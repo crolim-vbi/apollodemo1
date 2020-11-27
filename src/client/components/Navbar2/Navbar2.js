@@ -132,57 +132,7 @@ const temas = [
 
  const relatorios = [
   {
-    "nome": "Performance Breakdown",
-    "tema": "Ativo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Regulamentos dos Fundos",
-    "tema": "Contratos",
-    "frequencia": "Unitário"
-  },
-  {
-    "nome": "Relatório de distribuição de rendimentos",
-    "tema": "Ativo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Histórico de Cotas e PL",
-    "tema": "Ativo",
-    "frequencia": "Diário"
-  },
-  {
-    "nome": "Posição de Investidores do Fundo",
-    "tema": "Passivo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Demonstração Financeira Auditada",
-    "tema": "Contábil",
-    "frequencia": "Semestral"
-  },
-  {
-    "nome": "Atos Societários da Entidade",
-    "tema": "Eventos Societários",
-    "frequencia": "Pontual"
-  },
-  {
-    "nome": "Carteira do Administrador - Fundo",
-    "tema": "Ativo",
-    "frequencia": "Diário"
-  },
-  {
-    "nome": "Balancete dos Fundos",
-    "tema": "Contábil",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Contratos de Prestador de Serviço do Fundo",
-    "tema": "Contratos",
-    "frequencia": "Pontual"
-  },
-  {
-    "nome": "Carteira Administrador - INR",
+    "nome": "Carteira Administrador",
     "tema": "Ativo",
     "frequencia": "Mensal"
   },
@@ -192,17 +142,62 @@ const temas = [
     "frequencia": "Mensal"
   },
   {
+    "nome": "Histórico de Cotas e PL",
+    "tema": "Ativo",
+    "frequencia": "Diário"
+  },
+  {
+    "nome": "Memória de Cálculo",
+    "tema": "Ativo",
+    "frequencia": "Mensal"
+  },
+  {
+    "nome": "Performance Breakdown",
+    "tema": "Ativo",
+    "frequencia": "Mensal"
+  },
+  {
+    "nome": "Relatório de distribuição de rendimentos",
+    "tema": "Ativo",
+    "frequencia": "Mensal"
+  },
+  {
+    "nome": "Balancete dos Fundos",
+    "tema": "Contábil",
+    "frequencia": "Mensal"
+  },
+  {
+    "nome": "Demonstração Financeira Auditada",
+    "tema": "Contábil",
+    "frequencia": "Semestral"
+  },
+  {
     "nome": "Razão dos Fundo",
     "tema": "Contábil",
     "frequencia": "Mensal"
   },
   {
-    "nome": "Memória de Cálculo de Taxas dos Fundos",
-    "tema": "Ativo",
-    "frequencia": "Mensal"
+    "nome": "Contratos de Prestador de Serviço do Fundo",
+    "tema": "Contratos",
+    "frequencia": "Pontual"
+  },
+  {
+    "nome": "Regulamentos dos Fundos",
+    "tema": "Contratos",
+    "frequencia": "Unitário"
+  },
+  {
+    "nome": "Atos Societários da Entidade",
+    "tema": "Eventos Societários",
+    "frequencia": "Pontual"
   },
   {
     "nome": "Extrato de Cotista do Fundo",
+    "tema": "Passivo",
+    "frequencia": "Mensal"
+  },
+  {
+    "nome": "Posição de Investidores do Fundo",
     "tema": "Passivo",
     "frequencia": "Mensal"
   },
@@ -212,8 +207,6 @@ const temas = [
     "frequencia": "Diário"
   }
  ]
-
-
 
 
  const DatePickers = function(props) {
@@ -325,11 +318,11 @@ export default function Navbar2() {
 
         <VerticalLine />
 
-        <CheckboxesTags multipleBoolen={false} labelName = "Tema" optionsValues = {temas} />
+        <CheckboxesTags multipleBoolen={true} labelName = "Tema" optionsValues = {temas} />
 
         <VerticalLine />
 
-        <CheckboxesTags multipleBoolen={true} labelName = "Relatórios" optionsValues = {relatorios} />
+        <CheckboxesTags multipleBoolen={true} labelName = "Relatórios" optionsValues = {relatorios} groupByKey = "tema" />
 
         <VerticalLine />
 
