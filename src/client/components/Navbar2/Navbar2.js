@@ -290,7 +290,7 @@ const ComboBox = function (props) {
  const VerticalLine = () => {
 
   return (
-    <div style={{borderLeft: "1px solid gray", height: "50px", margin: "0px 15px"}}></div>
+    <div style={{borderLeft: "1px solid #ccc", height: "40px", margin: "0px 15px"}}></div>
   )
 
 }
@@ -325,11 +325,11 @@ export default function Navbar2() {
 
         <VerticalLine />
 
-        <div style={{border:"", marginTop: "15px", color: "#777"}}>De</div> &nbsp;&nbsp;&nbsp;&nbsp;
+        <div style={{border:"", marginTop: "15px", color: "#777"}}>De</div> &nbsp;&nbsp;&nbsp;
 
         <DatePickers labelName = "Período" />
 
-        &nbsp;&nbsp;&nbsp;&nbsp; <div style={{border:"", marginTop: "15px", color: "#777"}}>até</div> &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp; <div style={{border:"", marginTop: "15px", color: "#777"}}>até</div> &nbsp;&nbsp;&nbsp;
 
         <DatePickers labelName = " " />
         
