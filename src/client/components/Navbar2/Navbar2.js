@@ -218,8 +218,7 @@ const temas = [
     },
     textField: {
       marginLeft: theme.spacing(1),
-      marginRight: theme.spacing(1),
-      width: 200,
+      marginRight: theme.spacing(1)
     },
   }));
 
@@ -229,8 +228,8 @@ const temas = [
         id="date"
         label={props.labelName}
         type="date"
-        defaultValue="2017-05-24"
-        style={{ width: 200, backgroundColor: "transparent", display: "inline-block", margin: "10px 0px 15px" }}
+        defaultValue=""
+        style={{ width: 135, backgroundColor: "transparent", display: "inline-block", margin: "0px 0px 0px 0px" }}
         className={classes.textField}
         InputLabelProps={{
           shrink: true,
@@ -291,7 +290,7 @@ const ComboBox = function (props) {
  const VerticalLine = () => {
 
   return (
-    <div style={{borderLeft: "1px solid gray", height: "55px", margin: "0px 30px"}}></div>
+    <div style={{borderLeft: "1px solid gray", height: "50px", margin: "0px 15px"}}></div>
   )
 
 }
@@ -326,8 +325,13 @@ export default function Navbar2() {
 
         <VerticalLine />
 
+        <div style={{border:"", marginTop: "15px", color: "#777"}}>De</div> &nbsp;&nbsp;&nbsp;&nbsp;
 
-        <DatePickers labelName = "Data" />
+        <DatePickers labelName = "Período" />
+
+        &nbsp;&nbsp;&nbsp;&nbsp; <div style={{border:"", marginTop: "15px", color: "#777"}}>até</div> &nbsp;&nbsp;&nbsp;&nbsp;
+
+        <DatePickers labelName = " " />
         
 
         <VerticalLine />
