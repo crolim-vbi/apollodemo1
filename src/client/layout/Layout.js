@@ -7,14 +7,19 @@ import Footer from '../components/Footer/Footer';
 
 import apollo_lunar_logo from "./apollo_lunar_logo.png";
 import logo_vbi from "./logo_vbi.png";
+import background_footer_vbi from "./background_footer_vbi.png";
 
 import './styles.css';
+
+const style = {
+  backgroundImage: `url(${background_footer_vbi})`,
+}
 
 const Layout = (props) => {
   return (
 
       <div>
-        <div className="top-row">
+        <div className="top-row" style={style}>
           <div className="header">
             <div><img src={apollo_lunar_logo} height="60px" /></div>
             {/* <div><img src="user_avatar.png" height="30px" style={{borderRadius: '50%'}} /></div> */}
@@ -60,7 +65,7 @@ const Layout = (props) => {
             <br />
           </div>    
         </div>
-        <div className="bottom-row">
+        <div className="bottom-row" style={style}>
           <div className="footer1">
             <img src={logo_vbi} height="35px" />
             <div style={{height: '100%', textAlign: 'right'}}>
