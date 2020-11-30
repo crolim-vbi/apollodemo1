@@ -308,7 +308,7 @@ export default function Navbar2() {
 
   return (
     <div className="container2">
-      <div className="navbar2" style={{ maxWidth: "1200px"}}>
+      <div className="navbar2" >
 
         
         <VerticalLine />
