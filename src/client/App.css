@@ -1,38 +1,148 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  *{
+    /* border: solid 1px green; */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px; /* reset */
+    background-color: black;
   }
-  to {
-    transform: rotate(360deg);
+
+  .topWrap > div,  .bottomWrap, .xpto {
+    /* max-width: 1200px; */
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
   }
-} */
+
+
+
+
+
+  .topWrap, .bottomWrap   {
+    color: white;
+    background-color: black;
+    background-image: url("./example.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    
+    align-items: left;
+    justify-content: flex-start;
+  }
+
+
+
+  .mainWrap   {
+    background-color: #eee;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 450px;
+  }
+
+
+
+
+
+  /* Container for flexboxes */
+
+  .header, .footer1 {
+    display: -webkit-flex;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between	;
+    align-items: center;
+    border-bottom: solid 1px gray;
+  }
+
+  .header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .topNav {
+    display: -webkit-flex;
+    display: flex; 
+    flex-wrap: wrap;   
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 60px;
+    width: 550px;
+    margin: 0;
+  }  
+
+
+
+  .topNav a {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .topNav > a:hover, .topNavSelecionado {
+    color: #ccc!important;
+    border-bottom: solid lightgray 2px;
+  }
+
+  .topNav > a:hover {
+    color: #ccc!important;
+    border-bottom: solid lightgray 2px;
+  }  
+
+  .topNav2 {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+  }  
+
+  .topNav2 > .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+  }
+
+  .topNav2 > .row:first-child  {
+    margin-top: 20px;
+  }
+
+  .topNav2 > .row > .cell  {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* border-right: solid 1px gray; */
+    /* padding: 0px 20px; */
+    margin-left: 30px;
+  }
+
+  
+  .topNav2 > .row > .cell:first-child  {
+    margin-left: 0px;
+  }
+  
+
+   .topNav2 > .row > .cell > .item  {
+    width: 100%;
+  }
+
+
+  
+  .main {
+    background-color: white;
+  }
+  
+  /* Style the footer */
+  .footer1, .footer2 {
+    height: 60px;
+    color: gray;
+    font-weight: 600;
+    font-size: 12px
+  }
+
+
+
+  
