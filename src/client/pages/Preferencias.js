@@ -1,16 +1,14 @@
 import React from 'react';
-
+import Layout from '.././layout/Layout';
 
 const App = function() {
 
   
     return (<>
-
-        <h2 style={{fontWeight: "600", marginTop: "0px", paddingTop: "20px"}}>Preferências</h2>
+      <Layout titulo="Preferências" subTitulos={["Preferências"]}>
 
         <div Style={{marginBottom: "20px"}}> &nbsp; </div>
-
-
+      </Layout>
     
     </>);
   }

@@ -1,16 +1,16 @@
 import React from 'react';
-
+import Layout from '.././layout/Layout';
 
 const App = function() {
 
   
     return (<>
+      <Layout titulo="Não Encontrado" subTitulos={["Não Encontrado"]}>
 
-        <h2 style={{fontWeight: "600", marginTop: "0px", paddingTop: "20px"}}>Não Encontrado</h2>
 
         <div Style={{marginBottom: "20px"}}> &nbsp; </div>
 
-            
+      </Layout>
     
     </>);
   }

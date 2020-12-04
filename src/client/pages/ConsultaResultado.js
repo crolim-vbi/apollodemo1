@@ -1,5 +1,7 @@
 
 import React from 'react';
+import Layout from '.././layout/Layout';
+
 import DataTable2 from '../Components/DataTable2';
 
 
@@ -63,11 +65,7 @@ const App = function() {
   }
   
   
-    return (<>
-
-            {/* <h2 style={{fontWeight: "600", marginTop: "0px", paddingTop: "20px"}}>Resultado da Busca</h2> */}
-
-            <h2 style={{fontWeight: "600", marginTop: "0px", paddingTop: "20px"}}>Consulta</h2>
+    return (<Layout titulo="Resultado" subTitulos={["Consultar","Resultado"]}>
 
             
 
@@ -85,8 +83,7 @@ const App = function() {
               <Grid item xs={4}>
                   <div style={{display: "flex",   justifyContent: "center", alignItems: "center", height: "100%", float: "right"}}>
                       <Button variant="contained" onClick={shoot}>BAIXAR SELECIONADOS</Button>  
-                  </div>   
-                       
+                  </div>       
               </Grid>   
             </Grid> 
 
@@ -113,7 +110,7 @@ const App = function() {
             </div>
 
     
-    </>);
+      </ Layout>);
   }
 
 

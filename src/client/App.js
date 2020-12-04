@@ -19,20 +19,17 @@ const App = function() {
 
   
     return (<>
+          
+      <Switch>
+        <Route path="/consultar" component={Consulta}/>
+        <Route path="/inserir" component={Inserir}/>
+        <Route path="/preferencias" component={Preferencias}/>
+        <Route path="/ajuda" component={Ajuda}/>
+        <Route path="/ConsultaResultado" component={ConsultaResultado}/>
+        <Route exact path="/" component={Home}/>
+        <Route path="/" component={NaoEncontrado}/>
+      </Switch>
       
-      <Layout style={{marginBottom: "20px"}}>
-        <Switch>
-          <Route path="/consultar" component={Consulta}/>
-          <Route path="/inserir" component={Inserir}/>
-          <Route path="/preferencias" component={Preferencias}/>
-          <Route path="/ajuda" component={Ajuda}/>
-          <Route path="/ConsultaResultado" component={ConsultaResultado}/>
-          <Route exact path="/" component={Home}/>
-          <Route path="/" component={NaoEncontrado}/>
-        </Switch>
-      </Layout>
-    
-    
     </>);
   }
 

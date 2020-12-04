@@ -1,4 +1,5 @@
 import React from 'react';
+import Layout from '.././layout/Layout';
 import Consulta from '../partials/Consulta';
 
 
@@ -7,12 +8,12 @@ const App = function() {
 
   
     return (<>
-
-        <h2 style={{fontWeight: "600", marginTop: "0px", paddingTop: "20px"}}>Consultar</h2>
+      <Layout titulo="Fazer pesquisa" subTitulos={["Consultar"]}>
 
         <Consulta />
 
         <div Style={{marginBottom: "20px"}}> &nbsp; </div>
+      </Layout>
     
     </>);
   }

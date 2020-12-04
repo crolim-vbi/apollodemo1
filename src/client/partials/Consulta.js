@@ -246,7 +246,7 @@ const App = function() {
   
     return (<>
     
-            <div className={classes.root} style={{paddingBottom: "20px"}}>
+            <div className={classes.root} style={{paddingBottom: "25px"}}>
               
                   <Grid item xs={12} >
 
@@ -346,7 +346,7 @@ const App = function() {
               
             </div>
             
-            <div Style={{marginBottom: "20px"}}> &nbsp; </div>
+            
     
     </>);
   }

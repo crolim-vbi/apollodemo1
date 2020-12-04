@@ -1,18 +1,18 @@
 import React from 'react';
+import Layout from '.././layout/Layout';
 
 
 const App = function() {
 
   
-    return (<>
+    return (
 
-        <h2 style={{fontWeight: "600", marginTop: "0px", paddingTop: "20px"}}>Ajuda</h2>
+      <Layout titulo="Ajuda" subTitulos={["Ajuda"]}>
+      </Layout>
 
 
-
-            
-    
-    </>);
+      
+    );
   }
 
 
