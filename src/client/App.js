@@ -13,6 +13,8 @@ import ConsultaResultado from './pages/ConsultaResultado';
 import { Route, Switch } from 'react-router-dom';
 
 
+
+
 const App = function() {
 
   
