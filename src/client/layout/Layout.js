@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
         <Navbar />
         
         <div className="mainWrap">
-          {children}
+          <div className="maxScreenWidth">
+            {children}
+          </div>
         </div>
         
         <Footer />

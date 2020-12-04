@@ -8,9 +8,21 @@
     background-color: black;
   }
 
+  .maxScreenWidth {
+    /* max-width: 1920px; */
+    margin: auto 
+  }
+
+
+  /* xs, extra-pequeno: 0px
+  sm, pequeno: 600px
+  md, médio: 960px
+  lg, grande: 1280px
+  xl, extra-grande: 1920px */
+
+
   .topWrap > div,  .bottomWrap, .xpto {
     /* max-width: 1200px; */
-    margin: 0;
     padding-left: 30px;
     padding-right: 30px;
   }

@@ -44,7 +44,7 @@ const Navbar = function() {
 
         <div className="topWrap">
 
-          <div className="header">
+          <div className="header maxScreenWidth">
             <div className="zpto"><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></div>
             
             <div className="topNav">
@@ -57,10 +57,6 @@ const Navbar = function() {
             </div>    
             
           </div>
-
-   
-
-
 
       </div>
     </>
