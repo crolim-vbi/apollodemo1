@@ -84,8 +84,7 @@ const App = function() {
               </Grid>        
               <Grid item xs={4}>
                   <div style={{display: "flex",   justifyContent: "center", alignItems: "center", height: "100%", float: "right"}}>
-                      {/* <button className="item"  style={{backgroundColor: "#555", color: "white", width: "auto",  padding: "6px 12px", borderRadius: ".25rem", fontWeight: "700", marginBotto: "10px"}}>BAIXAR SELEÇÃO</button> */}
-                      <Button variant="contained" onClick={shoot}>BAIXAR SELEÇÃO</Button>  
+                      <Button variant="contained" onClick={shoot}>BAIXAR SELECIONADOS</Button>  
                   </div>   
                        
               </Grid>   
