@@ -45,7 +45,7 @@ const Navbar = function() {
         <div className="topWrap">
 
           <div className="header">
-            <div><img src={apollo_lunar_logo} height="60px" /></div>
+            <div className="zpto"><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></div>
             
             <div className="topNav">
               <Link to="/" >Início</Link>

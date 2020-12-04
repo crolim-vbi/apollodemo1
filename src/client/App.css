@@ -81,15 +81,12 @@
     font-weight: 600;
   }
 
-  .topNav > a:hover, .topNavSelecionado {
+  .topNav > a:hover {
     color: #ccc!important;
     border-bottom: solid lightgray 2px;
   }
 
-  .topNav > a:hover {
-    color: #ccc!important;
-    border-bottom: solid lightgray 2px;
-  }  
+
 
   .topNav2 {
     display: -webkit-flex;
