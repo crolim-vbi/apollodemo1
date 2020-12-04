@@ -326,7 +326,7 @@ const App = function() {
                             <Typography style={{}}>
                                 
                                     <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                        <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR DOCUMENTOS</Button></Link>
+                                        <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR</Button></Link>
                                     </div>
                             </Typography>
                         </CardContent>
