@@ -82,8 +82,7 @@ const App = function() {
                                 <Typography style={{}}>
                                 
                                     <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                        {/* <button  className="item"  style={{cursor: "pointer", backgroundColor: "#555", color: "white", width: "auto",  padding: "6px 12px", borderRadius: ".25rem", fontWeight: "700", marginBotto: "10px"}}>BAIXAR</button> */}
-                                        <Button  onClick={shoot} variant="contained">BAIXAR</Button>
+                                        <Button  onClick={shoot} variant="contained">BAIXAR SELECIONADOS</Button>
                                     </div>
                                 </Typography>
                             </CardContent>
@@ -107,8 +106,7 @@ const App = function() {
                                 <Typography style={{}}>
                                 
                                     <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                        {/* <button className="item" type="button" style={{backgroundColor: "#555", color: "white", width: "auto",  padding: "6px 12px", borderRadius: ".25rem", fontWeight: "700", marginBotto: "10px"}}>BAIXAR</button> */}
-                                        <Button onClick={shoot} variant="contained">BAIXAR</Button>
+                                        <Button onClick={shoot} variant="contained">BAIXAR SELECIONADOS</Button>
                                     </div>
                                 </Typography>
                             </CardContent>                      
