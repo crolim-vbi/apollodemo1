@@ -48,13 +48,11 @@ const Navbar = function() {
             <div><img src={apollo_lunar_logo} height="60px" /></div>
             
             <div className="topNav">
-
-              {/* <Link to="/"><a>Início</a></Link> */}
-              <a href="/">Início</a>
-              <a href="/consultar">Consultar</a>
-              <a href="/inserir">Inserir</a>
-              <a href="/preferencias">Preferências</a>
-              <a href="/ajuda">Ajuda</a>
+              <Link to="/" >Início</Link>
+              <Link to="/consultar" >Consultar</Link>
+              <Link to="/inserir" >Inserir</Link>
+              <Link to="/preferencias" >Preferências</Link>
+              <Link to="/ajuda" >Ajuda</Link>
               <a><UserIcon /></a>
             </div>    
             

@@ -20,6 +20,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 
+import { Link } from 'react-router-dom';
 
 
 
@@ -325,8 +326,7 @@ const App = function() {
                             <Typography style={{}}>
                                 
                                     <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                        {/* <a  href="/ConsultaResultado"><button  type="button" style={{backgroundColor: "#555", color: "white", width: "auto",  padding: "6px 12px", borderRadius: ".25rem", fontWeight: "700", marginBotto: "10px"}}>BUSCAR DOCUMENTOS</button></a> */}
-                                        <Button href="/ConsultaResultado" variant="contained">BUSCAR DOCUMENTOS</Button>
+                                        <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR DOCUMENTOS</Button></Link>
                                     </div>
                             </Typography>
                         </CardContent>
