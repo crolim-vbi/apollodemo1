@@ -72,7 +72,7 @@ const App = function() {
                       <Card className={classes2.root}>
                       <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
                           <Typography className={classes2.title} color="textSecondary" gutterBottom>
-                              Documentos Favoritos
+                            Highlights
                           </Typography>
                       </CardContent>
                       <CardContent>
