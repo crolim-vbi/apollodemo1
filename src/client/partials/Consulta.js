@@ -282,11 +282,10 @@ const App = function() {
                                           </div>
                                       </Grid>
                                   </Grid>
+
                                   <Grid container spacing={0}>
                                     <Grid item xs={12}>
                                         <div className={classes.paper}>
-
-                                        
 
                                             <div style={{textAlign: "left"}}>
 
