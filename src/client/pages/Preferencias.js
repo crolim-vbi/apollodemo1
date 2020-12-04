@@ -5,7 +5,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Preferências" subTitulos={["Preferências"]}>
+      <Layout titulo="Configurações">
 
         <div Style={{marginBottom: "20px"}}> &nbsp; </div>
       </Layout>

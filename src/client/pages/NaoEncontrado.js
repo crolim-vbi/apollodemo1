@@ -5,7 +5,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Não Encontrado" subTitulos={["Não Encontrado"]}>
+      <Layout titulo="Não Encontrado" >
 
 
         <div Style={{marginBottom: "20px"}}> &nbsp; </div>

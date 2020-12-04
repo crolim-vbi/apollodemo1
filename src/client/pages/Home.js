@@ -10,7 +10,7 @@ import Highlights from '.././partials/Highlights';
 const App = function() {
 
     return (
-      <Layout titulo="Overview" subTitulos={["Início"]}>
+      <Layout titulo="Overview">
 
         <Consulta />
 

@@ -5,7 +5,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Inserir" subTitulos={["Inserir"]}>
+      <Layout titulo="Carregar Documentos" >
 
 
         <div Style={{marginBottom: "20px"}}> &nbsp; </div>

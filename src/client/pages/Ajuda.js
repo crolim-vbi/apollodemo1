@@ -7,7 +7,7 @@ const App = function() {
   
     return (
 
-      <Layout titulo="Ajuda" subTitulos={["Ajuda"]}>
+      <Layout titulo="O que é o Sistema Apollo Lunar">
       </Layout>
 
 

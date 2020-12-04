@@ -65,7 +65,7 @@ const App = function() {
   }
   
   
-    return (<Layout titulo="Resultado" subTitulos={["Consultar","Resultado"]}>
+    return (<Layout titulo="Resultado da Busca" >
 
             
 

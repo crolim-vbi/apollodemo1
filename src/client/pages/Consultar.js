@@ -8,7 +8,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Fazer pesquisa" subTitulos={["Consultar"]}>
+      <Layout titulo="Fazer Busca" >
 
         <Consulta />
 
