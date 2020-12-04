@@ -31,16 +31,21 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
-  devServer: {
-    port: 3000,
-    open: true,
-    historyApiFallback: true,
-    contentBase: './',
-    hot: true,
-    proxy: {
-      '/api': 'http://localhost:8080'
-    }
-  },
+  // devServer: {
+  //   port: 3000,
+  //   open: true,
+  //   historyApiFallback: true,
+  //   contentBase: './',
+  //   hot: true,
+  //   proxy: {
+  //     '/api': 'http://localhost:8080'
+  //   }
+  // },
+    devServer: {
+      historyApiFallback: true,
+      contentBase: './',
+      hot: true
+  },  
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
     new HtmlWebpackPlugin({
