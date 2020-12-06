@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
-import { lighten, makeStyles } from '@material-ui/core/styles';
+import {withStyles, lighten, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -30,37 +30,34 @@ const icon2 = <GetAppIcon color="action" fontSize="small"/>;
 const icon3 = <ShareIcon color="action" fontSize="small"/>;
 const icon4 = <GetAppIcon style={{ color: "rgba(0, 0, 0, 0.54)" }} />;
 
+const StyledTableCell = withStyles((theme) => ({
+  head: {
+    color: "gray"
+  },
+  body: {
+    color: "gray"
+  },
+}))(TableCell);
+
+const StyledTableRow = withStyles((theme) => ({
+  root: {
+    '&:nth-of-type(odd)': {
+      backgroundColor: theme.palette.action.hover,
+    },
+  },
+}))(TableRow);
+
 
 function createData(name, calories, carbs, fat,  protein, protein2, protein3, protein4) {
   return { name, calories,  carbs, fat, protein, protein2, protein3, protein4 };
 }
 
 const rows = [
-    createData('Performance Breakdown', 'BREOF FIP', '2020.12', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2020.11', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2020.10', 'PDF', 'Diogo Massaro'),
-    createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2020.09', 'PDF', 'Diogo Massaro'),
-    createData('Performance Breakdown', 'BREOF FIP', '2020.08', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2020.07', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2020.06', 'PDF', 'Diogo Massaro'),
-    createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2020.05', 'PDF', 'Diogo Massaro'),
-    createData('Performance Breakdown', 'BREOF FIP', '2020.04', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2020.03', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2020.02', 'PDF', 'Diogo Massaro'),
-    createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2020.01', 'PDF', 'Diogo Massaro'),
-    createData('Performance Breakdown', 'BREOF FIP', '2019.12', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2019.11', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2019.10', 'PDF', 'Diogo Massaro'),
-    createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2019.09', 'PDF', 'Diogo Massaro'),
-    createData('Performance Breakdown', 'BREOF FIP', '2019.08', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2019.07', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2019.06', 'PDF', 'Diogo Massaro'),
-    createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2019.05', 'PDF', 'Diogo Massaro'),
-    createData('Performance Breakdown', 'BREOF FIP', '2019.04', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2019.03', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2019.02', 'PDF', 'Diogo Massaro'),
-    createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2019.01', 'PDF', 'Diogo Massaro'),
-    createData('Demonstrativo de Caixa – Conta YPTO', 'NOVA I FII', '2018.12', 'PDF', 'Diogo Massaro'),    
+    createData('VBI CRI FII_Posição Investidores_2018.01.xls', 'BREOF FIP', '23/05/2020', 'Excel', 'Diogo Massaro'),
+    createData('BREOF FIP Multiestratégia_Performance Breakdow_2020.04', 'BREOF FIP', '22/05/2020', 'PDF', 'Diogo Massaro'),
+    createData('BREOF FIDC_Performance Breakdow_2020.04', 'BREOF III FIP', '21/05/2020', 'PDF', 'Diogo Massaro'),
+    createData('BREOF III FIP_Performance Breakdow_2020.04', 'NOVA I FII', '20/05/2020', 'PDF', 'Diogo Massaro'),
+    createData('Nova I FII_Performance Breakdow_2020.04', 'BREOF FIP', '19/05/2020', 'Excel', 'Diogo Massaro'),   
 ];
 
 function descendingComparator(a, b, orderBy) {
@@ -90,14 +87,11 @@ function stableSort(array, comparator) {
 }
 
 const headCells = [
-  { id: 'name', numeric: true, disablePadding: false, label: 'Relatório' },
-  { id: 'calories', numeric: false, disablePadding: false, label: 'Entidade' },
-  { id: 'carbs', numeric: false, disablePadding: false, label: 'Data' },
-  { id: 'fat', numeric: false, disablePadding: false, label: 'Extensão' },
-  { id: 'protein', numeric: false, disablePadding: false, label: 'Carregado por' },
+  { id: 'name', numeric: true, disablePadding: false, label: 'Documento' },
+  { id: 'carbs', numeric: false, disablePadding: false, label: 'Data Atualização' },
   { id: 'protein2', numeric: false, disablePadding: false, label: '' },
-  { id: 'protein3', numeric: false, disablePadding: false, label: '' },
-  { id: 'protein4', numeric: false, disablePadding: false, label: '' }
+  // { id: 'protein3', numeric: false, disablePadding: false, label: '' },
+  // { id: 'protein4', numeric: false, disablePadding: false, label: '' }
 ];
 
 function EnhancedTableHead(props) {
@@ -109,16 +103,16 @@ function EnhancedTableHead(props) {
   return (
     <TableHead>
       <TableRow>
-        <TableCell padding="checkbox">
+        <StyledTableCell padding="checkbox">
           <Checkbox
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={rowCount > 0 && numSelected === rowCount}
             onChange={onSelectAllClick}
             inputProps={{ 'aria-label': 'select all desserts' }}
           />
-        </TableCell>
+        </StyledTableCell>
         {headCells.map((headCell) => (
-          <TableCell
+          <StyledTableCell
             key={headCell.id}
             align={headCell.numeric ? 'left' : 'left'}
             padding={headCell.disablePadding ? 'none' : 'default'}
@@ -136,7 +130,7 @@ function EnhancedTableHead(props) {
                 </span>
               ) : null}
             </TableSortLabel>
-          </TableCell>
+          </StyledTableCell>
         ))}
       </TableRow>
     </TableHead>
@@ -156,7 +150,7 @@ function EnhancedTableHead(props) {
 const useToolbarStyles = makeStyles((theme) => ({
   root: {
     paddingLeft: theme.spacing(2),
-    paddingRight: theme.spacing(1),
+    paddingRight: theme.spacing(1)
   },
   highlight:
     theme.palette.type === 'light'
@@ -189,7 +183,7 @@ const EnhancedTableToolbar = (props) => {
     >
       {numSelected > 0 ? (
           <Typography className={classes.title} color="inherit" variant="subtitle1" component="div">
-            {/* <a style={{fontSize: "1rem", fontWeight: "500"}}>Documentos</a> */}
+            
             <Tooltip title="Baixar Selecionados">
                 <IconButton aria-label="delete">
                     {icon4}
@@ -200,7 +194,7 @@ const EnhancedTableToolbar = (props) => {
 
       ) : (
         <Typography className={classes.title} variant="h6" id="tableTitle" component="div">
-          <a style={{fontSize: "1rem", fontWeight: "500"}}>Documentos</a>
+          <a style={{fontSize: "1rem", fontWeight: "500"}}>{props.titulo}</a>
         </Typography>
       )}
 
@@ -228,14 +222,14 @@ EnhancedTableToolbar.propTypes = {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
+    
   },
   paper: {
     width: '100%',
     marginBottom: theme.spacing(2),
   },
   table: {
-    minWidth: 750,
+    // minWidth: 750,
   },
   visuallyHidden: {
     border: 0,
@@ -250,10 +244,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function EnhancedTable() {
+export default function EnhancedTable(props) {
   const classes = useStyles();
   const [order, setOrder] = React.useState('desc');
-  const [orderBy, setOrderBy] = React.useState('carbs');
+  const [orderBy, setOrderBy] = React.useState('');
   const [selected, setSelected] = React.useState([]);
   const [page, setPage] = React.useState(0);
   const [dense, setDense] = React.useState(false);
@@ -314,8 +308,8 @@ export default function EnhancedTable() {
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
-        <EnhancedTableToolbar numSelected={selected.length} />
-        <TableContainer>
+        <EnhancedTableToolbar numSelected={selected.length} titulo={props.titulo}  />
+        <TableContainer style={{borderTop: "solid 1px lightgray"}}>
           <Table
             className={classes.table}
             aria-labelledby="tableTitle"
@@ -348,34 +342,29 @@ export default function EnhancedTable() {
                       key={row.carbs}
                       selected={isItemSelected}
                     >
-                      <TableCell padding="checkbox" >
+                      <StyledTableCell padding="checkbox" >
                         <Checkbox
                           checked={isItemSelected}
                           inputProps={{ 'aria-labelledby': labelId }}
                         />
-                      </TableCell>
-                      <TableCell  >
-                        {row.name}
-                      </TableCell>
-                      <TableCell align="left">{row.calories}</TableCell>
-                      <TableCell component="th" id={labelId} scope="row" padding="none" align="left">{row.carbs}</TableCell>
-                      <TableCell align="left">{row.fat}</TableCell>
-                      <TableCell align="left">{row.protein}</TableCell>
-                      <TableCell align="left"><a href="javascript:void(0);">{icon}</a></TableCell>
-                      <TableCell align="left"><a href="javascript:void(0);">{icon2}</a></TableCell>
-                      <TableCell align="left"><a href="javascript:void(0);">{icon3}</a></TableCell>
+                      </StyledTableCell>
+                      <StyledTableCell  >{row.name}</StyledTableCell>
+                      <StyledTableCell component="th" id={labelId} scope="row" align="left">{row.carbs}</StyledTableCell>
+                      <StyledTableCell align="left"><a href="javascript:void(0);">{icon}</a></StyledTableCell>
+                      {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon2}</a></StyledTableCell>
+                      <StyledTableCell align="left"><a href="javascript:void(0);">{icon3}</a></StyledTableCell> */}
                     </TableRow>
                   );
                 })}
               {emptyRows > 0 && (
                 <TableRow style={{ height: (dense ? 33 : 53) * emptyRows }}>
-                  <TableCell colSpan={6} />
+                  <StyledTableCell colSpan={6} />
                 </TableRow>
               )}
             </TableBody>
           </Table>
         </TableContainer>
-        <TablePagination
+        {/* <TablePagination
           rowsPerPageOptions={[5, 10, 25]}
           component="div"
           count={rows.length}
@@ -383,7 +372,7 @@ export default function EnhancedTable() {
           page={page}
           onChangePage={handleChangePage}
           onChangeRowsPerPage={handleChangeRowsPerPage}
-        />
+        /> */}
       </Paper>
       {/* <FormControlLabel
         control={<Switch checked={dense} onChange={handleChangeDense} />}

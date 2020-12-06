@@ -1,6 +1,7 @@
 
 import React from 'react';
 import DataTable from '../Components/DataTable';
+import DataTable4 from '../Components/DataTable4';
 
 
 
@@ -68,51 +69,47 @@ const App = function() {
             <div className={classes.root}  style={{paddingBottom: "10px"}}>
 
                 <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                      <Card className={classes2.root}>
-                      <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
-                          <Typography className={classes2.title} color="textSecondary" gutterBottom>
-                            Highlights
-                          </Typography>
-                      </CardContent>
-                      <CardContent>
-                          <DataTable/>
-                      </CardContent>
-                      <CardContent style={{borderTop: "solid 1px lightgray"}}>
-                                  <Typography style={{}}>
-                                  
-                                      <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                          <Button  onClick={shoot} variant="contained">BAIXAR SELECIONADOS</Button>
-                                      </div>
-                                  </Typography>
-                              </CardContent>
+                    <Grid item xs={12} md={6}>
+                      
+                      
+                          <DataTable4 titulo="Highlights"/>
+                      
 
-                      </Card>        
-                  </Grid> 
+                        
+                    </Grid> 
 
-                  <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6}>
+                      
+                      
+                          <DataTable4 titulo="Últimas atualizações"/>
+                      
 
-                      <Card className={classes2.root}>
-                      <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
-                          <Typography className={classes2.title} color="textSecondary" gutterBottom>
-                              Últimas Atualizações
-                          </Typography>
-                      </CardContent>
-                      <CardContent>
-                          <DataTable/>
-                      </CardContent>
-                      <CardContent style={{borderTop: "solid 1px lightgray"}}>
-                                  <Typography style={{}}>
-                                  
-                                      <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                          <Button onClick={shoot} variant="contained">BAIXAR SELECIONADOS</Button>
-                                      </div>
-                                  </Typography>
-                              </CardContent>                      
-                      </Card>        
+                        
+                    </Grid>                     
+
+                    {/* <Grid item xs={12} md={6}>
+
+                        <Card className={classes2.root}>
+                        <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
+                            <Typography className={classes2.title} color="textSecondary" gutterBottom>
+                                Últimas Atualizações
+                            </Typography>
+                        </CardContent>
+                        <CardContent>
+                            <DataTable/>
+                        </CardContent>
+                        <CardContent style={{borderTop: "solid 1px lightgray"}}>
+                                    <Typography style={{}}>
+                                    
+                                        <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
+                                            <Button onClick={shoot} variant="contained">BAIXAR SELECIONADOS</Button>
+                                        </div>
+                                    </Typography>
+                                </CardContent>                      
+                        </Card>        
 
 
-                  </Grid> 
+                    </Grid>  */}
                 </Grid> 
 
 

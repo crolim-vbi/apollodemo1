@@ -232,7 +232,9 @@ const App = function() {
     },
     title: {
       fontWeight: 500,
-      color: "black"
+      color: "black",
+      paddingTop: 10,
+      paddingBottom: 10
     },
     pos: {
       marginBottom: 12,
