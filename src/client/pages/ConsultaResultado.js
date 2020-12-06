@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '.././layout/Layout';
 
 import DataTable2 from '../Components/DataTable2';
-
+import DataTable3 from '../Components/DataTable3';
 
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -69,22 +69,22 @@ const App = function() {
 
             
 
-            <Grid container spacing={0} style={{color:"gray"}}>
-              <Grid item xs={4}>
+            <Grid container spacing={2} style={{color:"gray"}}>
+              <Grid item xs={12} sm={6}>
                 <a>Entidades: BREOF FIP, BREOF III FIP, SBC FII</a>
                 <div style={{height: "15px"}}>&nbsp;</div>
                 <a>Datas: de 2020.09 à 2020.12</a><br />
               </Grid>
-              <Grid item xs={4}>
+              <Grid item xs={12} sm={6}>
                 <a>Tema: Ativo</a>
                 <div style={{height: "15px"}}>&nbsp;</div>
                 <a>Relatório: Todos</a><br />
               </Grid>        
-              <Grid item xs={4}>
+              {/* <Grid item xs={4}>
                   <div style={{display: "flex",   justifyContent: "center", alignItems: "center", height: "100%", float: "right"}}>
                       <Button variant="contained" onClick={shoot}>BAIXAR SELECIONADOS</Button>  
                   </div>       
-              </Grid>   
+              </Grid>    */}
             </Grid> 
 
             <div style={{height: "30px"}}>&nbsp;</div>
@@ -96,7 +96,7 @@ const App = function() {
                       
 
                       
-                      <DataTable2/>
+                      <DataTable3/>
     
                   </Grid> 
 
