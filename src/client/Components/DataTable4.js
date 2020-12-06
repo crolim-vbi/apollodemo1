@@ -309,7 +309,7 @@ export default function EnhancedTable(props) {
     <div className={classes.root}>
       <Paper className={classes.paper}>
         <EnhancedTableToolbar numSelected={selected.length} titulo={props.titulo}  />
-        <TableContainer style={{borderTop: "solid 1px lightgray"}}>
+        <TableContainer style={{}}>
           <Table
             className={classes.table}
             aria-labelledby="tableTitle"
