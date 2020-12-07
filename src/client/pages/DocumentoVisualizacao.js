@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Layout from '.././layout/Layout';
+import Layout from '../layout/Layout';
 
 import DataTable3 from '../Components/DataTable3';
 
@@ -36,20 +36,20 @@ const App = function() {
   }
   
   
-    return (<Layout titulo="Resultado da Busca" >
+    return (<Layout titulo="Visualização do Documento" >
 
             
 
             <Grid container spacing={2} style={{color:"gray"}}>
               <Grid item xs={12} sm={6}>
-                <a>Entidades: BREOF FIP, BREOF III FIP, SBC FII</a>
+                <a>Entidade: BREOF FIP</a>
                 <div style={{height: "15px"}}>&nbsp;</div>
-                <a>Datas: de 2020.09 à 2020.12</a><br />
+                <a>Data: 2020.09</a><br />
               </Grid>
               <Grid item xs={12} sm={6}>
                 <a>Tema: Ativo</a>
                 <div style={{height: "15px"}}>&nbsp;</div>
-                <a>Relatório: Todos</a><br />
+                <a>Relatório: Performance Breakdown</a><br />
               </Grid>        
             </Grid> 
 
@@ -61,8 +61,6 @@ const App = function() {
                   <Grid item xs={12}>
                       
 
-                      
-                      <DataTable3/>
     
                   </Grid> 
 

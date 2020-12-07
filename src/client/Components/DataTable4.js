@@ -25,7 +25,9 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import ShareIcon from '@material-ui/icons/Share';
 import Button from '@material-ui/core/Button';
 
-const icon = <VisibilityIcon color="action" fontSize="small"/>;
+import { Link } from 'react-router-dom';
+
+const icon1 = <VisibilityIcon color="action" fontSize="small"/>;
 const icon2 = <GetAppIcon color="action" fontSize="small"/>;
 const icon3 = <ShareIcon color="action" fontSize="small"/>;
 const icon4 = <GetAppIcon style={{ color: "rgba(0, 0, 0, 0.54)" }} />;
@@ -184,9 +186,9 @@ const EnhancedTableToolbar = (props) => {
       {numSelected > 0 ? (
           <Typography className={classes.title} color="inherit" variant="subtitle1" component="div">
             
-            <Tooltip title="Baixar Selecionados">
+            <Tooltip  title="Baixar Selecionados">
                 <IconButton aria-label="delete">
-                    {icon4}
+                    {icon4} 
                 </IconButton>
             </Tooltip>
             <a style={{fontSize: "1rem", fontWeight: "500"}}>Baixar Selecionados</a>
@@ -253,6 +255,10 @@ export default function EnhancedTable(props) {
   const [dense, setDense] = React.useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
+  const shoot = () => {
+    alert("Esta funcionalidade ainda está em desenvolvimento");
+  }
+
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';
     setOrder(isAsc ? 'desc' : 'asc');
@@ -305,6 +311,8 @@ export default function EnhancedTable(props) {
 
   const emptyRows = rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
+
+
   return (
     <div className={classes.root}>
       <Paper className={classes.paper}>
@@ -316,7 +324,7 @@ export default function EnhancedTable(props) {
             size={dense ? 'small' : 'medium'}
             aria-label="enhanced table"
           >
-            <EnhancedTableHead
+            {/* <EnhancedTableHead
               classes={classes}
               numSelected={selected.length}
               order={order}
@@ -324,8 +332,8 @@ export default function EnhancedTable(props) {
               onSelectAllClick={handleSelectAllClick}
               onRequestSort={handleRequestSort}
               rowCount={rows.length}
-            />
-            <TableBody>
+            /> */}
+            <TableBody style={{borderTop: "solid 1px lightgray"}}>
               {stableSort(rows, getComparator(order, orderBy))
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
@@ -348,11 +356,13 @@ export default function EnhancedTable(props) {
                           inputProps={{ 'aria-labelledby': labelId }}
                         />
                       </StyledTableCell>
+                      <StyledTableCell component="th" id={labelId} scope="row" align="left">{row.carbs}</StyledTableCell>                      
                       <StyledTableCell  >{row.name}</StyledTableCell>
-                      <StyledTableCell component="th" id={labelId} scope="row" align="left">{row.carbs}</StyledTableCell>
-                      <StyledTableCell align="left"><a href="javascript:void(0);">{icon}</a></StyledTableCell>
-                      {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon2}</a></StyledTableCell>
-                      <StyledTableCell align="left"><a href="javascript:void(0);">{icon3}</a></StyledTableCell> */}
+                      {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon1}</a></StyledTableCell> */}
+                      <TableCell align="left"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></TableCell>
+                      
+                      {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon2}</a></StyledTableCell> */}
+                      {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon3}</a></StyledTableCell>  */}
                     </TableRow>
                   );
                 })}

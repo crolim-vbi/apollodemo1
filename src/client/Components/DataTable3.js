@@ -25,11 +25,17 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import ShareIcon from '@material-ui/icons/Share';
 import Button from '@material-ui/core/Button';
 
-const icon = <VisibilityIcon color="action" fontSize="small"/>;
+import { Link } from 'react-router-dom';
+
+const icon1 = <VisibilityIcon color="action" fontSize="small"/>;
 const icon2 = <GetAppIcon color="action" fontSize="small"/>;
 const icon3 = <ShareIcon color="action" fontSize="small"/>;
 const icon4 = <GetAppIcon style={{ color: "rgba(0, 0, 0, 0.54)" }} />;
 
+
+const shoot = () => {
+  alert("Esta funcionalidade ainda está em desenvolvimento");
+}
 
 function createData(name, calories, carbs, fat,  protein, protein2, protein3, protein4) {
   return { name, calories,  carbs, fat, protein, protein2, protein3, protein4 };
@@ -361,9 +367,9 @@ export default function EnhancedTable() {
                       <TableCell component="th" id={labelId} scope="row" padding="none" align="left">{row.carbs}</TableCell>
                       <TableCell align="left">{row.fat}</TableCell>
                       <TableCell align="left">{row.protein}</TableCell>
-                      <TableCell align="left"><a href="javascript:void(0);">{icon}</a></TableCell>
-                      <TableCell align="left"><a href="javascript:void(0);">{icon2}</a></TableCell>
-                      <TableCell align="left"><a href="javascript:void(0);">{icon3}</a></TableCell>
+                      <TableCell align="left"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></TableCell>
+                      <TableCell align="left"><a href="javascript:void(0);" onClick={shoot}>{icon2}</a></TableCell>
+                      <TableCell align="left"><a href="javascript:void(0);" onClick={shoot}>{icon3}</a></TableCell>
                     </TableRow>
                   );
                 })}
