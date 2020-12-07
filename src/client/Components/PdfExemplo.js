@@ -25,7 +25,6 @@ export default function Sample() {
             file={file}
             onLoadSuccess={onDocumentLoadSuccess}
             options={options}
-            
           >
             {
               Array.from(
@@ -34,7 +33,8 @@ export default function Sample() {
                   <Page
                     key={`page_${index + 1}`}
                     pageNumber={index + 1}
-                    scale="1"
+                    scale="1.5"
+                    
                   />
                 ),
               )
