@@ -36,19 +36,19 @@ const App = function() {
   }
   
   
-    return (<Layout titulo="Resultado da Busca" >
+    return (<Layout titulo="Sua Busca retornou 25 Resultados" >
 
             
 
             <Grid container spacing={2} style={{color:"gray"}}>
               <Grid item xs={12} sm={6}>
-                <a>Entidades: BREOF FIP, BREOF III FIP, SBC FII</a>
-                <div style={{height: "15px"}}>&nbsp;</div>
+                <a>Entidades: BREOF FIP, SBC FII, VBI CRI FII</a>
+                <div style={{height: "10px"}}>&nbsp;</div>
                 <a>Datas: de 2020.09 à 2020.12</a><br />
               </Grid>
               <Grid item xs={12} sm={6}>
                 <a>Tema: Ativo</a>
-                <div style={{height: "15px"}}>&nbsp;</div>
+                <div style={{height: "10px"}}>&nbsp;</div>
                 <a>Relatório: Todos</a><br />
               </Grid>        
             </Grid> 

@@ -187,7 +187,7 @@ const EnhancedTableToolbar = (props) => {
           <Typography className={classes.title} color="inherit" variant="subtitle1" component="div">
             
             <Tooltip  title="Baixar Selecionados">
-                <IconButton aria-label="delete">
+              <IconButton  href="ExcelExemplo.xlsx" target="_blank" aria-label="delete">
                     {icon4} 
                 </IconButton>
             </Tooltip>

@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// import PdfExemplo from './Components/PdfExemplo';
 
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { HashRouter } from 'react-router-dom'
-
 
 
 ReactDOM.render(
@@ -20,6 +20,10 @@ ReactDOM.render(
   </Router>,
   document.getElementById('root')
 );
+
+// render(<Sample />, document.getElementById('root'));
+
+
 
 
 

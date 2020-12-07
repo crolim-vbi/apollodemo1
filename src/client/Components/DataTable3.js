@@ -43,28 +43,28 @@ function createData(name, calories, carbs, fat,  protein, protein2, protein3, pr
 
 const rows = [
     createData('Performance Breakdown', 'BREOF FIP', '2020.12', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2020.11', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2020.10', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2020.11', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2020.10', 'PDF', 'Diogo Massaro'),
     createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2020.09', 'PDF', 'Diogo Massaro'),
     createData('Performance Breakdown', 'BREOF FIP', '2020.08', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2020.07', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2020.06', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2020.07', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2020.06', 'PDF', 'Diogo Massaro'),
     createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2020.05', 'PDF', 'Diogo Massaro'),
     createData('Performance Breakdown', 'BREOF FIP', '2020.04', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2020.03', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2020.02', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2020.03', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2020.02', 'PDF', 'Diogo Massaro'),
     createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2020.01', 'PDF', 'Diogo Massaro'),
     createData('Performance Breakdown', 'BREOF FIP', '2019.12', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2019.11', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2019.10', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2019.11', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2019.10', 'PDF', 'Diogo Massaro'),
     createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2019.09', 'PDF', 'Diogo Massaro'),
     createData('Performance Breakdown', 'BREOF FIP', '2019.08', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2019.07', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2019.06', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2019.07', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2019.06', 'PDF', 'Diogo Massaro'),
     createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2019.05', 'PDF', 'Diogo Massaro'),
     createData('Performance Breakdown', 'BREOF FIP', '2019.04', 'Excel', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF FIP', '2019.03', 'PDF', 'Diogo Massaro'),
-    createData('Carteira', 'BREOF III FIP', '2019.02', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2019.03', 'PDF', 'Diogo Massaro'),
+    createData('Carteira Diária', 'VBI CRI FII', '2019.02', 'PDF', 'Diogo Massaro'),
     createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2019.01', 'PDF', 'Diogo Massaro'),
     createData('Demonstrativo de Caixa – Conta YPTO', 'NOVA I FII', '2018.12', 'PDF', 'Diogo Massaro'),    
 ];
@@ -197,7 +197,7 @@ const EnhancedTableToolbar = (props) => {
           <Typography className={classes.title} color="inherit" variant="subtitle1" component="div">
             {/* <a style={{fontSize: "1rem", fontWeight: "500"}}>Documentos</a> */}
             <Tooltip title="Baixar Selecionados">
-                <IconButton aria-label="delete">
+                <IconButton  href="ExcelExemplo.xlsx" target="_blank" aria-label="delete">
                     {icon4}
                 </IconButton>
             </Tooltip>
@@ -368,7 +368,7 @@ export default function EnhancedTable() {
                       <TableCell align="left">{row.fat}</TableCell>
                       <TableCell align="left">{row.protein}</TableCell>
                       <TableCell align="left"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></TableCell>
-                      <TableCell align="left"><a href="javascript:void(0);" onClick={shoot}>{icon2}</a></TableCell>
+                      <TableCell align="left"><a href="ExcelExemplo.xlsx" target="_blank">{icon2}</a></TableCell>
                       <TableCell align="left"><a href="javascript:void(0);" onClick={shoot}>{icon3}</a></TableCell>
                     </TableRow>
                   );

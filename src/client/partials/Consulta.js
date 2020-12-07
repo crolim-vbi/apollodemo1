@@ -128,7 +128,7 @@ const temas = [
 
  const relatorios = [
   {
-    "nome": "Carteira Administrador",
+    "nome": "Carteira Diária",
     "tema": "Ativo",
     "frequencia": "Mensal"
   },
@@ -255,88 +255,88 @@ const App = function() {
                     <div  style={{ maxWidth: ""}}>
                           <Card className={classes2.root} style={{backgroundColor: ""}}>
 
-                          <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
-                              <Typography className={classes2.title} color="textSecondary" gutterBottom>
-                              <a>Consulta de Documentos</a>
-                              </Typography>
-                          </CardContent>                            
+                            <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
+                                <Typography className={classes2.title} color="textSecondary" gutterBottom>
+                                <a>Consulta de Documentos</a>
+                                </Typography>
+                            </CardContent>                            
 
-                          <CardContent style={{color: "gray"}}>
+                            <CardContent style={{color: "gray"}}>
 
 
-                                  <Grid container spacing={0}>
-                                      <Grid item xs={12} md={4}>
-                                          <div className={classes.paper}>
-                                          
-                                          <CheckboxesTags multipleBoolen={true} labelName = "Entidades" optionsValues = {entidades} groupByKey = "tipo" />
-                                          </div>
-                                      </Grid>
-                                      <Grid item xs={12} md={4}>
-                                          <div className={classes.paper}>
-                                          
-                                          <CheckboxesTags multipleBoolen={true} labelName = "Tema" optionsValues = {temas} />
-                                          </div>
-                                      </Grid>
-                                      <Grid item xs={12} md={4}>
-                                          <div className={classes.paper}>
-                                          
-                                          <CheckboxesTags multipleBoolen={true} labelName = "Relatórios" optionsValues = {relatorios} groupByKey = "tema" />
-                                          </div>
-                                      </Grid>
-                                  </Grid>
-
-                                  <Grid container spacing={0}>
-                                    <Grid item xs={12}>
-                                        <div className={classes.paper}>
-
-                                            <div style={{textAlign: "left"}}>
-
-                                                <span style={{whiteSpace: "nowrap"}}>
-                                                  <div style={{display: "inline-block", textAlign: "left"}}>
-                                                    <a style={{color: ''}}>De</a>
-                                                  </div>
-
-                                                  &nbsp;&nbsp;&nbsp;
-
-                                                  <div style={{display: "inline-block", textAlign: "left"}}>
-                                                    <DatePickers style={{display: "inline"}} />
-                                                  </div>
-
-                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                </span>
-                                                &nbsp;
-                                                <span style={{whiteSpace: "nowrap"}}>
-
-                                                  <div style={{display: "inline-block", textAlign: "left"}}>
-                                                    <a style={{color: ''}}>Até</a>
-                                                  </div>
-
-                                                  &nbsp;&nbsp;
-
-                                                  <div style={{display: "inline-block", textAlign: "left"}}>
-                                                    <DatePickers style={{display: "inline"}} />
-                                                  </div>
-
-                                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                </span>
-
+                                    <Grid container spacing={0}>
+                                        <Grid item xs={12} md={4}>
+                                            <div className={classes.paper}>
+                                            
+                                            <CheckboxesTags multipleBoolen={true} labelName = "Entidades" optionsValues = {entidades} groupByKey = "tipo" />
                                             </div>
+                                        </Grid>
+                                        <Grid item xs={12} md={4}>
+                                            <div className={classes.paper}>
+                                            
+                                            <CheckboxesTags multipleBoolen={true} labelName = "Tema" optionsValues = {temas} />
+                                            </div>
+                                        </Grid>
+                                        <Grid item xs={12} md={4}>
+                                            <div className={classes.paper}>
+                                            
+                                            <CheckboxesTags multipleBoolen={true} labelName = "Relatórios" optionsValues = {relatorios} groupByKey = "tema" />
+                                            </div>
+                                        </Grid>
+                                    </Grid>
 
+                                    <Grid container spacing={0}>
+                                      <Grid item xs={12}>
+                                          <div className={classes.paper}>
+
+                                              <div style={{textAlign: "left"}}>
+
+                                                  <span style={{whiteSpace: "nowrap"}}>
+                                                    <div style={{display: "inline-block", textAlign: "left"}}>
+                                                      <a style={{color: ''}}>De</a>
+                                                    </div>
+
+                                                    &nbsp;&nbsp;&nbsp;
+
+                                                    <div style={{display: "inline-block", textAlign: "left"}}>
+                                                      <DatePickers style={{display: "inline"}} />
+                                                    </div>
+
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                  </span>
+                                                  &nbsp;
+                                                  <span style={{whiteSpace: "nowrap"}}>
+
+                                                    <div style={{display: "inline-block", textAlign: "left"}}>
+                                                      <a style={{color: ''}}>Até</a>
+                                                    </div>
+
+                                                    &nbsp;&nbsp;
+
+                                                    <div style={{display: "inline-block", textAlign: "left"}}>
+                                                      <DatePickers style={{display: "inline"}} />
+                                                    </div>
+
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                  </span>
+
+                                              </div>
+
+                                          </div>
+                                      </Grid>        
+                                    </Grid>
+
+
+                            </CardContent>
+
+                            <CardContent style={{borderTop: "solid 1px lightgray"}}>
+                                <Typography style={{}}>
+                                    
+                                        <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
+                                            <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR</Button></Link>
                                         </div>
-                                    </Grid>        
-                                  </Grid>
-
-
-                          </CardContent>
-
-                          <CardContent style={{borderTop: "solid 1px lightgray"}}>
-                              <Typography style={{}}>
-                                  
-                                      <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR</Button></Link>
-                                      </div>
-                              </Typography>
-                          </CardContent>
+                                </Typography>
+                            </CardContent>
 
 
                           </Card>     
