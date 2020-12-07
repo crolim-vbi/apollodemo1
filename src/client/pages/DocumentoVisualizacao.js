@@ -105,15 +105,15 @@ const App = function() {
                     
                     <Card className={classes2.root} style={{backgroundColor: ""}}>
 
-                      <CardContent style={{color: "gray"}}>
+                      {/* <CardContent style={{color: "gray"}}>
                       <div style={{textAlign:"right"}}>
                         <a href="ExcelExemplo.xlsx" target="_blank" style={{marginLeft:"30px"}}>{icon2}</a> 
                         <a href="PdfExemplo.pdf" target="_blank" style={{marginLeft:"30px"}}>{icon5}</a> 
                         <a href="javascript:void(0);" onClick={shoot} style={{marginLeft:"30px"}}>{icon3}</a> 
                       </div>
-                        <PdfExemplo />
-                        {/* <embed  src="PdfExemplo.pdf" width="100%" height="500px"/> */}
-                      </CardContent>
+                        <PdfExemplo /> */}
+                        <embed  src="PdfExemplo.pdf" width="100%" height="500px"/>
+                      {/* </CardContent> */}
                     </Card>
 
                   </Grid> 
