@@ -18,9 +18,9 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ShareIcon from '@material-ui/icons/Share';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 
-const icon2 = <GetAppIcon color="action" fontSize="small"/>;
-const icon3 = <ShareIcon color="action" fontSize="small"/>;
-const icon5 = <PictureAsPdfIcon color="action" fontSize="small"/>;
+const icon2 = <GetAppIcon color="action"/>;
+const icon3 = <ShareIcon color="action" />;
+const icon5 = <PictureAsPdfIcon color="action" />;
 
 
 
@@ -79,24 +79,32 @@ const App = function() {
     
 
             <Grid container spacing={2} style={{color:"gray"}}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} md={6}>
                 <div style={{marginBottom: "10px"}}>Razão Social: FUNDO DE INVESTIMENTO IMOBILIÁRIO – VBI CRI</div>
                 <div style={{marginBottom: "10px"}}>CNPJ: 28.729.197/0001-13</div>
                 <div style={{marginBottom: "10px"}}>Administrador: BRL TRUST DTVM - 13.486.793/0001-42</div>
                 
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <div style={{marginBottom: "10px"}}>Carregado Por: Diogo Massaro</div>
-                <div style={{marginBottom: "10px"}}>Carregado Em: 01/Dez/2020</div>
-                <div style={{marginBottom: "10px"}}>Versão: 03   </div>
-              </Grid>        
+              <Grid item xs={12} md={3}>
+                <div style={{display: "inline-block"}}>
+                  <div style={{marginBottom: "10px"}}>Carregado Por: Diogo Massaro</div>
+                  <div style={{marginBottom: "10px"}}>Carregado Em: 01/Dez/2020</div>
+                  <div style={{marginBottom: "10px"}}>Versão: 03   </div>
+                </div>
+              </Grid>
+              <Grid item xs={12} md={3}>
+                <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
+                    <div style={{display: "inline-block", alignSelf: "flex-end"}}>
+                      <a href="ExcelExemplo.xlsx" target="_blank" style={{marginLeft:"20px"}}>{icon2}</a> 
+                      <a href="PdfExemplo.pdf" target="_blank" style={{marginLeft:"20px"}}>{icon5}</a> 
+                      <a href="javascript:void(0);" onClick={shoot} style={{marginLeft:"20px"}}>{icon3}</a>               
+                    </div>
+                </div>
+  
+              </Grid>                    
             </Grid> 
 
-            {/* <div style={{height: "15px"}}>&nbsp;</div> */}
-
-
-
-            <div style={{height: "15px"}}>&nbsp;</div>
+            <div style={{height: "25px"}}>&nbsp;</div>
         
             <div className={classes.root}  style={{paddingBottom: "10px"}}>
 
@@ -105,15 +113,11 @@ const App = function() {
                     
                     <Card className={classes2.root} style={{backgroundColor: ""}}>
 
-                      {/* <CardContent style={{color: "gray"}}>
-                      <div style={{textAlign:"right"}}>
-                        <a href="ExcelExemplo.xlsx" target="_blank" style={{marginLeft:"30px"}}>{icon2}</a> 
-                        <a href="PdfExemplo.pdf" target="_blank" style={{marginLeft:"30px"}}>{icon5}</a> 
-                        <a href="javascript:void(0);" onClick={shoot} style={{marginLeft:"30px"}}>{icon3}</a> 
-                      </div>
-                        <PdfExemplo /> */}
-                        <embed  src="PdfExemplo.pdf" width="100%" height="500px"/>
-                      {/* </CardContent> */}
+                      <CardContent style={{color: "gray"}}>
+
+                        <PdfExemplo />
+                        {/* <embed  src="PdfExemplo.pdf" width="100%" height="500px"/> */}
+                      </CardContent>
                     </Card>
 
                   </Grid> 
