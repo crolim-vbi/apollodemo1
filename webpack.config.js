@@ -22,10 +22,10 @@ module.exports = {
   module: {
     rules: [{
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
+        exclude: /node_modules/,     
         use: {
           loader: 'babel-loader'
-        }
+        }      
       },
       {
         test: /\.css$/,
@@ -58,7 +58,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: './src/client/Components/PdfExemplo.pdf' },
-        { from: './src/client/Components/PdfExemplo2.pdf' },
+        { from: './src/client/Components/pdf.pdf' },
         { from: './src/client/Components/ExcelExemplo.xlsx' },
         { from: 'node_modules/pdfjs-dist/cmaps/', to: 'cmaps/' },
       ],
