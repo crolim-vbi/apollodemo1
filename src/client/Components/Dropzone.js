@@ -1,6 +1,16 @@
 import React, {Component} from 'react'
 import {DropzoneArea} from 'material-ui-dropzone'
+import { createStyles, makeStyles } from '@material-ui/core/styles';
+
+const classes  = makeStyles(theme => createStyles({
+  previewChip: {
+    minWidth: 160,
+    maxWidth: 210
+  },
+}));
  
+
+
 class DropzoneAreaExample extends Component{
   constructor(props){
     super(props);
@@ -14,14 +24,27 @@ class DropzoneAreaExample extends Component{
     });
   }
   render(){
+    
+
     return (
       <DropzoneArea
-        filesLimit = "10"
+        filesLimit = "100"
         dropzoneText = "Arraste e solte um arquivo aqui ou clique"
         onChange={this.handleChange.bind(this)}
-        />
+
+
+        showPreviews={true}
+        showPreviewsInDropzone={false}
+        useChipsForPreview
+        previewGridProps={{container: { spacing: 1, direction: 'row' }}}
+        previewChipProps={{classes: { root: classes.previewChip } }}
+        previewText="Selected files"        
+        
+      />
     )
   }
 }
  
 export default DropzoneAreaExample;
+
+
