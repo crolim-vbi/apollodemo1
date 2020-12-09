@@ -27,20 +27,26 @@ class DropzoneAreaExample extends Component{
     
 
     return (
-      <DropzoneArea
-        filesLimit = "100"
-        dropzoneText = "Arraste e solte um arquivo aqui ou clique"
-        onChange={this.handleChange.bind(this)}
+      <>
+         <div style={{marginBottom: "25px"}}>  </div>
+        <DropzoneArea
+          filesLimit = "100"
+          dropzoneText = "Arraste e solte um arquivo aqui ou clique"
+          onChange={this.handleChange.bind(this)}
 
 
-        showPreviews={true}
-        showPreviewsInDropzone={false}
-        useChipsForPreview
-        previewGridProps={{container: { spacing: 1, direction: 'row' }}}
-        previewChipProps={{classes: { root: classes.previewChip } }}
-        previewText="Selected files"        
-        
-      />
+          showPreviews={true}
+          showPreviewsInDropzone={false}
+          useChipsForPreview
+          previewGridProps={{container: { spacing: 1, direction: 'row' }}}
+          previewChipProps={{classes: { root: classes.previewChip } }}
+          previewText="Selected files"        
+          
+        />
+         <div style={{height: "25px"}}>  </div>
+
+      </>
+      
     )
   }
 }
