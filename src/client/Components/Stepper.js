@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Carregar Arquivos', 'Classificar Documentos'];
+  return ['Carregar Arquivos', 'Classificar Arquivos'];
 }
 
 function getStepContent(step) {
@@ -30,7 +30,7 @@ function getStepContent(step) {
     case 0:
       return <Dropzone />;
     case 1:
-      return (<div><h3> Classificação de Documentos </h3> <br /></div>);
+      return (<div><br /><h3> Classificação de Arquivos</h3> <br /></div>);
     default:
       return 'Unknown step';
   }
@@ -107,7 +107,7 @@ export default function HorizontalLinearStepper() {
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>
-                <div><br /> Documentos carregados com sucesso! <br /><br /></div>
+                <div><br /> Arquivos carregados com sucesso! <br /><br /></div>
             </Typography>
             <Button onClick={handleReset} className={classes.button}>
               Reiniciar

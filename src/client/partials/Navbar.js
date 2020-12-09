@@ -48,7 +48,7 @@ const Navbar = function() {
             <div className="zpto"><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></div>
             
             <div className="topNav">
-              <Link to="/" >Início</Link>
+              <Link to="/" >Home</Link>
               <Link to="/consultar" >Consultar</Link>
               <Link to="/inserir" >Inserir</Link>
               <Link to="/preferencias" >Preferências</Link>

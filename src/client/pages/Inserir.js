@@ -7,11 +7,11 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Carregar Documentos" >
+      <Layout titulo="Inserir Documentos" >
 
         <div style={{marginBottom: "25px"}}>  </div>
 
-        <Dropzone />
+        <Stepper />
 
         <div style={{height: "25px"}}>  </div>
 

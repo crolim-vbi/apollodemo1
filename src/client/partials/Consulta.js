@@ -257,7 +257,7 @@ const App = function() {
 
                             <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
                                 <Typography className={classes2.title} color="textSecondary" gutterBottom>
-                                <a>Consulta de Documentos</a>
+                                <a>Busca de Documentos</a>
                                 </Typography>
                             </CardContent>                            
 

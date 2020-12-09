@@ -8,7 +8,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Fazer Busca" >
+      <Layout titulo="Consultar Documentos" >
 
         <Consulta />
 
