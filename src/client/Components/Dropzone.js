@@ -16,6 +16,8 @@ class DropzoneAreaExample extends Component{
   render(){
     return (
       <DropzoneArea
+        filesLimit = "10"
+        dropzoneText = "Arraste e solte um arquivo aqui ou clique"
         onChange={this.handleChange.bind(this)}
         />
     )
