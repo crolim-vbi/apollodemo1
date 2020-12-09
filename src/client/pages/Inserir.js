@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '.././layout/Layout';
+import Dropzone from '../Components/Dropzone';
 
 const App = function() {
 
@@ -8,7 +9,7 @@ const App = function() {
       <Layout titulo="Carregar Documentos" >
 
 
-        <div Style={{marginBottom: "20px"}}> &nbsp; </div>
+        <Dropzone />
 
       </Layout>
     
