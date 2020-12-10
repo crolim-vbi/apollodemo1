@@ -185,13 +185,13 @@ const EnhancedTableToolbar = (props) => {
     >
       {numSelected > 0 ? (
           <Typography className={classes.title} color="inherit" variant="subtitle1" component="div">
-            
-            <Tooltip  title="Baixar Selecionados">
-              <IconButton  href="ExcelExemplo.xlsx" target="_blank" aria-label="delete">
-                    {icon4} 
-                </IconButton>
+            {/* <a style={{fontSize: "1rem", fontWeight: "500"}}>Documentos</a> */}
+            <Tooltip title="Baixar Documentos Selecionados">
+                <Button  href="ExcelExemplo.xlsx" target="_blank" aria-label="baixar">
+                  {icon4} &nbsp; &nbsp; <a style={{ fontWeight: "500", color: "gray"}}>Baixar Selecionados</a>
+                </Button>
             </Tooltip>
-            <a style={{fontSize: "1rem", fontWeight: "500"}}>Baixar Selecionados</a>
+            
         </Typography>
 
       ) : (
@@ -359,7 +359,7 @@ export default function EnhancedTable(props) {
                       <StyledTableCell component="th" id={labelId} scope="row" align="left">{row.carbs}</StyledTableCell>                      
                       <StyledTableCell  >{row.name}</StyledTableCell>
                       {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon1}</a></StyledTableCell> */}
-                      <TableCell align="left"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></TableCell>
+                      <TableCell align="left"><Tooltip title="Visualizar este Documento"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></Tooltip></TableCell>
                       
                       {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon2}</a></StyledTableCell> */}
                       {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon3}</a></StyledTableCell>  */}

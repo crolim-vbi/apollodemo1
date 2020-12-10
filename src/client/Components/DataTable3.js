@@ -194,14 +194,14 @@ const EnhancedTableToolbar = (props) => {
       })}
     >
       {numSelected > 0 ? (
-          <Typography className={classes.title} color="inherit" variant="subtitle1" component="div">
+        <Typography className={classes.title} color="inherit" variant="subtitle1" component="div">
             {/* <a style={{fontSize: "1rem", fontWeight: "500"}}>Documentos</a> */}
-            <Tooltip title="Baixar Selecionados">
-                <IconButton  href="ExcelExemplo.xlsx" target="_blank" aria-label="delete">
-                    {icon4}
-                </IconButton>
+            <Tooltip title="Baixar Documentos Selecionados">
+                <Button  href="ExcelExemplo.xlsx" target="_blank" aria-label="baixar">
+                  {icon4} &nbsp; &nbsp; <a style={{ fontWeight: "500", color: "gray"}}>Baixar Selecionados</a>
+                </Button>
             </Tooltip>
-            <a style={{fontSize: "1rem", fontWeight: "500"}}>Baixar Selecionados</a>
+            
         </Typography>
 
       ) : (
@@ -367,9 +367,9 @@ export default function EnhancedTable() {
                       <TableCell component="th" id={labelId} scope="row" padding="none" align="left">{row.carbs}</TableCell>
                       <TableCell align="left">{row.fat}</TableCell>
                       <TableCell align="left">{row.protein}</TableCell>
-                      <TableCell align="left"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></TableCell>
-                      <TableCell align="left"><a href="ExcelExemplo.xlsx" target="_blank">{icon2}</a></TableCell>
-                      <TableCell align="left"><a href="javascript:void(0);" onClick={shoot}>{icon3}</a></TableCell>
+                      <TableCell align="left"><Tooltip title="Visualizar este Documento"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></Tooltip></TableCell>
+                      <TableCell align="left"><Tooltip title="Baixar este Documento"><a href="ExcelExemplo.xlsx" target="_blank">{icon2}</a></Tooltip></TableCell>
+                      <TableCell align="left"><Tooltip title="Compartilhar este Documento"><a href="javascript:void(0);" onClick={shoot}>{icon3}</a></Tooltip></TableCell>
                     </TableRow>
                   );
                 })}

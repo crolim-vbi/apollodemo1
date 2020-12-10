@@ -22,6 +22,8 @@ import Button from '@material-ui/core/Button';
 
 import { Link } from 'react-router-dom';
 
+import Tooltip from '@material-ui/core/Tooltip';
+
 
 
 
@@ -330,11 +332,10 @@ const App = function() {
                             </CardContent>
 
                             <CardContent style={{borderTop: "solid 1px lightgray"}}>
-                                <Typography style={{}}>
-                                    
-                                        <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                            <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR</Button></Link>
-                                        </div>
+                                <Typography style={{}}>                                  
+                                      <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
+                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR</Button></Link>
+                                      </div>
                                 </Typography>
                             </CardContent>
 
