@@ -82,6 +82,7 @@ const App = function() {
   
 
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl2, setAnchorEl2] = React.useState(null);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -90,6 +91,14 @@ const App = function() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const handleClick2 = (event) => {
+    setAnchorEl2(event.currentTarget);
+  };
+
+  const handleClose2 = () => {
+    setAnchorEl2(null);
+  };  
 
   
     return (<>
@@ -136,7 +145,61 @@ const App = function() {
                       </Menu>
                       
                       <Tooltip title="Visualizar em PDF"><Button href="PdfExemplo.pdf" target="_blank">{icon5}</Button></Tooltip>
-                      <Tooltip title="Outras Versões"><Button href="javascript:void(0);" onClick={shoot}>{icon7}</Button></Tooltip>
+
+
+                      <Tooltip title="Versões Antigas">
+                        <Button aria-controls="simple-menu-2" aria-haspopup="true" onClick={handleClick2}>
+                          {icon7}
+                        </Button>
+                      </Tooltip>
+                      <Menu
+                        id="simple-menu-2"
+                        anchorEl={anchorEl2}
+                        keepMounted
+                        open={Boolean(anchorEl2)}
+                        onClose={handleClose2}
+                      >
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
+                        {/* <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
+
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
+
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
+
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
+
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem> */}
+
+                      </Menu>
+
+
+                      
                       <Tooltip title="Compartilhar"><Button href="javascript:void(0);" onClick={shoot}>{icon3}</Button></Tooltip>
                     </div>
                 </div>
