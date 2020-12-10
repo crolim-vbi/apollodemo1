@@ -9,8 +9,8 @@ import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import Box from '@material-ui/core/Box';
 
 
-const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
-const checkedIcon = <CheckBoxIcon fontSize="small" />;
+const icon = <CheckBoxOutlineBlankIcon />;
+const checkedIcon = <CheckBoxIcon  />;
 
 export default function CheckboxesTags() {
   return (

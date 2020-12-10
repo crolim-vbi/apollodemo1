@@ -24,11 +24,13 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 
 const icon2 = <GetAppIcon color="action"  />;
 const icon3 = <ScreenShareIcon color="action"/>;
 const icon5 = <PictureAsPdfIcon color="action"/>;
 const icon6 = <ArrowBackIcon color="action" />;
+const icon7 = <LibraryBooksIcon color="action" />;
 
 
 
@@ -115,7 +117,7 @@ const App = function() {
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-end"}}>
 
-                      <Tooltip title="Retornar para a busca"><Link to="/ConsultaResultado" ><Button>{icon6}</Button></Link></Tooltip>
+                      <Tooltip title="Retornar"><Link to="/ConsultaResultado" ><Button>{icon6}</Button></Link></Tooltip>
 
                       <Tooltip title="Baixar Documento">
                         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
@@ -134,6 +136,7 @@ const App = function() {
                       </Menu>
                       
                       <Tooltip title="Visualizar em PDF"><Button href="PdfExemplo.pdf" target="_blank">{icon5}</Button></Tooltip>
+                      <Tooltip title="Outras Versões"><Button href="javascript:void(0);" onClick={shoot}>{icon7}</Button></Tooltip>
                       <Tooltip title="Compartilhar"><Button href="javascript:void(0);" onClick={shoot}>{icon3}</Button></Tooltip>
                     </div>
                 </div>

@@ -19,14 +19,6 @@ const icon2 = <CheckBoxOutlineBlankIcon  />;
 const checkedIcon2 = <CheckBoxIcon  />;
 
 
-// const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
-// const checkedIcon = <CheckBoxIcon fontSize="small" />;
-
-// const icon1 = <CheckBoxOutlineBlankIcon fontSize="small" />;
-// const checkedIcon1 = <CheckBoxIcon fontSize="small" />;
-
-// const icon2 = <CheckBoxOutlineBlankIcon fontSize="small" />;
-// const checkedIcon2 = <CheckBoxIcon fontSize="small" />;
 
 export default function CheckboxesTags(props) {
   return (
