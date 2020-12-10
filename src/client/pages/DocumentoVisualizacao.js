@@ -159,42 +159,8 @@ const App = function() {
                         open={Boolean(anchorEl2)}
                         onClose={handleClose2}
                       >
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
-                        {/* <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
-
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
-
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
-
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>
-
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem>                        
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 2</a></MenuItem>
-                        <MenuItem onClick={handleClose2}><a>Acessar Versão Antiga 1</a></MenuItem> */}
+                        <MenuItem onClick={handleClose2}  onClick={shoot}><a>Acessar Versão Antiga 2</a></MenuItem>
+                        <MenuItem onClick={handleClose2}  onClick={shoot}><a>Acessar Versão Antiga 1</a></MenuItem>                        
 
                       </Menu>
 
