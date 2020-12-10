@@ -4,9 +4,21 @@ import Layout from '.././layout/Layout';
 
 import DataTable3 from '../Components/DataTable3';
 
+import Tooltip from '@material-ui/core/Tooltip';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+
+import Button from '@material-ui/core/Button';
+
+import ShareIcon from '@material-ui/icons/Share';
+const icon3 = <ShareIcon color="action"  fontSize="small" />;
+
+
+
+const shoot = () => {
+  alert("Esta funcionalidade ainda está em desenvolvimento");
+}
 
 
 
@@ -30,11 +42,6 @@ const App = function() {
 
   const classes = useStyles();
 
-
-  const shoot = () => {
-    alert("Este módulo ainda está em desenvolvimento");
-  }
-  
   
     return (<Layout titulo="Sua Busca retornou 25 Resultados" >
 
@@ -46,11 +53,19 @@ const App = function() {
                 <div style={{height: "10px"}}>&nbsp;</div>
                 <a>Datas: de 2020.09 à 2020.12</a><br />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} sm={3}>
                 <a>Tema: Ativo</a>
                 <div style={{height: "10px"}}>&nbsp;</div>
                 <a>Relatório: Todos</a><br />
               </Grid>        
+              <Grid item xs={12} md={3}>
+                <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
+                    <div style={{display: "inline-block", alignSelf: "flex-end"}}>
+                      <Tooltip title="Compartilhar esta Busca"><Button href="javascript:void(0);" onClick={shoot} style={{marginLeft:"20px"}}>{icon3}</Button></Tooltip>
+                    </div>
+                </div>
+  
+              </Grid>                      
             </Grid> 
 
             <div style={{height: "30px"}}>&nbsp;</div>

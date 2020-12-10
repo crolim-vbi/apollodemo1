@@ -59,7 +59,7 @@ const App = function() {
   const classes2 = useStyles2();
   
   const shoot = () => {
-    alert("Este módulo ainda está em desenvolvimento");
+    alert("Esta funcionalidade ainda está em desenvolvimento");
   }
   
 

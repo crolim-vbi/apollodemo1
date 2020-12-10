@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '../layout/Layout';
 
-import DataTable3 from '../Components/DataTable3';
+import Tooltip from '@material-ui/core/Tooltip';
 
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -12,15 +12,19 @@ import PdfExemplo from '../Components/PdfExemplo'
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
+
 
 import GetAppIcon from '@material-ui/icons/GetApp';
 import ShareIcon from '@material-ui/icons/Share';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 
-const icon2 = <GetAppIcon color="action"/>;
-const icon3 = <ShareIcon color="action" />;
-const icon5 = <PictureAsPdfIcon color="action" />;
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
+const icon2 = <GetAppIcon color="action"  fontSize="small"/>;
+const icon3 = <ShareIcon color="action"  fontSize="small"/>;
+const icon5 = <PictureAsPdfIcon color="action"   fontSize="small"/>;
 
 
 
@@ -70,6 +74,17 @@ const App = function() {
     alert("Esta funcionalidade ainda está em desenvolvimento");
   }
   
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   
     return (<>
     
@@ -95,9 +110,24 @@ const App = function() {
               <Grid item xs={12} md={3}>
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-end"}}>
-                      <a href="ExcelExemplo.xlsx" target="_blank" style={{marginLeft:"20px"}}>{icon2}</a> 
-                      <a href="PdfExemplo.pdf" target="_blank" style={{marginLeft:"20px"}}>{icon5}</a> 
-                      <a href="javascript:void(0);" onClick={shoot} style={{marginLeft:"20px"}}>{icon3}</a>               
+
+                      <Tooltip title="Baixar">
+                        <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+                          {icon2}
+                        </Button>
+                      </Tooltip>
+                      <Menu
+                        id="simple-menu"
+                        anchorEl={anchorEl}
+                        keepMounted
+                        open={Boolean(anchorEl)}
+                        onClose={handleClose}
+                      >
+                        <MenuItem onClick={handleClose}><a href="ExcelExemplo.xlsx" target="_blank" style={{textDecoration: "inherit", color: "inherit"}}>Baixar em Excel</a></MenuItem>
+                        <MenuItem onClick={handleClose}><a href="PdfExemplo.pdf" download="PdfExemplo.pdf" target="_blank" style={{textDecoration: "inherit", color: "inherit"}}>Baixar em PDF</a></MenuItem>
+                      </Menu>
+                      <Tooltip title="Visualizar em PDF"><Button href="PdfExemplo.pdf" target="_blank">{icon5}</Button></Tooltip>
+                      <Tooltip title="Compartilhar"><Button href="javascript:void(0);" onClick={shoot}>{icon3}</Button></Tooltip>
                     </div>
                 </div>
   
