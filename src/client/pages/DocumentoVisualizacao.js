@@ -13,18 +13,22 @@ import PdfExemplo from '../Components/PdfExemplo'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 
+import { Link } from 'react-router-dom';
+
 
 import GetAppIcon from '@material-ui/icons/GetApp';
-import ShareIcon from '@material-ui/icons/Share';
+import ScreenShareIcon from '@material-ui/icons/ScreenShare';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-const icon2 = <GetAppIcon color="action"  fontSize="small"/>;
-const icon3 = <ShareIcon color="action"  fontSize="small"/>;
-const icon5 = <PictureAsPdfIcon color="action"   fontSize="small"/>;
+const icon2 = <GetAppIcon color="action"  />;
+const icon3 = <ScreenShareIcon color="action"/>;
+const icon5 = <PictureAsPdfIcon color="action"/>;
+const icon6 = <ArrowBackIcon color="action" />;
 
 
 
@@ -93,25 +97,27 @@ const App = function() {
 
     
 
-            <Grid container spacing={2} style={{color:"gray"}}>
+            <Grid container spacing={1} style={{color:"gray"}}>
               <Grid item xs={12} md={6}>
                 <div style={{marginBottom: "10px"}}>Razão Social: FUNDO DE INVESTIMENTO IMOBILIÁRIO – VBI CRI</div>
                 <div style={{marginBottom: "10px"}}>CNPJ: 28.729.197/0001-13</div>
                 <div style={{marginBottom: "10px"}}>Administrador: BRL TRUST DTVM - 13.486.793/0001-42</div>
                 
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid item xs={12} md={6}>
                 <div style={{display: "inline-block"}}>
                   <div style={{marginBottom: "10px"}}>Carregado Por: Diogo Massaro</div>
                   <div style={{marginBottom: "10px"}}>Carregado Em: 01/Dez/2020</div>
                   <div style={{marginBottom: "10px"}}>Versão: 03   </div>
                 </div>
               </Grid>
-              <Grid item xs={12} md={3}>
+              <Grid item xs={12} md={12}>
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-end"}}>
 
-                      <Tooltip title="Baixar">
+                      <Tooltip title="Retornar para a busca"><Link to="/ConsultaResultado" ><Button>{icon6}</Button></Link></Tooltip>
+
+                      <Tooltip title="Baixar Documento">
                         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                           {icon2}
                         </Button>
@@ -126,6 +132,7 @@ const App = function() {
                         <MenuItem onClick={handleClose}><a href="ExcelExemplo.xlsx" target="_blank" style={{textDecoration: "inherit", color: "inherit"}}>Baixar em Excel</a></MenuItem>
                         <MenuItem onClick={handleClose}><a href="PdfExemplo.pdf" download="PdfExemplo.pdf" target="_blank" style={{textDecoration: "inherit", color: "inherit"}}>Baixar em PDF</a></MenuItem>
                       </Menu>
+                      
                       <Tooltip title="Visualizar em PDF"><Button href="PdfExemplo.pdf" target="_blank">{icon5}</Button></Tooltip>
                       <Tooltip title="Compartilhar"><Button href="javascript:void(0);" onClick={shoot}>{icon3}</Button></Tooltip>
                     </div>
@@ -134,7 +141,7 @@ const App = function() {
               </Grid>                    
             </Grid> 
 
-            <div style={{height: "25px"}}>&nbsp;</div>
+            <div style={{height: "10px"}}>&nbsp;</div>
         
             <div className={classes.root}  style={{paddingBottom: "10px"}}>
 

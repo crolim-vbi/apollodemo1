@@ -11,8 +11,8 @@ import Grid from '@material-ui/core/Grid';
 
 import Button from '@material-ui/core/Button';
 
-import ShareIcon from '@material-ui/icons/Share';
-const icon3 = <ShareIcon color="action"  fontSize="small" />;
+import ScreenShareIcon from '@material-ui/icons/ScreenShare';
+const icon3 = <ScreenShareIcon color="action"   />;
 
 
 
@@ -47,18 +47,18 @@ const App = function() {
 
             
 
-            <Grid container spacing={2} style={{color:"gray"}}>
+            <Grid container spacing={1} style={{color:"gray"}}>
               <Grid item xs={12} sm={6}>
                 <a>Entidades: BREOF FIP, SBC FII, VBI CRI FII</a>
                 <div style={{height: "10px"}}>&nbsp;</div>
                 <a>Datas: de 2020.09 à 2020.12</a><br />
               </Grid>
-              <Grid item xs={12} sm={3}>
+              <Grid item xs={12} sm={6}>
                 <a>Tema: Ativo</a>
                 <div style={{height: "10px"}}>&nbsp;</div>
                 <a>Relatório: Todos</a><br />
               </Grid>        
-              <Grid item xs={12} md={3}>
+              <Grid item xs={12} md={12}>
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-end"}}>
                       <Tooltip title="Compartilhar esta Busca"><Button href="javascript:void(0);" onClick={shoot} style={{marginLeft:"20px"}}>{icon3}</Button></Tooltip>
@@ -68,7 +68,7 @@ const App = function() {
               </Grid>                      
             </Grid> 
 
-            <div style={{height: "30px"}}>&nbsp;</div>
+            <div style={{height: "10px"}}>&nbsp;</div>
         
             <div className={classes.root}  style={{paddingBottom: "10px"}}>
 

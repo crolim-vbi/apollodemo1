@@ -22,14 +22,13 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import FilterListIcon from '@material-ui/icons/FilterList';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import VisibilityIcon from '@material-ui/icons/Visibility';
-import ShareIcon from '@material-ui/icons/Share';
+import ScreenShareIcon from '@material-ui/icons/ScreenShare';
 import Button from '@material-ui/core/Button';
-
 import { Link } from 'react-router-dom';
 
 const icon1 = <VisibilityIcon color="action" fontSize="small"/>;
-const icon2 = <GetAppIcon color="action" fontSize="small"/>;
-const icon3 = <ShareIcon color="action" fontSize="small"/>;
+const icon2 = <GetAppIcon color="action" />;
+const icon3 = <ScreenShareIcon color="action" />;
 const icon4 = <GetAppIcon style={{ color: "rgba(0, 0, 0, 0.54)" }} />;
 
 const StyledTableCell = withStyles((theme) => ({
