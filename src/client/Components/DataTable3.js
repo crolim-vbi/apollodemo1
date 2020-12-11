@@ -117,6 +117,7 @@ function EnhancedTableHead(props) {
       <TableRow>
         <TableCell padding="checkbox">
           <Checkbox
+            color="action"
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={rowCount > 0 && numSelected === rowCount}
             onChange={onSelectAllClick}
@@ -167,7 +168,7 @@ const useToolbarStyles = makeStyles((theme) => ({
   highlight:
     theme.palette.type === 'light'
       ? {
-          color: theme.palette.text.secondary,
+          color: "theme.palette.text.secondary",
           backgroundColor: lighten(theme.palette.text.secondary, 0.85),
         }
       : {
@@ -283,6 +284,9 @@ export default function EnhancedTable() {
   const handleClick = (event, name) => {
     const selectedIndex = selected.indexOf(name);
     let newSelected = [];
+    
+
+    // event.target.style.background = "yellow";
 
     if (selectedIndex === -1) {
       newSelected = newSelected.concat(selected, name);
@@ -356,6 +360,7 @@ export default function EnhancedTable() {
                     >
                       <TableCell padding="checkbox" >
                         <Checkbox
+                          color="action"
                           checked={isItemSelected}
                           inputProps={{ 'aria-labelledby': labelId }}
                         />

@@ -10,13 +10,13 @@ import Box from '@material-ui/core/Box';
 
 
 const icon = <CheckBoxOutlineBlankIcon  />;
-const checkedIcon = <CheckBoxIcon   />;
+const checkedIcon = <CheckBoxIcon color="action"  />;
 
 const icon1 = <CheckBoxOutlineBlankIcon />;
 const checkedIcon1 = <CheckBoxIcon color="action" />;
 
 const icon2 = <CheckBoxOutlineBlankIcon  />;
-const checkedIcon2 = <CheckBoxIcon  />;
+const checkedIcon2 = <CheckBoxIcon  color="action" />;
 
 
 

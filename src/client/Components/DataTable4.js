@@ -106,6 +106,7 @@ function EnhancedTableHead(props) {
       <TableRow>
         <StyledTableCell padding="checkbox">
           <Checkbox
+            color="action"
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={rowCount > 0 && numSelected === rowCount}
             onChange={onSelectAllClick}
@@ -351,6 +352,7 @@ export default function EnhancedTable(props) {
                     >
                       <StyledTableCell padding="checkbox" >
                         <Checkbox
+                          color="action"
                           checked={isItemSelected}
                           inputProps={{ 'aria-labelledby': labelId }}
                         />
