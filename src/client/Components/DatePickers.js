@@ -8,13 +8,26 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',    
   },
   textField: {
-    marginLeft: theme.spacing(1),
-    marginRight: theme.spacing(1),
+    // marginLeft: theme.spacing(1),
+    // marginRight: theme.spacing(1),
   },
 }));
 
+const useStyles2 = makeStyles((theme) => ({
+  root: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),     
+    background: "inherit"
+  },
+  input: {
+    color: "gray"
+  }
+}));
+
+
 export default function DatePickers() {
   const classes = useStyles();
+  const classes2 = useStyles2();
 
   return (
     <form className={classes.container} noValidate>
@@ -23,11 +36,13 @@ export default function DatePickers() {
         // label="Birthday"
         type="date"
         defaultValue=""
-        className={classes.textField}
+        className={classes.textField}        
         InputLabelProps={{
           shrink: true
         }}
-        style={{backgroundColor: '', color: "red" }}
+        InputProps={{
+          className: classes2.input
+        }}        
       />
     </form>
   );
