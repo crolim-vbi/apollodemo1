@@ -35,7 +35,7 @@ export default function DatePickers() {
         id="date"
         // label="Birthday"
         type="date"
-        defaultValue=""
+        defaultValue="2017-05-24"
         className={classes.textField}        
         InputLabelProps={{
           shrink: true
