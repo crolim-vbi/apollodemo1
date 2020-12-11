@@ -13,7 +13,7 @@ const icon = <CheckBoxOutlineBlankIcon  />;
 const checkedIcon = <CheckBoxIcon   />;
 
 const icon1 = <CheckBoxOutlineBlankIcon />;
-const checkedIcon1 = <CheckBoxIcon color="action"/>;
+const checkedIcon1 = <CheckBoxIcon color="action" />;
 
 const icon2 = <CheckBoxOutlineBlankIcon  />;
 const checkedIcon2 = <CheckBoxIcon  />;
