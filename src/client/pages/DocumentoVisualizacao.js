@@ -126,7 +126,7 @@ const App = function() {
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-end"}}>
 
-                      <Tooltip title="Retornar"><Link to="/ConsultaResultado" ><Button>{icon6}</Button></Link></Tooltip>
+                      <Tooltip title="Retornar"><Button href="javascript:history.back()">{icon6}</Button></Tooltip>
 
                       <Tooltip title="Baixar Documento">
                         <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>

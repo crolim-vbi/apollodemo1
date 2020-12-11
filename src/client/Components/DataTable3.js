@@ -168,8 +168,10 @@ const useToolbarStyles = makeStyles((theme) => ({
   highlight:
     theme.palette.type === 'light'
       ? {
-          color: "theme.palette.text.secondary",
-          backgroundColor: lighten(theme.palette.text.secondary, 0.85),
+          // color: "theme.palette.text.secondary",
+          // backgroundColor: "lighten(theme.palette.text.secondary, 0.85)",
+          color: "gray",
+          backgroundColor: "inherit",          
         }
       : {
           color: theme.palette.text.primary,
@@ -244,6 +246,17 @@ const useStyles = makeStyles((theme) => ({
   table: {
     minWidth: 750,
   },
+  tableRow: {
+    "&$selected, &$selected:hover": {
+      backgroundColor: "rgba(0, 0, 0, 0.08)"
+    }
+  },
+  // tableCell: {
+  //   "$selected &": {
+  //     color: "yellow"
+  //   }
+  // },
+  selected: {},  
   visuallyHidden: {
     border: 0,
     clip: 'rect(0 0 0 0)',
@@ -357,6 +370,8 @@ export default function EnhancedTable() {
                       tabIndex={-1}
                       key={row.carbs}
                       selected={isItemSelected}
+                      classes={{ selected: classes.selected }}
+                      className={classes.tableRow}
                     >
                       <TableCell padding="checkbox" >
                         <Checkbox
