@@ -205,7 +205,7 @@ const EnhancedTableToolbar = (props) => {
       {numSelected > 0 ? (
         
         <Typography className={classes.title2} color="inherit" variant="subtitle1" component="div" style={{align: "right"}}>
-          {numSelected} {numSelected === 1? "selecionado" : "selecionados"} 
+          {numSelected} {numSelected === 1? "selecionado" : "selecionados"} &nbsp;
         </Typography>
        
       ) : (

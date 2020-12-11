@@ -101,9 +101,9 @@ const headCells = [
   { id: 'carbs', numeric: false, disablePadding: false, label: 'Data' },
   { id: 'fat', numeric: false, disablePadding: false, label: 'Extensão' },
   { id: 'protein', numeric: false, disablePadding: false, label: 'Carregado por' },
-  { id: 'protein2', numeric: false, disablePadding: false, label: '' },
-  { id: 'protein3', numeric: false, disablePadding: false, label: '' },
-  { id: 'protein4', numeric: false, disablePadding: false, label: '' }
+  { id: 'protein2', numeric: false, disablePadding: false, label: 'Visualizar' },
+  { id: 'protein3', numeric: false, disablePadding: false, label: 'Baixar' },
+  { id: 'protein4', numeric: false, disablePadding: false, label: 'Compartilhar' }
 ];
 
 function EnhancedTableHead(props) {
@@ -216,7 +216,7 @@ const EnhancedTableToolbar = (props) => {
       {numSelected > 0 ? (
         
         <Typography className={classes.title2} color="inherit" variant="subtitle1" component="div" style={{align: "right"}}>
-          {numSelected} {numSelected === 1? "selecionado" : "selecionados"} 
+          {numSelected} {numSelected === 1? "selecionado" : "selecionados"} &nbsp;
         </Typography>
        
       ) : (
@@ -387,9 +387,9 @@ export default function EnhancedTable() {
                       <TableCell component="th" id={labelId} scope="row" padding="none" align="left">{row.carbs}</TableCell>
                       <TableCell align="left">{row.fat}</TableCell>
                       <TableCell align="left">{row.protein}</TableCell>
-                      <TableCell align="left"><Tooltip title="Visualizar este Documento"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></Tooltip></TableCell>
-                      <TableCell align="left"><Tooltip title="Baixar este Documento"><a href="ExcelExemplo.xlsx" target="_blank">{icon2}</a></Tooltip></TableCell>
-                      <TableCell align="left"><Tooltip title="Compartilhar este Documento"><a href="javascript:void(0);" onClick={shoot}>{icon3}</a></Tooltip></TableCell>
+                      <TableCell align="left"><Tooltip title="Visualizar este Documento"><Button><Link to="/DocumentoVisualizacao" >{icon1}</Link></Button></Tooltip></TableCell>
+                      <TableCell align="left"><Tooltip title="Baixar este Documento"><Button href="ExcelExemplo.xlsx" target="_blank">{icon2}</Button></Tooltip></TableCell>
+                      <TableCell align="left"><Tooltip title="Compartilhar este Documento"><Button href="javascript:void(0);" onClick={shoot}>{icon3}</Button></Tooltip></TableCell>
                     </TableRow>
                   );
                 })}
