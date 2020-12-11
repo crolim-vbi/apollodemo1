@@ -11,9 +11,16 @@ import Grid from '@material-ui/core/Grid';
 
 import Button from '@material-ui/core/Button';
 
-import ScreenShareIcon from '@material-ui/icons/ScreenShare';
-const icon3 = <ScreenShareIcon color="action"   />;
+import IconButton from '@material-ui/core/IconButton';
 
+import ScreenShareIcon from '@material-ui/icons/ScreenShare';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import GetAppIcon from '@material-ui/icons/GetApp';
+
+
+const icon3 = <ScreenShareIcon color="action"   />;
+const icon6 = <ArrowBackIcon color="action" />;
+const icon2 = <GetAppIcon color="action"  />;
 
 
 const shoot = () => {
@@ -47,28 +54,33 @@ const App = function() {
 
             
 
-            <Grid container spacing={1} style={{color:"gray"}}>
+            <Grid container spacing={0} style={{color:"gray"}}>
               <Grid item xs={12} sm={6}>
-                <a>Entidades: BREOF FIP, SBC FII, VBI CRI FII</a>
-                <div style={{height: "10px"}}>&nbsp;</div>
-                <a>Datas: de 2020.09 à 2020.12</a><br />
+                <div style={{marginBottom: "10px"}}>Entidades: BREOF FIP, SBC FII, VBI CRI FII</div>
+                <div style={{marginBottom: "10px"}}>Datas: de 2020.09 à 2020.12</div>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <a>Tema: Ativo</a>
-                <div style={{height: "10px"}}>&nbsp;</div>
-                <a>Relatório: Todos</a><br />
+                <div style={{marginBottom: "10px"}}>Tema: Ativo</div>
+                <div style={{marginBottom: "10px"}}>Relatório: Todos</div>
               </Grid>        
               <Grid item xs={12} md={12}>
-                <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
-                    <div style={{display: "inline-block", alignSelf: "flex-end"}}>
-                      <Tooltip title="Compartilhar esta Busca"><Button href="javascript:void(0);" onClick={shoot} style={{marginLeft:"20px"}}>{icon3}</Button></Tooltip>
+                <div style={{marginBottom: "10px"}}></div>
+              </Grid>
+              <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray"}}>
+                <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
+                    <div style={{display: "inline-block", alignSelf: "flex-start"}}>
+                      <Tooltip title="Retornar"><IconButton href="javascript:history.back()">{icon6}</IconButton></Tooltip>
+                      <Tooltip title="Baixar documentos desta busca"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon2}</IconButton></Tooltip>
+                      <Tooltip title="Compartilhar esta Busca"><IconButton  href="javascript:void(0);" onClick={shoot} >{icon3}</IconButton></Tooltip>
                     </div>
                 </div>
   
-              </Grid>                      
+              </Grid>                  
+              <Grid item xs={12} md={12}>
+                <div style={{marginBottom: "10px"}}></div>
+              </Grid>                  
             </Grid> 
 
-            <div style={{height: "10px"}}>&nbsp;</div>
         
             <div className={classes.root}  style={{paddingBottom: "10px"}}>
 

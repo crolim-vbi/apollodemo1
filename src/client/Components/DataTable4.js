@@ -375,7 +375,7 @@ export default function EnhancedTable(props) {
                       <StyledTableCell component="th" id={labelId} scope="row" align="left">{row.carbs}</StyledTableCell>                      
                       <StyledTableCell  >{row.name}</StyledTableCell>
                       {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon1}</a></StyledTableCell> */}
-                      <TableCell align="left"><Tooltip title="Visualizar este Documento"><a><Link to="/DocumentoVisualizacao" >{icon1}</Link></a></Tooltip></TableCell>
+                      <TableCell align="left"><Tooltip title="Visualizar este Documento"><Link to="/DocumentoVisualizacao" ><Button>{icon1}</Button></Link></Tooltip></TableCell>
                       
                       {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon2}</a></StyledTableCell> */}
                       {/* <StyledTableCell align="left"><a href="javascript:void(0);">{icon3}</a></StyledTableCell>  */}

@@ -20,11 +20,14 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 import ScreenShareIcon from '@material-ui/icons/ScreenShare';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 
+import IconButton from '@material-ui/core/IconButton';
+
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
+
 
 const icon2 = <GetAppIcon color="action"  />;
 const icon3 = <ScreenShareIcon color="action"/>;
@@ -108,7 +111,7 @@ const App = function() {
 
     
 
-            <Grid container spacing={1} style={{color:"gray"}}>
+            <Grid  container spacing={0} style={{color:"gray"}}>
               <Grid item xs={12} md={6}>
                 <div style={{marginBottom: "10px"}}>Razão Social: FUNDO DE INVESTIMENTO IMOBILIÁRIO – VBI CRI</div>
                 <div style={{marginBottom: "10px"}}>CNPJ: 28.729.197/0001-13</div>
@@ -123,15 +126,20 @@ const App = function() {
                 </div>
               </Grid>
               <Grid item xs={12} md={12}>
-                <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-end"}}>
-                    <div style={{display: "inline-block", alignSelf: "flex-end"}}>
+                <div style={{marginBottom: "10px"}}></div>
+              </Grid>
+              <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray"}}>
+                <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
+                    <div style={{display: "inline-block", alignSelf: "flex-start"}}>
 
-                      <Tooltip title="Retornar"><Button href="javascript:history.back()">{icon6}</Button></Tooltip>
+                      <Tooltip title="Retornar"><IconButton href="javascript:history.back()">{icon6}</IconButton></Tooltip>
 
+                      
+                        
                       <Tooltip title="Baixar Documento">
-                        <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+                        <IconButton aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                           {icon2}
-                        </Button>
+                        </IconButton>
                       </Tooltip>
                       <Menu
                         id="simple-menu"
@@ -143,14 +151,17 @@ const App = function() {
                         <MenuItem onClick={handleClose}><a href="ExcelExemplo.xlsx" target="_blank" style={{textDecoration: "inherit", color: "inherit"}}>Baixar em Excel</a></MenuItem>
                         <MenuItem onClick={handleClose}><a href="PdfExemplo.pdf" download="PdfExemplo.pdf" target="_blank" style={{textDecoration: "inherit", color: "inherit"}}>Baixar em PDF</a></MenuItem>
                       </Menu>
-                      
-                      <Tooltip title="Visualizar em PDF"><Button href="PdfExemplo.pdf" target="_blank">{icon5}</Button></Tooltip>
 
+                      
+                      
+                      <Tooltip title="Visualizar em PDF"><IconButton href="PdfExemplo.pdf" target="_blank">{icon5}</IconButton></Tooltip>
+
+                      
 
                       <Tooltip title="Versões Antigas">
-                        <Button aria-controls="simple-menu-2" aria-haspopup="true" onClick={handleClick2}>
+                        <IconButton aria-controls="simple-menu-2" aria-haspopup="true" onClick={handleClick2}>
                           {icon7}
-                        </Button>
+                        </IconButton>
                       </Tooltip>
                       <Menu
                         id="simple-menu-2"
@@ -164,16 +175,19 @@ const App = function() {
 
                       </Menu>
 
-
                       
-                      <Tooltip title="Compartilhar"><Button href="javascript:void(0);" onClick={shoot}>{icon3}</Button></Tooltip>
+                      
+                      <Tooltip title="Compartilhar"><IconButton href="javascript:void(0);" onClick={shoot}>{icon3}</IconButton></Tooltip>
                     </div>
                 </div>
   
               </Grid>                    
+              <Grid item xs={12} md={12}>
+                <div style={{marginBottom: "10px"}}></div>
+              </Grid>              
             </Grid> 
 
-            <div style={{height: "10px"}}>&nbsp;</div>
+            
         
             <div className={classes.root}  style={{paddingBottom: "10px"}}>
 
