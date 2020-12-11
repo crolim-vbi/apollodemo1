@@ -390,7 +390,7 @@ export default function EnhancedTable() {
                       <TableCell component="th" id={labelId} scope="row" padding="none" align="left">{row.carbs}</TableCell>
                       <TableCell align="left">{row.fat}</TableCell>
                       <TableCell align="left">{row.protein}</TableCell>
-                      <TableCell align="left"><Tooltip title="Visualizar este Documento"><Button><Link to="/DocumentoVisualizacao" >{icon1}</Link></Button></Tooltip></TableCell>
+                      <TableCell align="left"><Tooltip title="Visualizar este Documento"><Link to="/DocumentoVisualizacao" ><Button>{icon1}</Button></Link></Tooltip></TableCell>
                       <TableCell align="left"><Tooltip title="Baixar este Documento"><Button href="ExcelExemplo.xlsx" target="_blank">{icon2}</Button></Tooltip></TableCell>
                       <TableCell align="left"><Tooltip title="Compartilhar este Documento"><Button href="javascript:void(0);" onClick={shoot}>{icon3}</Button></Tooltip></TableCell>
                     </TableRow>
