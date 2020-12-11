@@ -295,7 +295,7 @@ const App = function() {
 
                                                   <span style={{whiteSpace: "nowrap"}}>
                                                     <div style={{display: "inline-block", textAlign: "left"}}>
-                                                      <a style={{color: ''}}>De</a>
+                                                      <p style={{color: ''}}>De</p>
                                                     </div>
 
                                                     &nbsp;&nbsp;&nbsp;
@@ -310,7 +310,7 @@ const App = function() {
                                                   <span style={{whiteSpace: "nowrap"}}>
 
                                                     <div style={{display: "inline-block", textAlign: "left"}}>
-                                                      <a style={{color: ''}}>Até</a>
+                                                      <p style={{color: ''}}>Até</p>
                                                     </div>
 
                                                     &nbsp;&nbsp;
