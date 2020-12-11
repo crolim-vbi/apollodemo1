@@ -30,7 +30,7 @@ import { Link } from 'react-router-dom';
 const icon1 = <VisibilityIcon color="action" fontSize="small"/>;
 const icon2 = <GetAppIcon color="action" fontSize="small"/>;
 const icon3 = <ScreenShareIcon color="action" fontSize="small"/>;
-const icon4 = <GetAppIcon style={{ color: "rgba(0, 0, 0, 0.54)" }} fontSize="small"/>;
+const icon4 = <GetAppIcon style={{ color: "rgba(0, 0, 0, 0.54)" }} />;
 
 
 const shoot = () => {
@@ -229,6 +229,9 @@ const EnhancedTableToolbar = (props) => {
       )}
     </Toolbar>
   );
+
+
+
 };
 
 EnhancedTableToolbar.propTypes = {
