@@ -22,12 +22,12 @@ export default function DatePickers() {
         id="date"
         // label="Birthday"
         type="date"
-        defaultValue="2017-05-24"
+        defaultValue=""
         className={classes.textField}
         InputLabelProps={{
           shrink: true
         }}
-        style={{backgroundColor: '' }}
+        style={{backgroundColor: '', color: "red" }}
       />
     </form>
   );
