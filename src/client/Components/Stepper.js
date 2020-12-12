@@ -6,6 +6,11 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { createMuiTheme } from '@material-ui/core/styles';
+import Toolbar from '@material-ui/core/Toolbar';
+
+import Classificacao from '../partials/Classificacao';
+
+
 
 import Dropzone from './Dropzone';
 
@@ -33,7 +38,7 @@ function getStepContent(step) {
     case 0:
       return <Dropzone />;
     case 1:
-      return (<div><br /><h3> Classificação de Arquivos</h3> <br /></div>);
+      return (<div style={{padding: "25px 0px"}}><Classificacao /></div>);
     default:
       return 'Unknown step';
   }
@@ -113,7 +118,7 @@ export default function HorizontalLinearStepper() {
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>
-                <div><br /> Arquivos carregados com sucesso! <br /><br /></div>
+                <div style={{padding: "25px 0px"}}><Toolbar style={{backgroundColor: "white",  fontWeight: "500", color: "gray", textTransform: "uppercase"}}>Arquivos carregados e classificados com sucesso!</Toolbar></div>
             </Typography>
             <Button onClick={handleReset} className={classes.button}>
               Reiniciar
@@ -141,7 +146,7 @@ export default function HorizontalLinearStepper() {
                 onClick={handleNext}
                 className={classes.button}
               >
-                {activeStep === steps.length - 1 ? 'Finalizar' : 'Próximo'}
+                {activeStep === steps.length - 1 ? 'Classificar' : 'Carregar'}
               </Button>
             </div>
           </div>

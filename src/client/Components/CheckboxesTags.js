@@ -6,6 +6,8 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 import Box from '@material-ui/core/Box';
 
 
@@ -15,8 +17,8 @@ const checkedIcon = <CheckBoxIcon color="action"  />;
 const icon1 = <CheckBoxOutlineBlankIcon />;
 const checkedIcon1 = <CheckBoxIcon color="action" />;
 
-const icon2 = <CheckBoxOutlineBlankIcon  />;
-const checkedIcon2 = <CheckBoxIcon  color="action" />;
+const icon2 = <RadioButtonUncheckedIcon  />;
+const checkedIcon2 = <RadioButtonCheckedIcon  color="action" />;
 
 
 
@@ -31,7 +33,7 @@ export default function CheckboxesTags(props) {
       groupBy={ props.groupByKey ? (option) => option[props.groupByKey] : ""}
       disableCloseOnSelect = {props.multipleBoolen ? true : null}
       getOptionLabel={(option) => option.nome}
-      renderOption={(option, { selected }) => (
+      renderOption={props.multipleBoolen ? (option, { selected }) => (
         <React.Fragment>
           <Checkbox
             icon={props.multipleBoolen ? icon1 : icon2}
@@ -41,7 +43,7 @@ export default function CheckboxesTags(props) {
           />
           {option.nome}
         </React.Fragment>
-      )}
+      ): null}
       style={{ width: "100%", backgroundColor: "transparent" }}
       renderInput={(params) => (
         <TextField {...params}   variant="standard" label={props.labelName}/>
