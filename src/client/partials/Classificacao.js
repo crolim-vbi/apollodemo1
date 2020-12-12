@@ -35,6 +35,11 @@ const icon2 = <PublishIcon color="action"  />;
 const icon6 = <HelpOutlineIcon color="action" />;
 
 
+const shoot = () => {
+  alert("Esta funcionalidade ainda está em desenvolvimento");
+}
+
+
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
@@ -74,8 +79,8 @@ export default function BasicTable() {
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-start"}}>
                       <Tooltip title="Baixar planilha modelo para classificação"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon3}</IconButton></Tooltip>
-                      <Tooltip title="Submeter planilha para classificação em Lote"><IconButton href="javascript:void(0);">{icon2}</IconButton></Tooltip>
-                      <Tooltip title="Ajuda com planilha de classificação"><IconButton  href="javascript:void(0);"  >{icon6}</IconButton></Tooltip>
+                      <Tooltip title="Submeter planilha para classificação em Lote"><IconButton href="javascript:void(0);" onClick={shoot}>{icon2}</IconButton></Tooltip>
+                      <Tooltip title="Ajuda com planilha de classificação"><IconButton  href="javascript:void(0);" onClick={shoot} >{icon6}</IconButton></Tooltip>
                     </div>
                 </div>
   
