@@ -1,12 +1,15 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, getMuiTheme  } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { createMuiTheme } from '@material-ui/core/styles';
 
 import Dropzone from './Dropzone';
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -84,6 +87,9 @@ export default function HorizontalLinearStepper() {
     setActiveStep(0);
   };
 
+
+
+  
   return (
     <div className={classes.root}>
       <Stepper activeStep={activeStep}>
@@ -98,7 +104,7 @@ export default function HorizontalLinearStepper() {
           }
           return (
             <Step key={label} {...stepProps}>
-              <StepLabel {...labelProps}>{label}</StepLabel>
+              <StepLabel  {...labelProps}>{label}</StepLabel>
             </Step>
           );
         })}
