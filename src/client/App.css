@@ -26,25 +26,18 @@
   }
 
 
-  .globalWrap {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-  }
-
-
-
   .maxScreenWidth {
     max-width: 1920px;
     margin: auto 
   }
 
 
-  /* xs, extra-pequeno: 0px
-  sm, pequeno: 600px
-  md, médio: 960px
-  lg, grande: 1280px
-  xl, extra-grande: 1920px */
+  .globalWrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+  }
+
 
 
   .topWrap > div,  .bottomWrap, .xpto {
