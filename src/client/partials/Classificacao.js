@@ -95,9 +95,9 @@ export default function BasicTable() {
           <TableHead>
             <TableRow>
               <TableCell style={{color: "gray"}}>Arquivo</TableCell>
+              <TableCell style={{color: "gray"}} align="left">Entidade</TableCell>
               <TableCell style={{color: "gray"}} align="left">Relatório</TableCell>
               <TableCell style={{color: "gray"}} align="left">Descritivo</TableCell>
-              <TableCell style={{color: "gray"}} align="left">Entidade</TableCell>
               <TableCell style={{color: "gray", maxWidth: "40px"}} align="left">Data de Referência</TableCell>
             </TableRow>
           </TableHead>
@@ -107,9 +107,9 @@ export default function BasicTable() {
                 <TableCell component="th" scope="row" style={{maxWidth: "120px", wordWrap: "break-word", color: "gray"}}>
                   {row.name}
                 </TableCell>
-                <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
-                <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
                 <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {entidades} groupByKey = "tipo" /></TableCell>
+                <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
+                <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
                 <TableCell align="left"  style={{maxWidth: "40px"}}><DatePickers /></TableCell>
               </TableRow>
             ))}
