@@ -18,6 +18,12 @@
     color: gray !important;
   }
 
+  .MuiInputBase-inputAdornedEnd {
+    color: gray !important;
+    width: 100px !important;
+  }
+
+
 
   body {
     font-family: Arial, Helvetica, sans-serif;

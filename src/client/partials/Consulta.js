@@ -2,6 +2,7 @@
 import React from 'react';
 import CheckboxesTags from '../Components/CheckboxesTags';
 import DatePickers from '../Components/DatePickers';
+import DatePickersMonth from '../Components/DatePickersMonth';
 import UserIcon from '../Components/UserIcon';
 import DataTable from '../Components/DataTable';
 import Layout from '../layout/Layout';
@@ -301,7 +302,7 @@ const App = function() {
                                                     &nbsp;&nbsp;&nbsp;
 
                                                     <div style={{display: "inline-block", textAlign: "left"}}>
-                                                      <DatePickers style={{display: "inline"}} />
+                                                      <DatePickersMonth />
                                                     </div>
 
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -316,7 +317,7 @@ const App = function() {
                                                     &nbsp;&nbsp;
 
                                                     <div style={{display: "inline-block", textAlign: "left"}}>
-                                                      <DatePickers style={{display: "inline"}} />
+                                                      <DatePickersMonth />
                                                     </div>
 
                                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
