@@ -1,5 +1,5 @@
 import "date-fns";
-import React from "react";
+import React, { useEffect} from "react";
 import Grid from "@material-ui/core/Grid";
 import DateFnsUtils from "@date-io/date-fns";
 import {
@@ -7,31 +7,43 @@ import {
   KeyboardDatePicker
 } from "@material-ui/pickers";
 
-export default function MaterialUIPickers({tipo}) {
+export default function MaterialUIPickers({tipo, usarDataAtual}) {
+
   const [selectedDate, setSelectedDate] = React.useState(
-    new Date(Date.now())
+    null
   );
+  
+  useEffect(() => {
+    if(usarDataAtual) setSelectedDate(Date.now());
+  }, []);
+
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
 
+
+
   let openTo=""
   let format=""
   let views=[]
+  let placeholder
   
   if(tipo==="datePicker"){
     openTo="year"
     format="dd/MM/yyyy";
-    views=[ "year", "month", "date"]
+    views=[ "year", "month", "date"];
+    placeholder="dd/mm/aaaa"
   } else if (tipo==="monthPicker"){
     openTo="year"
     format="MM/yyyy";
-    views=["year", "month"]     
+    views=["year", "month"];   
+    placeholder="mm/aaaa"  
   } else if (tipo==="yearPicker"){
     openTo="year"
     format="yyyy";
-    views=[ "year"]    
+    views=[ "year"];
+    placeholder="aaaa"  
   }
 
   return (
@@ -52,6 +64,7 @@ export default function MaterialUIPickers({tipo}) {
           KeyboardButtonProps={{
             "aria-label": "change date"
           }}
+          placeholder={placeholder}
         />
       </Grid>
     </MuiPickersUtilsProvider>
