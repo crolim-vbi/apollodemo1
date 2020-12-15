@@ -19,6 +19,7 @@ import Grid from '@material-ui/core/Grid';
 
 
 import DatePickers from '../Components/DatePickers';
+import DatePickers2 from '../Components/DatePickers2';
 import CheckboxesTags from '../Components/CheckboxesTags';
 
 
@@ -46,16 +47,16 @@ const useStyles = makeStyles({
   },
 });
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(name, tipo, fat, carbs, protein) {
+  return { name, tipo, fat, carbs, protein };
 }
 
 const rows = [
-  createData('VBI CRI FII_Posição Investidores_2018.01.xls', 159, 6.0, 24, 4.0),
-  createData('BREOF FIP Multiestratégia_Performance Breakdow_2020.04.pdf', 237, 9.0, 37, 4.3),
-  createData('BREOF FIDC_Performance Breakdow_2020.04.pdf', 262, 16.0, 24, 6.0),
-  createData('BREOF III FIP_Performance Breakdow_2020.04.pdf', 305, 3.7, 67, 4.3),
-  createData('Nova I FII_Performance Breakdow_2020.04.pdf', 356, 16.0, 49, 3.9),
+  createData('VBI CRI FII - Carteira Diária - 2018.11.30.xls', "datePicker", 6.0, 24, 4.0),
+  createData('BREOF II FIP - Carteira Diária - 2018.11.30.pdf', "datePicker", 9.0, 37, 4.3),
+  createData('BREOF FIDC - Performance Breakdow - 2020.11.pdf', "monthPicker", 16.0, 24, 6.0),
+  createData('BREOF III FIP - Performance Breakdow - 2020.11.pdf', "monthPicker", 3.7, 67, 4.3),
+  createData('Nova I FII - Relatório Anual Exemplo - 2020.04.pdf', "yearPicker", 16.0, 49, 3.9),
 ];
 
 
@@ -110,7 +111,7 @@ export default function BasicTable() {
                 <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {entidades} groupByKey = "tipo" /></TableCell>
                 <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
                 <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
-                <TableCell align="left"  style={{maxWidth: "40px"}}><DatePickers /></TableCell>
+                <TableCell align="left"  style={{maxWidth: "40px"}}><DatePickers2 tipo={row.tipo}/></TableCell>
               </TableRow>
             ))}
           </TableBody>

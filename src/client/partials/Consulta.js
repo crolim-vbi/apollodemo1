@@ -301,7 +301,7 @@ const App = function() {
 
                                                     &nbsp;&nbsp;&nbsp;
 
-                                                    <div style={{display: "inline-block", textAlign: "left"}}>
+                                                    <div style={{display: "inline-block", textAlign: "left", width: "150px"}}>
                                                       <DatePickers2 tipo="monthPicker"/>
                                                     </div>
 
@@ -316,7 +316,7 @@ const App = function() {
 
                                                     &nbsp;&nbsp;
 
-                                                    <div style={{display: "inline-block", textAlign: "left"}}>
+                                                    <div style={{display: "inline-block", textAlign: "left", width: "150px"}}>
                                                       <DatePickers2 tipo="monthPicker"/>
                                                     </div>
 
