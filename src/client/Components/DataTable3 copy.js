@@ -15,30 +15,27 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Checkbox from '@material-ui/core/Checkbox';
 import IconButton from '@material-ui/core/IconButton';
-import Button from '@material-ui/core/Button';
 import Tooltip from '@material-ui/core/Tooltip';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import DeleteIcon from '@material-ui/icons/Delete';
 import FilterListIcon from '@material-ui/icons/FilterList';
-import { Link } from 'react-router-dom';
-
 import GetAppIcon from '@material-ui/icons/GetApp';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import ScreenShareIcon from '@material-ui/icons/ScreenShare';
+import Button from '@material-ui/core/Button';
 
+import { Link } from 'react-router-dom';
 
-
-const icon1 = <VisibilityIcon  fontSize="small" style={{color:"dimgray"}}/>;
-const icon2 = <GetAppIcon  fontSize="small" style={{color:"dimgray"}}/>;
-const icon3 = <ScreenShareIcon  fontSize="small" style={{color:"dimgray"}}/>;
-const icon4 = <GetAppIcon style={{color:"dimgray"}} />;
+const icon1 = <VisibilityIcon  fontSize="small"/>;
+const icon2 = <GetAppIcon  fontSize="small"/>;
+const icon3 = <ScreenShareIcon  fontSize="small"/>;
+const icon4 = <GetAppIcon style={{ color: "rgba(0, 0, 0, 0.54)" }} />;
 
 
 const shoot = () => {
   alert("Esta funcionalidade ainda está em desenvolvimento");
 }
-
 
 function createData(name, calories, carbs, fat,  protein, protein2, protein3, protein4) {
   return { name, calories,  carbs, fat, protein, protein2, protein3, protein4 };
@@ -71,7 +68,6 @@ const rows = [
     createData('Demonstrativo de Caixa – Conta XPTO', 'NOVA I FII', '2019.01', 'PDF', 'Diogo Massaro'),
     createData('Demonstrativo de Caixa – Conta YPTO', 'NOVA I FII', '2018.12', 'PDF', 'Diogo Massaro'),    
 ];
-
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -110,7 +106,6 @@ const headCells = [
   { id: 'protein4', numeric: false, disablePadding: false, label: 'Compartilhar' }
 ];
 
-
 function EnhancedTableHead(props) {
   const { classes, onSelectAllClick, order, orderBy, numSelected, rowCount, onRequestSort } = props;
   const createSortHandler = (property) => (event) => {
@@ -121,7 +116,7 @@ function EnhancedTableHead(props) {
     <TableHead>
       <TableRow>
         <TableCell padding="checkbox">
-        <Checkbox
+          <Checkbox
             indeterminate={numSelected > 0 && numSelected < rowCount}
             checked={rowCount > 0 && numSelected === rowCount}
             onChange={onSelectAllClick}
@@ -172,15 +167,21 @@ const useToolbarStyles = makeStyles((theme) => ({
   highlight:
     theme.palette.type === 'light'
       ? {
-          color: theme.palette.secondary.main,
-          backgroundColor: lighten(theme.palette.secondary.light, 0.85),
+          // color: "theme.palette.text.secondary",
+          // backgroundColor: "lighten(theme.palette.text.secondary, 0.85)",
+          color: "dimgray",
+          backgroundColor: "inherit",          
         }
       : {
           color: theme.palette.text.primary,
-          backgroundColor: theme.palette.secondary.dark,
+          backgroundColor: theme.palette.primary.dark,
         },
   title: {
     flex: '1 1 100%',
+  },
+  title2: {
+    flex: '1 1 100%',
+    textAlign: "right"
   },
 }));
 
@@ -199,7 +200,7 @@ const EnhancedTableToolbar = (props) => {
             {/* <a style={{fontSize: "1rem", fontWeight: "500"}}>Documentos</a> */}
             <Tooltip title="Baixar Documentos Selecionados">
                 <Button  href="ExcelExemplo.xlsx" target="_blank" aria-label="baixar">
-                  {icon4} &nbsp; &nbsp; <a style={{ fontWeight: "500", color: "gray"}}>Baixar Selecionados</a>
+                  {icon4} &nbsp; &nbsp; <a style={{ fontWeight: "500", color: "dimgray"}}>Baixar Selecionados</a>
                 </Button>
             </Tooltip>
             
@@ -213,7 +214,7 @@ const EnhancedTableToolbar = (props) => {
 
       {numSelected > 0 ? (
         
-        <Typography className={classes.title} color="inherit" variant="subtitle1" component="div" style={{textAlign: "right"}}>
+        <Typography className={classes.title2} color="inherit" variant="subtitle1" component="div" style={{align: "right"}}>
           {numSelected} {numSelected === 1? "selecionado" : "selecionados"} &nbsp;
         </Typography>
        
@@ -227,6 +228,9 @@ const EnhancedTableToolbar = (props) => {
       )}
     </Toolbar>
   );
+
+
+
 };
 
 // EnhancedTableToolbar.propTypes = {
@@ -244,6 +248,17 @@ const useStyles = makeStyles((theme) => ({
   table: {
     minWidth: 750,
   },
+  tableRow: {
+    "&$selected, &$selected:hover": {
+      backgroundColor: "rgba(0, 0, 0, 0.08)"
+    }
+  },
+  // tableCell: {
+  //   "$selected &": {
+  //     color: "yellow"
+  //   }
+  // },
+  selected: {},  
   visuallyHidden: {
     border: 0,
     clip: 'rect(0 0 0 0)',
@@ -285,6 +300,8 @@ export default function EnhancedTable() {
     const selectedIndex = selected.indexOf(name);
     let newSelected = [];
     
+
+    // event.target.style.background = "yellow";
 
     if (selectedIndex === -1) {
       newSelected = newSelected.concat(selected, name);
@@ -340,7 +357,7 @@ export default function EnhancedTable() {
               rowCount={rows.length}
             />
             <TableBody>
-             {stableSort(rows, getComparator(order, orderBy))
+              {stableSort(rows, getComparator(order, orderBy))
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
                   const isItemSelected = isSelected(row.carbs);
@@ -355,8 +372,8 @@ export default function EnhancedTable() {
                       tabIndex={-1}
                       key={row.carbs}
                       selected={isItemSelected}
-                      // classes={{ selected: classes.selected }}
-                      // className={classes.tableRow}
+                      classes={{ selected: classes.selected }}
+                      className={classes.tableRow}
                     >
                       <TableCell padding="checkbox" >
                         <Checkbox
@@ -366,7 +383,7 @@ export default function EnhancedTable() {
                       </TableCell>
                       <TableCell  >
                         {row.name}
-                      </TableCell>                      
+                      </TableCell>
                       <TableCell align="left">{row.calories}</TableCell>
                       <TableCell component="th" id={labelId} scope="row" padding="none" align="left">{row.carbs}</TableCell>
                       <TableCell align="left">{row.fat}</TableCell>
@@ -374,7 +391,7 @@ export default function EnhancedTable() {
                       <TableCell align="left"><Tooltip title="Visualizar este Documento"><Link to="/DocumentoVisualizacao" ><Button>{icon1}</Button></Link></Tooltip></TableCell>
                       <TableCell align="left"><Tooltip title="Baixar este Documento"><Button href="ExcelExemplo.xlsx" target="_blank">{icon2}</Button></Tooltip></TableCell>
                       <TableCell align="left"><Tooltip title="Compartilhar este Documento"><Button href="javascript:void(0);" onClick={shoot}>{icon3}</Button></Tooltip></TableCell>
-                     </TableRow>
+                    </TableRow>
                   );
                 })}
               {emptyRows > 0 && (

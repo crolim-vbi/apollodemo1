@@ -264,7 +264,7 @@ const App = function() {
                                 </Typography>
                             </CardContent>                            
 
-                            <CardContent style={{color: "gray"}}>
+                            <CardContent style={{color: "dimgray"}}>
 
 
                                     <Grid container spacing={0}>
@@ -335,7 +335,7 @@ const App = function() {
                             <CardContent style={{borderTop: "solid 1px lightgray"}}>
                                 <Typography style={{}}>                                  
                                       <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR</Button></Link>
+                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained" color="primary">BUSCAR</Button></Link>
                                       </div>
                                 </Typography>
                             </CardContent>

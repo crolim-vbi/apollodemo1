@@ -2,22 +2,45 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-// import PdfExemplo from './Components/PdfExemplo';
 
-import reportWebVitals from './reportWebVitals';
+import { createMuiTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import { orange, green } from '@material-ui/core/colors';
+
+import Checkbox from '@material-ui/core/Checkbox';
+
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: '#bcbdc0',
+      main: '#77787b',
+      dark: '#636464',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#33918a',
+      main: '#00766d',
+      dark: '#00524c',
+      contrastText: '#fff',
+    },
+  },
+});
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { HashRouter } from 'react-router-dom'
 
 
 ReactDOM.render(
-  <Router>
-    <Switch>
-      <HashRouter>
-        <Route path="/" component={App} />
-      </HashRouter>
-    </Switch>
-  </Router>,
+  <ThemeProvider theme={theme}>
+    <Router>
+      <Switch>
+        <HashRouter>
+          {/* <Checkbox /> */}
+          <Route path="/" component={App} />
+        </HashRouter>
+      </Switch>
+    </Router>
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

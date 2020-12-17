@@ -20,7 +20,7 @@ const useStyles2 = makeStyles((theme) => ({
     background: "inherit"
   },
   input: {
-    color: "gray"
+    color: "dimgray"
   }
 }));
 

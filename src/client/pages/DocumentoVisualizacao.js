@@ -29,11 +29,11 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 
 
-const icon2 = <GetAppIcon color="action"  />;
-const icon3 = <ScreenShareIcon color="action"/>;
-const icon5 = <PictureAsPdfIcon color="action"/>;
-const icon6 = <ArrowBackIcon color="action" />;
-const icon7 = <LibraryBooksIcon color="action" />;
+const icon2 = <GetAppIcon   />;
+const icon3 = <ScreenShareIcon />;
+const icon5 = <PictureAsPdfIcon />;
+const icon6 = <ArrowBackIcon  />;
+const icon7 = <LibraryBooksIcon  />;
 
 
 
@@ -111,7 +111,7 @@ const App = function() {
 
     
 
-            <Grid  container spacing={0} style={{color:"gray"}}>
+            <Grid  container spacing={0} style={{color:"dimgray"}}>
               <Grid item xs={12} md={6}>
                 <div style={{marginBottom: "10px"}}>Razão Social: FUNDO DE INVESTIMENTO IMOBILIÁRIO – VBI CRI</div>
                 <div style={{marginBottom: "10px"}}>CNPJ: 28.729.197/0001-13</div>
@@ -196,7 +196,7 @@ const App = function() {
                     
                     <Card className={classes2.root} style={{backgroundColor: ""}}>
 
-                      <CardContent style={{color: "gray"}}>
+                      <CardContent style={{color: "dimgray"}}>
 
                         <PdfExemplo />
                         {/* <embed  src="PdfExemplo.pdf" width="100%" height="500px"/> */}

@@ -32,8 +32,8 @@ import ExcelIcon from "./xpto.png"
 
 
 const icon3 = <img src={ExcelIcon} style={{height: "22px"}}  />;
-const icon2 = <PublishIcon color="action"  />;
-const icon6 = <HelpOutlineIcon color="action" />;
+const icon2 = <PublishIcon   />;
+const icon6 = <HelpOutlineIcon  />;
 
 
 const shoot = () => {
@@ -72,7 +72,7 @@ export default function BasicTable() {
   return (
     <>
 
-            <Grid container spacing={0} style={{color:"gray"}}>
+            <Grid container spacing={0} style={{color:"dimgray"}}>
               <Grid item xs={12} md={12}>
                 <div style={{marginBottom: "10px"}}></div>
               </Grid>
@@ -95,17 +95,17 @@ export default function BasicTable() {
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell style={{color: "gray"}}>Arquivo</TableCell>
-              <TableCell style={{color: "gray"}} align="left">Entidade</TableCell>
-              <TableCell style={{color: "gray"}} align="left">Relatório</TableCell>
-              <TableCell style={{color: "gray"}} align="left">Descritivo</TableCell>
-              <TableCell style={{color: "gray", maxWidth: "40px"}} align="left">Data de Referência</TableCell>
+              <TableCell style={{color: "dimgray"}}>Arquivo</TableCell>
+              <TableCell style={{color: "dimgray"}} align="left">Entidade</TableCell>
+              <TableCell style={{color: "dimgray"}} align="left">Relatório</TableCell>
+              <TableCell style={{color: "dimgray"}} align="left">Descritivo</TableCell>
+              <TableCell style={{color: "dimgray", maxWidth: "40px"}} align="left">Data de Referência</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {rows.map((row) => (
               <TableRow key={row.name}>
-                <TableCell component="th" scope="row" style={{maxWidth: "120px", wordWrap: "break-word", color: "gray"}}>
+                <TableCell component="th" scope="row" style={{maxWidth: "120px", wordWrap: "break-word", color: "dimgray"}}>
                   {row.name}
                 </TableCell>
                 <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {entidades} groupByKey = "tipo" /></TableCell>

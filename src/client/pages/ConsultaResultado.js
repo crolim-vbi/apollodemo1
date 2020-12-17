@@ -18,9 +18,9 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import GetAppIcon from '@material-ui/icons/GetApp';
 
 
-const icon3 = <ScreenShareIcon color="action"   />;
-const icon6 = <ArrowBackIcon color="action" />;
-const icon2 = <GetAppIcon color="action"  />;
+const icon3 = <ScreenShareIcon    />;
+const icon6 = <ArrowBackIcon  />;
+const icon2 = <GetAppIcon   />;
 
 
 const shoot = () => {
@@ -54,7 +54,7 @@ const App = function() {
 
             
 
-            <Grid container spacing={0} style={{color:"gray"}}>
+            <Grid container spacing={0} style={{color:"dimgray"}}>
               <Grid item xs={12} sm={6}>
                 <div style={{marginBottom: "10px"}}>Entidades: BREOF FIP, SBC FII, VBI CRI FII</div>
                 <div style={{marginBottom: "10px"}}>Datas: de 2020.09 à 2020.12</div>
