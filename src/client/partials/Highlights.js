@@ -2,7 +2,7 @@
 import React from 'react';
 import DataTable from '../Components/DataTable';
 import DataTable4 from  '../Components/DataTable4';
-import Datatablex from  '../Components/DataTable/datatablex';
+import Datatable5 from  '../Components/DataTable/datatable5';
 
 
 
@@ -73,7 +73,7 @@ const App = function() {
                     <Grid item xs={12} md={6}>
                       
 
-                          <Datatablex titulo="Preferidos"/>
+                          <Datatable5 titulo="Preferidos"/>
 
                       
 
@@ -83,7 +83,7 @@ const App = function() {
                     <Grid item xs={12} md={6}>
                       
                       
-                          <Datatablex titulo="Últimas atualizações"/>
+                          <Datatable5 titulo="Últimas atualizações"/>
 
                       
 
