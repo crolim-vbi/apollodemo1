@@ -90,29 +90,6 @@ const App = function() {
                         
                     </Grid>                     
 
-                    {/* <Grid item xs={12} md={6}>
-
-                        <Card className={classes2.root}>
-                        <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
-                            <Typography className={classes2.title} color="textSecondary" gutterBottom>
-                                Últimas Atualizações
-                            </Typography>
-                        </CardContent>
-                        <CardContent>
-                            <DataTable/>
-                        </CardContent>
-                        <CardContent style={{borderTop: "solid 1px lightgray"}}>
-                                    <Typography style={{}}>
-                                    
-                                        <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                            <Button onClick={shoot} variant="contained">BAIXAR SELECIONADOS</Button>
-                                        </div>
-                                    </Typography>
-                                </CardContent>                      
-                        </Card>        
-
-
-                    </Grid>  */}
                 </Grid> 
 
 

@@ -194,7 +194,7 @@ const App = function() {
                 <Grid container spacing={3}>
                   <Grid item xs={12}>
                     
-                    <Card className={classes2.root} style={{backgroundColor: ""}}>
+                    <Card className={classes2.root} style={{backgroundColor: ""}} elevation={3}>
 
                       <CardContent style={{color: "dimgray"}}>
 
