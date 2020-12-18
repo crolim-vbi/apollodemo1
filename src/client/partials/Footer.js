@@ -52,7 +52,7 @@ const Footer = function() {
         <div className="footer1 maxScreenWidth">
           <img src={logo_vbi} height="35px" />
           <div style={{height: '100%', textAlign: 'right'}}>
-            <div style={{padding: '12px 0px 8px'}}> apollo@vbirealestate.com </div>
+            <div style={{padding: '12px 0px 8px'}}> dev@vbirealestate.com </div>
             <div> 55 11 2344 - 2525 </div>
           </div>
         </div>

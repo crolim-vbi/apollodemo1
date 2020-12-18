@@ -2,35 +2,24 @@
     /* border: solid 1px green; */
   }
   
-
-  .MuiDropzoneArea-icon {  /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
-    color: dimgray !important;
-  }
-
-  .MuiDropzoneArea-text {
-    color: dimgray !important;
-  }
-
-  .MuiInputBase-inputAdornedEnd { /*Obs: isso aqui faz com o valor do input de data fique mais cinza* (muito embora não consigo ficar complemente seguro que isso possa ter efeito colateral na estilização de outro elemento de input)*/ 
-    color: dimgray !important;
-  } 
-
-
-
   body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px; /* reset */
-    background-color: #eee;
+  }
+
+
+  body, .mainWrap   {
+    background-color: #eee; /* essa parte aqui, quando aplicada ao "body", é importante porque as vezes tem "sobra" entre o footer e o resto da aplicação (sem essa parte aqui esta "sobra" ficaria em branco, o que não é bom!) */
   }
 
 
   .maxScreenWidth {
-    max-width: 1920px;
+    max-width: 1920px; /* essa parte aqui é para por o limite no quanto a tela se "estica" quando o monitor é largo demais (obs: se a tela se "esticar" demais, pode trazer problemas ruins para a UI) */
     margin: auto 
   }
 
 
-  .globalWrap {
+  .globalWrap { /* esse globalWrap com essas 3 configurações** permite que o footer use "margin-top: auto;" e fique fixado sempre no fundo da página; **(min-height: 100vh; display: flex; flex-direction: column;) */
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -38,10 +27,9 @@
 
 
 
-  .topWrap,  .bottomWrap {
-    /* max-width: 1200px; */
-    padding-left: 30px;
-    padding-right: 30px;
+  .topWrap,  .bottomWrap, .mainWrap  {
+    padding-left: 30px; /* essa parte aqui faz com que sempre exista uma "coluna" de 30px no início e no final da tela */
+    padding-right: 30px; /* essa parte aqui faz com que sempre exista uma "coluna" de 30px no início e no final da tela */
   }
 
 
@@ -50,7 +38,8 @@
 
   .topWrap, .bottomWrap   {
     color: white;
-    background-color: black;
+
+    background-color: black; /* para backup caso a imagem não carregue */
     background-image: url("./example.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -62,21 +51,12 @@
 
 
   .bottomWrap {
-    margin-top: auto;
+    margin-top: auto; /*Essa configuração (junto a configuração também no GlobalWrap) permite que o footer fique fixado sempre no fundo da página*/ 
   }
-
-  .mainWrap   {
-    background-color: #eee;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-
 
 
 
   /* Container for flexboxes */
-
   .header, .footer1 {
     display: -webkit-flex;
     display: flex;    
@@ -86,6 +66,7 @@
     border-bottom: solid 1px dimgray;
   }
 
+  
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -113,58 +94,14 @@
   }
 
   .topNav > a:hover {
-    color: #ccc!important;
+    color: lightgray!important;
     border-bottom: solid lightgray 2px;
   }
 
 
 
-  .topNav2 {
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-  }  
-
-  .topNav2 > .row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    
-  }
-
-  .topNav2 > .row:first-child  {
-    margin-top: 20px;
-  }
-
-  .topNav2 > .row > .cell  {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    /* border-right: solid 1px dimgray; */
-    /* padding: 0px 20px; */
-    margin-left: 30px;
-  }
-
-  
-  .topNav2 > .row > .cell:first-child  {
-    margin-left: 0px;
-  }
-  
-
-   .topNav2 > .row > .cell > .item  {
-    width: 100%;
-  }
-
-
-  
-  .main {
-    background-color: white;
-  }
-  
-  /* Style the footer */
-  .footer1, .footer2 {
+   /* Style the footer */
+   .footer1, .footer2 {
     height: 60px;
     color: dimgray;
     font-weight: 600;
@@ -172,5 +109,17 @@
   }
 
 
-
   
+  
+  .MuiDropzoneArea-icon {  /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
+    color: dimgray !important;
+  }
+
+  .MuiDropzoneArea-text { /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
+    color: dimgray !important;
+  }
+
+  .MuiInputBase-inputAdornedEnd { /*Obs: isso aqui faz com o valor do input de data fique mais cinza* (muito embora não consigo ficar complemente seguro que isso possa ter efeito colateral na estilização de outro elemento de input)*/ 
+    color: dimgray !important;
+  } 
+
