@@ -2,15 +2,8 @@
     /* border: solid 1px green; */
   }
   
-  /* .MuiStepIcon-root.MuiStepIcon-active {
-    color: black !important;
-  }  
 
-  .MuiStepIcon-root.MuiStepIcon-completed {
-    color: black !important;
-  } */
-
-  .MuiDropzoneArea-icon {
+  .MuiDropzoneArea-icon {  /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
     color: dimgray !important;
   }
 
@@ -18,9 +11,9 @@
     color: dimgray !important;
   }
 
-  .MuiInputBase-inputAdornedEnd {
+  .MuiInputBase-inputAdornedEnd { /*Obs: isso aqui faz com o valor do input de data fique mais cinza* (muito embora não consigo ficar complemente seguro que isso possa ter efeito colateral na estilização de outro elemento de input)*/ 
     color: dimgray !important;
-  }
+  } 
 
 
 
@@ -45,7 +38,7 @@
 
 
 
-  .topWrap > div,  .bottomWrap, .xpto {
+  .topWrap,  .bottomWrap {
     /* max-width: 1200px; */
     padding-left: 30px;
     padding-right: 30px;

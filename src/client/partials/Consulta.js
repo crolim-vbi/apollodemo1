@@ -1,29 +1,20 @@
 
 import React from 'react';
 import CheckboxesTags from '../Components/CheckboxesTags';
-import DatePickers from '../Components/DatePickers';
 import DatePickers2 from '../Components/DatePickers2';
-import UserIcon from '../Components/UserIcon';
-import DataTable from '../Components/DataTable';
-import Layout from '../layout/Layout';
 
 
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
 
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 
 import { Link } from 'react-router-dom';
 
-import Tooltip from '@material-ui/core/Tooltip';
 
 
 
@@ -226,7 +217,7 @@ const App = function() {
 
   const useStyles2 = makeStyles({
     root: {
-      minWidth: 275,
+      minWidth: 275
     },
     bullet: {
       display: 'inline-block',
@@ -256,7 +247,7 @@ const App = function() {
                   <Grid item xs={12} >
 
                     <div  style={{ maxWidth: ""}}>
-                          <Card className={classes2.root} style={{backgroundColor: ""}}>
+                          <Card className={classes2.root} style={{backgroundColor: ""}} elevation={3}>
 
                             <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "5px", paddingBottom: "0px"}}>
                                 <Typography className={classes2.title} color="textSecondary" gutterBottom>
