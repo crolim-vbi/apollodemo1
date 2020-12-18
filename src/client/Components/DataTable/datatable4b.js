@@ -4,7 +4,7 @@ import CustomToolbarSelect from "./CustomToolbarSelect"
 import MuiTableTextLabels from "./MuiTableTextLabels"
 
 
-import "./datatable5.css"
+import "./datatable4b.css"
 
 
 
@@ -52,7 +52,7 @@ export default function DefaultButton({titulo}) {
 
 
     return (    
-        <div id="datatable5">
+        <div id="datatable4b">
             <MUIDataTable
                 title={titulo}
                 data={data}
