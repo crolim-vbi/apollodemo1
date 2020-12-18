@@ -1,7 +1,6 @@
 
 import React from 'react';
 import './App.css';
-import Layout from './layout/Layout';
 import Home from './pages/Home';
 import Consulta from './pages/Consultar';
 import Inserir from './pages/Inserir';
@@ -10,6 +9,7 @@ import Ajuda from './pages/Ajuda';
 import NaoEncontrado from './pages/NaoEncontrado';
 import ConsultaResultado from './pages/ConsultaResultado';
 import DocumentoVisualizacao from './pages/DocumentoVisualizacao';
+
 
 
 import { Route, Switch } from 'react-router-dom';
@@ -29,6 +29,7 @@ const App = function() {
         <Route path="/ajuda" component={Ajuda}/>
         <Route path="/ConsultaResultado" component={ConsultaResultado}/>
         <Route path="/DocumentoVisualizacao" component={DocumentoVisualizacao}/>
+
         <Route exact path="/" component={Home}/>
         <Route path="/" component={NaoEncontrado}/>
       </Switch>

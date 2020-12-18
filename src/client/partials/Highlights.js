@@ -1,7 +1,8 @@
 
 import React from 'react';
 import DataTable from '../Components/DataTable';
-import DataTable4 from '../Components/DataTable4';
+import DataTable4 from  '../Components/DataTable4';
+import DataTable4b from  '../Components/Datatable/DataTable4b';
 
 
 
@@ -71,8 +72,9 @@ const App = function() {
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6}>
                       
-                      
-                          <DataTable4 titulo="Highlights"/>
+
+                          <DataTable4b titulo="Preferidos"/>
+                          {/* <DataTable4b /> */}
                       
 
                         
@@ -81,7 +83,8 @@ const App = function() {
                     <Grid item xs={12} md={6}>
                       
                       
-                          <DataTable4 titulo="Últimas atualizações"/>
+                          <DataTable4b titulo="Últimas atualizações"/>
+                          {/* <DataTable4b /> */}
                       
 
                         

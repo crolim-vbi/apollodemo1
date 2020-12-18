@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '.././layout/Layout';
 
 import DataTable3 from '../Components/DataTable3';
+import DataTable3b from '../Components/DataTable/DataTable3b.js';
 
 import Tooltip from '@material-ui/core/Tooltip';
 
@@ -50,7 +51,7 @@ const App = function() {
   const classes = useStyles();
 
   
-    return (<Layout titulo="Sua Busca retornou 25 Resultados" >
+    return (<Layout titulo="Sua Busca retornou 25 Documentos" >
 
             
 
@@ -70,7 +71,7 @@ const App = function() {
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-start"}}>
                       <Tooltip title="Retornar"><IconButton href="javascript:history.back()">{icon6}</IconButton></Tooltip>
-                      <Tooltip title="Baixar documentos desta busca"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon2}</IconButton></Tooltip>
+                      {/* <Tooltip title="Baixar documentos desta busca"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon2}</IconButton></Tooltip> */}
                       <Tooltip title="Compartilhar esta Busca"><IconButton  href="javascript:void(0);" onClick={shoot} >{icon3}</IconButton></Tooltip>
                     </div>
                 </div>
@@ -89,7 +90,7 @@ const App = function() {
                       
 
                       
-                      <DataTable3/>
+                      <DataTable3b/>
     
                   </Grid> 
 

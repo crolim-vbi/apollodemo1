@@ -145,7 +145,6 @@ export default function HorizontalLinearStepper() {
                 variant="contained"
                 onClick={handleNext}
                 className={classes.button}
-                color="primary"
               >
                 {activeStep === steps.length - 1 ? 'Avançar' : 'Avançar'}
               </Button>

@@ -5,7 +5,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Configurações de Preferências">
+      <Layout titulo="Configurar Documentos Preferidos">
 
         <div Style={{marginBottom: "20px"}}> &nbsp; </div>
       </Layout>

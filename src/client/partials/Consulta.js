@@ -234,10 +234,10 @@ const App = function() {
       transform: 'scale(0.8)',
     },
     title: {
-      fontWeight: 500,
       color: "black",
       paddingTop: 10,
-      paddingBottom: 10
+      paddingBottom: 10,
+      paddingLeft: 8
     },
     pos: {
       marginBottom: 12,
@@ -258,9 +258,9 @@ const App = function() {
                     <div  style={{ maxWidth: ""}}>
                           <Card className={classes2.root} style={{backgroundColor: ""}}>
 
-                            <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "10px", paddingBottom: "5px"}}>
+                            <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "5px", paddingBottom: "0px"}}>
                                 <Typography className={classes2.title} color="textSecondary" gutterBottom>
-                                <a>Busca de Documentos</a>
+                                    <h6 class="MuiTypography-root MUIDataTableToolbar-titleText-43 MuiTypography-h6">Busca de Documentos</h6>
                                 </Typography>
                             </CardContent>                            
 
@@ -335,7 +335,7 @@ const App = function() {
                             <CardContent style={{borderTop: "solid 1px lightgray"}}>
                                 <Typography style={{}}>                                  
                                       <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained" color="primary">BUSCAR</Button></Link>
+                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained" >BUSCAR</Button></Link>
                                       </div>
                                 </Typography>
                             </CardContent>

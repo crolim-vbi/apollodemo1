@@ -177,7 +177,7 @@ const App = function() {
 
                       
                       
-                      <Tooltip title="Compartilhar"><IconButton href="javascript:void(0);" onClick={shoot}>{icon3}</IconButton></Tooltip>
+                      <Tooltip title="Compartilhar este Documento"><IconButton href="javascript:void(0);" onClick={shoot}>{icon3}</IconButton></Tooltip>
                     </div>
                 </div>
   

@@ -9,7 +9,7 @@ const App = function() {
     return (<>
       <Layout titulo="Inserir Documentos" >
 
-        <div style={{marginBottom: "25px"}}>  </div>
+        <div style={{marginBottom: "0px"}}>  </div>
 
         <Stepper />
 
