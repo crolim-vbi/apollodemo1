@@ -1,11 +1,8 @@
-#datatable4b .MuiToolbar-root {
-    border-bottom: 1px solid lightgray;
+#datatable4b td, .datatable4b th, .MuiTableCell-head  {
+    color: dimgray;
 }
+
 
 #datatable4b .MuiTableRow-head {
     display: none;
-}
-
-#datatable4b td  {
-    color: dimgray;
 }
