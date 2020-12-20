@@ -123,3 +123,12 @@
     color: dimgray !important;
   } 
 
+
+  #datatable4b td, .datatable4b th, .MuiTableCell-head  {
+      color: dimgray;
+  }
+
+
+  #datatable4b .MuiTableRow-head {
+      display: none;
+  }
