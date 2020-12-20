@@ -36,7 +36,7 @@ const App = function() {
     root: {
       flexGrow: 1,
       alignItems: "center",
-      backgroundColor: "#eee",
+      backgroundColor: "inherit",
       border: "solid 1px transparent"
     },
     paper: {

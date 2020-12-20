@@ -90,7 +90,7 @@ export default function BasicTable() {
                 <div style={{marginBottom: "10px"}}></div>
               </Grid>                  
             </Grid>     
-      <Toolbar style={{backgroundColor: "white",  fontWeight: "500"}}>CLASSIFIQUE OS ARQUIVOS</Toolbar>
+      <Toolbar style={{backgroundColor: "inherit",  fontWeight: "500"}}>CLASSIFIQUE OS ARQUIVOS</Toolbar>
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>

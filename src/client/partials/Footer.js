@@ -12,7 +12,7 @@ const Footer = function() {
       flexGrow: 1,
       alignItems: "center",
       margin: "0px 30px",
-      backgroundColor: "#eee",
+      backgroundColor: "inherit",
       border: "solid 1px transparent"
     },
     paper: {

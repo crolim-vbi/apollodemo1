@@ -48,13 +48,26 @@ const CoresVBI = {
     },
 
 
-    azulFakeVbiDark :{
+    azulVbiFakeDark1 :{
         light: '#4a83bd',
         main: '#00578d',
         dark: '#002f5f',
         contrastText: '#fff',
     },
 
+    azulVbiFakeDark2 :{
+        light: '#927dff',
+        main: '#5850ec',
+        dark: '#0026b8',
+        contrastText: '#fff',
+    },    
+
+    azulVbiMaterialUi :{    
+        light: '#4791db',
+        main: '#1976d2',
+        dark: '#115293',
+        contrastText: '#fff',
+    },  
 
     // Cores De Apoio
 
@@ -101,7 +114,7 @@ const CoresVBI = {
         light: '#e8ff6a',
         main: '#b3d335',
         dark: '#80a200',
-        contrastText: '#000'
+        contrastText: '#fff'
     },
 
 

@@ -8,7 +8,7 @@ import "./datatable4b.css"
 
 
 
-export default function DefaultButton({titulo}) {
+export default function App({titulo}) {
         
     const options = {
         responsive: "simple",
@@ -24,7 +24,7 @@ export default function DefaultButton({titulo}) {
           window.location.href = "#/DocumentoVisualizacao";
         },        
         customToolbarSelect: (selectedRows, displayData, setSelectedRows) => (
-        <CustomToolbarSelect selectedRows={selectedRows} displayData={displayData} setSelectedRows={setSelectedRows} />
+            <CustomToolbarSelect selectedRows={selectedRows} displayData={displayData} setSelectedRows={setSelectedRows} />
         ),
         textLabels: MuiTableTextLabels
     };

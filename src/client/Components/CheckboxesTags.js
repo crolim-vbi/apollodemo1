@@ -12,13 +12,13 @@ import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 
 
 const icon = <CheckBoxOutlineBlankIcon  />;
-const checkedIcon = <CheckBoxIcon   />;
+const checkedIcon = <CheckBoxIcon  color="primary"  />;
 
-const icon1 = <CheckBoxOutlineBlankIcon />;
-const checkedIcon1 = <CheckBoxIcon  />;
+const icon1 = <CheckBoxOutlineBlankIcon  />;
+const checkedIcon1 = <CheckBoxIcon  color="primary" />;
 
-const icon2 = <RadioButtonUncheckedIcon  />;
-const checkedIcon2 = <RadioButtonCheckedIcon   />;
+const icon2 = <RadioButtonUncheckedIcon   />;
+const checkedIcon2 = <RadioButtonCheckedIcon  color="primary"  />;
 
 
 
@@ -44,7 +44,7 @@ export default function CheckboxesTags(props) {
           {option.nome}
         </React.Fragment>
       ): null}
-      style={{ width: "100%", backgroundColor: "transparent" }}
+      style={{ width: "100%", backgroundColor: "inherit" }}
       renderInput={(params) => (
         <TextField {...params}   variant="standard" label={props.labelName}/>
       )}
