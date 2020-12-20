@@ -143,6 +143,7 @@ export default function HorizontalLinearStepper() {
 
               <Button
                 variant="contained"
+                color="primary"
                 onClick={handleNext}
                 className={classes.button}
               >
