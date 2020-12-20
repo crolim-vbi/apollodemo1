@@ -57,7 +57,7 @@ const cinzaVbi5 = {
 }
 
 
-const fakeAzulVbiDark = {
+const azulFakeVbiDark = {
   light: '#4a83bd',
   main: '#00578d',
   dark: '#002f5f',
