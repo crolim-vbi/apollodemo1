@@ -124,11 +124,14 @@
   } 
 
 
-  #datatable4b td, .datatable4b th, .MuiTableCell-head  {
+  #datatable4b td  {
       color: dimgray;
   }
 
 
-  #datatable4b .MuiTableRow-head {
+  #datatable4b .MuiTableRow-head, 
+  #datatable4b .MuiTablePagination-caption, 
+  #datatable4b .MuiTablePagination-select,
+  #datatable4b .MuiTablePagination-selectIcon  {
       display: none;
   }
