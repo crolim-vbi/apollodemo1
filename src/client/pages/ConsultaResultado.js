@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '.././layout/Layout';
 
-import DataTable3b from '../Components/datatable/datatable3b';
+import DataTable3b from '../Components/DataTable/DataTable3b';
 
 import Tooltip from '@material-ui/core/Tooltip';
 
