@@ -11,10 +11,11 @@ import CoresVbi from './CoresVbi';
 import { createMuiTheme,  ThemeProvider } from '@material-ui/core/styles';
 
 
-const theme = createMuiTheme({
-  palette: {
-    primary: CoresVbi.cinzaVbi1,
-    secondary: CoresVbi.verdePetroleo,
+const theme = createMuiTheme(
+  {
+    palette: {
+      primary: CoresVbi.verdePetroleo,
+      secondary: CoresVbi.laranjaVbi1,
   },
 });
 
