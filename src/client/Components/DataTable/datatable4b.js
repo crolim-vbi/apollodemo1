@@ -4,7 +4,6 @@ import CustomToolbarSelect from "./CustomToolbarSelect"
 import MuiTableTextLabels from "./MuiTableTextLabels"
 
 
-import "./datatable4b.css"
 
 
 
