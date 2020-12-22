@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '.././layout/Layout';
-import Stepper from '../Partials/Stepper';
+import Stepper from '../partials/Stepper';
 
 const App = function() {
 

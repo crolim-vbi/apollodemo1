@@ -1,6 +1,6 @@
 
 import React from 'react';
-import DataTable2 from  '../Components/datatable/DataTable2';
+import DataTable2 from  '../Components/DataTable/DataTable2';
 
 
 
