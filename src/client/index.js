@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { HashRouter } from 'react-router-dom'
 
 
-import CoresVbi from './CoresVbi';
+import CoresVbi from './shared/CoresVbi';
 import { createMuiTheme,  ThemeProvider } from '@material-ui/core/styles';
 
 
