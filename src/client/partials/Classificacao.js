@@ -26,7 +26,7 @@ import GridOnIcon from '@material-ui/icons/GridOn';
 import PublishIcon from '@material-ui/icons/Publish';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
-import ExcelIcon from "./xpto.png"
+import ExcelIcon from "../shared/excelIcon.png"
 
 
 
