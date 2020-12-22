@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '.././layout/Layout';
 
-import DataTable3b from '../Components/DataTable/DataTable3b';
+import DataTable1 from '../Components/DataTable/DataTable1';
 
 import Tooltip from '@material-ui/core/Tooltip';
 
@@ -89,7 +89,7 @@ const App = function() {
                       
 
                       
-                      <DataTable3b/>
+                      <DataTable1/>
     
                   </Grid> 
 

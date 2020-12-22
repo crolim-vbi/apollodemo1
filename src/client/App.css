@@ -125,14 +125,14 @@
   } 
 
 
-  #datatable4b td  {
+  #DataTable2 td  {
       color: dimgray;
   }
 
 
-  #datatable4b .MuiTableRow-head, 
-  #datatable4b .MuiTablePagination-caption, 
-  #datatable4b .MuiTablePagination-select,
-  #datatable4b .MuiTablePagination-selectIcon  {
+  #DataTable2 .MuiTableRow-head, 
+  #DataTable2 .MuiTablePagination-caption, 
+  #DataTable2 .MuiTablePagination-select,
+  #DataTable2 .MuiTablePagination-selectIcon  {
       display: none;
   }

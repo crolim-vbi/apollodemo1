@@ -31,9 +31,8 @@ export default function CheckboxesTags({multipleBoolen, optionsValues, groupByKe
           {option.nome}
         </React.Fragment>
       ): null}
-      // style={{ width: "100%", backgroundColor: "inherit" }}
       renderInput={(params) => (
-        <TextField {...params}   variant="standard" label={labelName}/>
+        <TextField {...params}  label={labelName}/>
       )}
     />
 
