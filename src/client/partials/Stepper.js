@@ -9,7 +9,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 import Classificacao from './Classificacao';
 
-import Dropzone from '../Components/Dropzone';
+import Dropzone from '../components/Dropzone';
 
 
 

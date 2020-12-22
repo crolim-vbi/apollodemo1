@@ -18,8 +18,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid';
 
 
-import DatePickers2 from '../Components/DatePickers2';
-import CheckboxesTags from '../Components/CheckboxesTags';
+import DatePickers2 from '../components/DatePickers2';
+import CheckboxesTags from '../components/CheckboxesTags';
 
 
 import GridOnIcon from '@material-ui/icons/GridOn';

@@ -1,50 +1,11 @@
 
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import logo_vbi from "./logo_vbi.png"
 
 
 
 const Footer = function() {
 
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-      alignItems: "center",
-      margin: "0px 30px",
-      backgroundColor: "inherit",
-      border: "solid 1px transparent"
-    },
-    paper: {
-      paddingRight: theme.spacing(2),
-      paddingLeft: theme.spacing(2),
-      paddingTop: theme.spacing(1),
-      paddingBottom: theme.spacing(2)
-    },
-  }));
-
-  const useStyles2 = makeStyles({
-    root: {
-      minWidth: 275,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontWeight: 500,
-      color: "black"
-    },
-    pos: {
-      marginBottom: 12,
-    },
-  });
-
-  const classes = useStyles();
-
-  const classes2 = useStyles2();
-  const bull = <span className={classes2.bullet}>•</span>;
   
     return (
   

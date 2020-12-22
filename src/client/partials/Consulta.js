@@ -1,7 +1,7 @@
 
 import React from 'react';
-import CheckboxesTags from '../Components/CheckboxesTags';
-import DatePickers2 from '../Components/DatePickers2';
+import CheckboxesTags from '../components/CheckboxesTags';
+import DatePickers2 from '../components/DatePickers2';
 
 
 import { makeStyles } from '@material-ui/core/styles';

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import UserIcon from '../../Components/UserIcon';
+import UserIcon from '../../components/UserIcon';
 import { makeStyles } from '@material-ui/core/styles';
 import apollo_lunar_logo from "./apollo_lunar_logo.png"
 
