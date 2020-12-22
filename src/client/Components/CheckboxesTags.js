@@ -10,10 +10,6 @@ import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 
 
-
-const icon = <CheckBoxOutlineBlankIcon  />;
-const checkedIcon = <CheckBoxIcon    />;
-
 const icon1 = <CheckBoxOutlineBlankIcon    />;
 const checkedIcon1 = <CheckBoxIcon  />;
 

@@ -1,11 +1,15 @@
 import "date-fns";
 import React, { useEffect} from "react";
 import Grid from "@material-ui/core/Grid";
-import DateFnsUtils from "@date-io/date-fns";
 import {
   MuiPickersUtilsProvider,
   KeyboardDatePicker
 } from "@material-ui/pickers";
+
+import DateFnsUtils from "@date-io/date-fns";
+import { ptBR } from "date-fns/locale";
+
+
 
 export default function MaterialUIPickers({tipo, usarDataAtual}) {
 
@@ -47,7 +51,7 @@ export default function MaterialUIPickers({tipo, usarDataAtual}) {
   }
 
   return (
-    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+    <MuiPickersUtilsProvider utils={DateFnsUtils} locale={ptBR}>
       <Grid container justify="space-around">
         <KeyboardDatePicker
           disableToolbar
