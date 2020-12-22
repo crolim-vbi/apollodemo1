@@ -12,13 +12,13 @@ import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 
 
 const icon = <CheckBoxOutlineBlankIcon  />;
-const checkedIcon = <CheckBoxIcon  color="primary"  />;
+const checkedIcon = <CheckBoxIcon    />;
 
-const icon1 = <CheckBoxOutlineBlankIcon  />;
-const checkedIcon1 = <CheckBoxIcon  color="primary" />;
+const icon1 = <CheckBoxOutlineBlankIcon    />;
+const checkedIcon1 = <CheckBoxIcon  />;
 
 const icon2 = <RadioButtonUncheckedIcon   />;
-const checkedIcon2 = <RadioButtonCheckedIcon  color="primary"  />;
+const checkedIcon2 = <RadioButtonCheckedIcon   />;
 
 
 
@@ -40,6 +40,7 @@ export default function CheckboxesTags(props) {
             checkedIcon={props.multipleBoolen ? checkedIcon1 : checkedIcon2}
             style={{ marginRight: 8}}
             checked={selected}
+            color="primary"
           />
           {option.nome}
         </React.Fragment>

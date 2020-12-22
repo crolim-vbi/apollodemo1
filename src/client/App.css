@@ -9,7 +9,7 @@
 
 
   body, .mainWrap   {
-    background-color: #f4f6f8; /* essa parte aqui, quando aplicada ao "body", é importante porque as vezes tem "sobra" entre o footer e o resto da aplicação (sem essa parte aqui esta "sobra" ficaria em branco, o que não é bom!) */
+    background-color: #eee; /* essa parte aqui, quando aplicada ao "body", é importante porque as vezes tem "sobra" entre o footer e o resto da aplicação (sem essa parte aqui esta "sobra" ficaria em branco, o que não é bom!) */
   }
 
 

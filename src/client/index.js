@@ -15,7 +15,7 @@ const theme = createMuiTheme(
   {
     palette: {
       primary: CoresVbi.azulVbi2,
-      secondary: CoresVbi.verdePetroleo,
+      secondary: CoresVbi.laranjaVbi1,
   },
 });
 
