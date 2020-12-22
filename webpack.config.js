@@ -6,6 +6,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+var CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+
+
 const isProduction = process.env.NODE_ENV === 'production';
 
 const outputDirectory = 'dist';
@@ -61,6 +64,7 @@ module.exports = {
         { from: './src/client/shared/ExcelExemplo.xlsx' },
         { from: 'node_modules/pdfjs-dist/cmaps/', to: 'cmaps/' },
       ],
-    })
+    }),
+    new CaseSensitivePathsPlugin()
   ]
 };
