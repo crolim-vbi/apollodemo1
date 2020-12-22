@@ -29,7 +29,6 @@ const App = function() {
         <Route path="/ajuda" component={Ajuda}/>
         <Route path="/ConsultaResultado" component={ConsultaResultado}/>
         <Route path="/DocumentoVisualizacao" component={DocumentoVisualizacao}/>
-
         <Route exact path="/" component={Home}/>
         <Route path="/" component={NaoEncontrado}/>
       </Switch>

@@ -2,19 +2,8 @@
 import React from 'react';
 import DataTable2 from  '../components/DataTable/DataTable2';
 
-
-
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-
-import Typography from '@material-ui/core/Typography';
-
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-
-import Button from '@material-ui/core/Button';
-
-
 
 
 
@@ -35,31 +24,10 @@ const App = function() {
     },
   }));
 
-  const useStyles2 = makeStyles({
-    root: {
-      minWidth: 275,
-    },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontWeight: 500,
-      color: "black"
-    },
-    pos: {
-      marginBottom: 12,
-    },
-  });
+  
 
   const classes = useStyles();
 
-  const classes2 = useStyles2();
-  
-  const shoot = () => {
-    alert("Esta funcionalidade ainda está em desenvolvimento");
-  }
   
 
     return (<>

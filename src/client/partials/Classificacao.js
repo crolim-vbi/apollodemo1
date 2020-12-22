@@ -22,7 +22,6 @@ import DatePickers2 from '../components/DatePickers2';
 import CheckboxesTags from '../components/CheckboxesTags';
 
 
-import GridOnIcon from '@material-ui/icons/GridOn';
 import PublishIcon from '@material-ui/icons/Publish';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
@@ -42,7 +41,7 @@ const shoot = () => {
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    minWidth: 700,
   },
 });
 
@@ -60,36 +59,34 @@ const rows = [
 
 
 
-
-
-
-
-
 export default function BasicTable() {
   const classes = useStyles();
 
   return (
     <>
 
-            <Grid container spacing={0} style={{color:"dimgray"}}>
-              <Grid item xs={12} md={12}>
-                <div style={{marginBottom: "10px"}}></div>
-              </Grid>
-              <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray"}}>
-                <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
-                    <div style={{display: "inline-block", alignSelf: "flex-start"}}>
-                      <Tooltip title="Baixar planilha para classificação em lote"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon3}</IconButton></Tooltip>
-                      <Tooltip title="Submeter planilha para classificação em lote"><IconButton href="javascript:void(0);" onClick={shoot}>{icon2}</IconButton></Tooltip>
-                      <Tooltip title="Ajuda com planilha de classificação em lote"><IconButton  href="javascript:void(0);" onClick={shoot} >{icon6}</IconButton></Tooltip>
-                    </div>
-                </div>
-  
-              </Grid>                  
-              <Grid item xs={12} md={12}>
-                <div style={{marginBottom: "10px"}}></div>
-              </Grid>                  
-            </Grid>     
+      <Grid container spacing={0} style={{color:"dimgray"}}>
+        <Grid item xs={12} md={12}>
+          <div style={{marginBottom: "10px"}}></div>
+        </Grid>
+
+        <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray"}}>
+          <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
+              <div style={{display: "inline-block", alignSelf: "flex-start"}}>
+                <Tooltip title="Baixar planilha para classificação em lote"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon3}</IconButton></Tooltip>
+                <Tooltip title="Submeter planilha para classificação em lote"><IconButton href="javascript:void(0);" onClick={shoot}>{icon2}</IconButton></Tooltip>
+                <Tooltip title="Ajuda com planilha de classificação em lote"><IconButton  href="javascript:void(0);" onClick={shoot} >{icon6}</IconButton></Tooltip>
+              </div>
+          </div>
+
+        </Grid>                  
+        <Grid item xs={12} md={12}>
+          <div style={{marginBottom: "10px"}}></div>
+        </Grid>                  
+      </Grid>     
+      
       <Toolbar style={{backgroundColor: "inherit",  fontWeight: "500"}}>CLASSIFIQUE OS ARQUIVOS</Toolbar>
+      
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
@@ -203,103 +200,81 @@ const entidades = [
   
 
 
-   
 
-const temas = [
-  {
-    "nome": "Ativo"
-  },
-  {
-    "nome": "Contratos"
-  },
-  {
-    "nome": "Passivo"
-  },
-  {
-    "nome": "Contábil"
-  },
-  {
-    "nome": "Eventos Societários"
-  },
-  {
-    "nome": "Risco"
-  }
- ]
-
- const relatorios = [
-  {
-    "nome": "Carteira Diária",
-    "tema": "Ativo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Demonstrativo de Caixa",
-    "tema": "Ativo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Histórico de Cotas e PL",
-    "tema": "Ativo",
-    "frequencia": "Diário"
-  },
-  {
-    "nome": "Memória de Cálculo",
-    "tema": "Ativo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Performance Breakdown",
-    "tema": "Ativo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Relatório de distribuição de rendimentos",
-    "tema": "Ativo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Balancete dos Fundos",
-    "tema": "Contábil",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Demonstração Financeira Auditada",
-    "tema": "Contábil",
-    "frequencia": "Semestral"
-  },
-  {
-    "nome": "Razão dos Fundo",
-    "tema": "Contábil",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Contratos de Prestador de Serviço do Fundo",
-    "tema": "Contratos",
-    "frequencia": "Pontual"
-  },
-  {
-    "nome": "Regulamentos dos Fundos",
-    "tema": "Contratos",
-    "frequencia": "Unitário"
-  },
-  {
-    "nome": "Atos Societários da Entidade",
-    "tema": "Eventos Societários",
-    "frequencia": "Pontual"
-  },
-  {
-    "nome": "Extrato de Cotista do Fundo",
-    "tema": "Passivo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Posição de Investidores do Fundo",
-    "tema": "Passivo",
-    "frequencia": "Mensal"
-  },
-  {
-    "nome": "Relatório de Controle de Enquadramento",
-    "tema": "Risco",
-    "frequencia": "Diário"
-  }
- ]
+const relatorios = [
+{
+  "nome": "Carteira Diária",
+  "tema": "Ativo",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Demonstrativo de Caixa",
+  "tema": "Ativo",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Histórico de Cotas e PL",
+  "tema": "Ativo",
+  "frequencia": "Diário"
+},
+{
+  "nome": "Memória de Cálculo",
+  "tema": "Ativo",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Performance Breakdown",
+  "tema": "Ativo",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Relatório de distribuição de rendimentos",
+  "tema": "Ativo",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Balancete dos Fundos",
+  "tema": "Contábil",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Demonstração Financeira Auditada",
+  "tema": "Contábil",
+  "frequencia": "Semestral"
+},
+{
+  "nome": "Razão dos Fundo",
+  "tema": "Contábil",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Contratos de Prestador de Serviço do Fundo",
+  "tema": "Contratos",
+  "frequencia": "Pontual"
+},
+{
+  "nome": "Regulamentos dos Fundos",
+  "tema": "Contratos",
+  "frequencia": "Unitário"
+},
+{
+  "nome": "Atos Societários da Entidade",
+  "tema": "Eventos Societários",
+  "frequencia": "Pontual"
+},
+{
+  "nome": "Extrato de Cotista do Fundo",
+  "tema": "Passivo",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Posição de Investidores do Fundo",
+  "tema": "Passivo",
+  "frequencia": "Mensal"
+},
+{
+  "nome": "Relatório de Controle de Enquadramento",
+  "tema": "Risco",
+  "frequencia": "Diário"
+}
+]
