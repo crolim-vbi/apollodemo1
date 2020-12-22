@@ -5,14 +5,11 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { createMuiTheme } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 
-import Classificacao from '../partials/Classificacao';
+import Classificacao from './Classificacao';
 
-
-
-import Dropzone from './Dropzone';
+import Dropzone from '../Components/Dropzone';
 
 
 

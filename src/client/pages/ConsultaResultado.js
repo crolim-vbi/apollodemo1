@@ -9,7 +9,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
-import Button from '@material-ui/core/Button';
 
 import IconButton from '@material-ui/core/IconButton';
 
@@ -20,7 +19,6 @@ import GetAppIcon from '@material-ui/icons/GetApp';
 
 const icon3 = <ScreenShareIcon    />;
 const icon6 = <ArrowBackIcon  />;
-const icon2 = <GetAppIcon   />;
 
 
 const shoot = () => {

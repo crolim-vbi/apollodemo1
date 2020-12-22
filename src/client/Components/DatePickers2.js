@@ -1,4 +1,3 @@
-import "date-fns";
 import React, { useEffect} from "react";
 import Grid from "@material-ui/core/Grid";
 import {
@@ -6,6 +5,7 @@ import {
   KeyboardDatePicker
 } from "@material-ui/pickers";
 
+import "date-fns";
 import DateFnsUtils from "@date-io/date-fns";
 import { ptBR } from "date-fns/locale";
 

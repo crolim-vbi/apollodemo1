@@ -16,6 +16,7 @@ const Layout = (props) => {
   
     return (
       <div className="globalWrap">
+
         <Navbar />
         
         <div className="mainWrap">
@@ -33,6 +34,7 @@ const Layout = (props) => {
         </div>
         
         <Footer />
+        
       </div>
     );
   };

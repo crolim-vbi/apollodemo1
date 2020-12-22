@@ -58,7 +58,6 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: './src/client/Components/PdfExemplo.pdf' },
-        { from: './src/client/Components/pdf.pdf' },
         { from: './src/client/Components/ExcelExemplo.xlsx' },
         { from: 'node_modules/pdfjs-dist/cmaps/', to: 'cmaps/' },
       ],

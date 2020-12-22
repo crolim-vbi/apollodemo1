@@ -199,7 +199,7 @@ const App = function() {
                       <CardContent style={{color: "dimgray"}}>
 
                         <PdfExemplo />
-                        {/* <embed  src="PdfExemplo.pdf" width="100%" height="500px"/> */}
+                        
                       </CardContent>
                     </Card>
 

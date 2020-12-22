@@ -34,11 +34,6 @@ const Navbar = function() {
     return (
     
     <>
-      {/* <Container maxWidth="100%" style={{backgroundColor: "yellow"}}>
-        <a>teste</a>
-      </Container> */}
-
-
 
         
 

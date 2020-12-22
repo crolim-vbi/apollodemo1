@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '.././layout/Layout';
-import Dropzone from '../Components/Dropzone';
-import Stepper from '../Components/Stepper';
+import Stepper from '../Partials/Stepper';
 
 const App = function() {
 
