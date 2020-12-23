@@ -34,7 +34,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div id="row" style={{display: "flex", overflow: "hidden"}}>
-        <div id="placeholderWrapper" style={{}}/>
+        <div id="placeholderWrapper" />
         <div id="pdfWrapper" style={{width: "66%"}} ref={(ref) => this.pdfWrapper = ref}>
           <PdfComponent wrapperDivSize={this.state.width} />
         </div>

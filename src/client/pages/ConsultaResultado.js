@@ -14,7 +14,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 import ScreenShareIcon from '@material-ui/icons/ScreenShare';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import GetAppIcon from '@material-ui/icons/GetApp';
+
 
 
 const icon3 = <ScreenShareIcon    />;
