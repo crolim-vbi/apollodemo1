@@ -1,3 +1,14 @@
+//*************************************************************************** 
+//*************************************************************************** 
+//*************************************************************************** 
+//(!!!) ESSE AQUI NA VERDADE TALVEZ ERA MELHOR FUTURAMENTE TRANSFORMAR PARA MUI-DATATABLE!!
+  //-(OBS: SÓ PARA TODOS FICAREM NO MESMO PADRÃO!!!)
+//*************************************************************************** 
+//*************************************************************************** 
+//*************************************************************************** 
+
+
+
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -25,11 +36,11 @@ import CheckboxesTags from '../components/CheckboxesTags';
 import PublishIcon from '@material-ui/icons/Publish';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
-import ExcelIcon from "../shared/excelIcon.png"
+import ExcelIcon from "../shared/ExcelIcon/ExcelIcon.js"
 
 
 
-const icon3 = <img src={ExcelIcon} style={{height: "22px"}}  />;
+const icon3 = <ExcelIcon />
 const icon2 = <PublishIcon   />;
 const icon6 = <HelpOutlineIcon  />;
 
