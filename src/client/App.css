@@ -116,9 +116,10 @@
     color: dimgray !important;
   }
 
-  .MuiDropzoneArea-text { /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
-    color: dimgray !important;
-  }
+  /* .MuiDropzoneArea-text {  */
+    /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
+    /* color: dimgray !important; */
+  /* } */
 
   .MuiInputBase-inputAdornedEnd { /*Obs: isso aqui faz com o valor do input de data fique mais cinza* (muito embora não consigo ficar complemente seguro que isso possa ter efeito colateral na estilização de outro elemento de input)*/ 
     color: dimgray !important;

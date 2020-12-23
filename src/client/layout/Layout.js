@@ -7,7 +7,11 @@ import Footer from '../partials/Footer/Footer';
 
 const Titulo = (props) => {
   return(
-    <h2 style={{fontWeight: "550"}}>{props.titulo}</h2>
+    <>
+      <div style={{padding: "10px 0px"}}>
+        <h2 style={{fontWeight: "550"}}>{props.titulo}</h2>
+      </div>
+    </>
   )
 }
 
@@ -16,25 +20,17 @@ const Layout = (props) => {
   
     return (
       <div className="globalWrap">
-
         <Navbar />
         
         <div className="mainWrap">
-          <div className="maxScreenWidth">
-            
-            <div style={{height: "10px"}}></div>
-      
+          <div className="maxScreenWidth">      
             <Titulo titulo={props.titulo}/>
-
-            <div style={{height: "10px"}}></div>
-            
             {props.children}
 
           </div>
         </div>
         
         <Footer />
-        
       </div>
     );
   };

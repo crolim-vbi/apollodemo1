@@ -115,7 +115,7 @@ export default function HorizontalLinearStepper() {
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>
-                <div style={{padding: "25px 0px"}}><Toolbar style={{backgroundColor: "inherit",  fontWeight: "500", color: "dimgray", textTransform: "uppercase"}}>Arquivos carregados e classificados com sucesso!</Toolbar></div>
+                <div style={{padding: "25px 0px"}}><Toolbar style={{backgroundColor: "inherit",  fontWeight: "500", color: "", textTransform: "uppercase"}}>Arquivos carregados e classificados com sucesso!</Toolbar></div>
             </Typography>
             <Button onClick={handleReset} className={classes.button}>
               Reiniciar

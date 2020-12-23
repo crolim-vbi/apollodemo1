@@ -60,7 +60,7 @@ const useStyles = makeStyles({
   },
   title: {
     flex: '1 1 100%',
-    color: 'dimgray'
+    // color: 'dimgray'
   },
   paper: {
     width: '100%',
