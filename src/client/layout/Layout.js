@@ -24,7 +24,9 @@ const Layout = (props) => {
         
         <div className="mainWrap">
           <div className="maxScreenWidth">      
+
             <Titulo titulo={props.titulo}/>
+            
             {props.children}
 
           </div>
