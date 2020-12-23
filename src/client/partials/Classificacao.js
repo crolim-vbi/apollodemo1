@@ -60,6 +60,7 @@ const useStyles = makeStyles({
   },
   title: {
     flex: '1 1 100%',
+    color: 'dimgray'
   },
   paper: {
     width: '100%',
@@ -108,7 +109,7 @@ export default function BasicTable() {
       <Paper className={classes.paper}>
         <Toolbar style={{backgroundColor: "white"}}>
             <Typography className={classes.title} variant="h6" id="tableTitle" component="div" >
-              Classificação
+              Classifique os Arquivos
             </Typography>
         </Toolbar>      
         <TableContainer>
