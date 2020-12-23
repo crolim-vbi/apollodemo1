@@ -36,13 +36,13 @@ import CheckboxesTags from '../components/CheckboxesTags';
 import PublishIcon from '@material-ui/icons/Publish';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
-import ExcelIcon from "../shared/ExcelIcon/ExcelIcon.js"
+import ExcelIcon from "../shared/customIcons/ExcelIcon/ExcelIcon"
 
 
-
-const icon3 = <ExcelIcon />
 const icon2 = <PublishIcon   />;
 const icon6 = <HelpOutlineIcon  />;
+
+const icon3 = <ExcelIcon />
 
 
 const shoot = () => {

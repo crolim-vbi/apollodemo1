@@ -219,11 +219,6 @@ const App = function() {
     root: {
       minWidth: 275
     },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
     title: {
       color: "black",
       paddingTop: 10,
@@ -246,7 +241,7 @@ const App = function() {
               
                   <Grid item xs={12} >
 
-                    <div  style={{ maxWidth: ""}}>
+
                           <Card className={classes2.root} style={{backgroundColor: ""}} elevation={3}>
 
                             <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "5px", paddingBottom: "0px"}}>
@@ -261,20 +256,17 @@ const App = function() {
                                     <Grid container spacing={0}>
                                         <Grid item xs={12} md={4}>
                                             <div className={classes.paper}>
-                                            
-                                            <CheckboxesTags multipleBoolen={true} labelName = "Entidades" optionsValues = {entidades} groupByKey = "tipo" />
+                                              <CheckboxesTags multipleBoolen={true} labelName = "Entidades" optionsValues = {entidades} groupByKey = "tipo" />
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} md={4}>
                                             <div className={classes.paper}>
-                                            
-                                            <CheckboxesTags multipleBoolen={true} labelName = "Tema" optionsValues = {temas} />
+                                              <CheckboxesTags multipleBoolen={true} labelName = "Tema" optionsValues = {temas} />
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} md={4}>
                                             <div className={classes.paper}>
-                                            
-                                            <CheckboxesTags multipleBoolen={true} labelName = "Relatórios" optionsValues = {relatorios} groupByKey = "tema" />
+                                              <CheckboxesTags multipleBoolen={true} labelName = "Relatórios" optionsValues = {relatorios} groupByKey = "tema" />
                                             </div>
                                         </Grid>
                                     </Grid>
@@ -333,8 +325,6 @@ const App = function() {
 
 
                           </Card>     
-
-                    </div>
 
 
                   </Grid>
