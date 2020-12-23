@@ -19,6 +19,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+
 
 import Tooltip from '@material-ui/core/Tooltip';
 
@@ -27,6 +29,8 @@ import IconButton from '@material-ui/core/IconButton';
 
 
 import Grid from '@material-ui/core/Grid';
+
+
 
 
 import DatePickers2 from '../components/DatePickers2';
@@ -54,6 +58,13 @@ const useStyles = makeStyles({
   table: {
     minWidth: 700,
   },
+  title: {
+    flex: '1 1 100%',
+  },
+  paper: {
+    width: '100%',
+    // marginBottom: theme.spacing(2),
+  }
 });
 
 function createData(name, tipo, fat, carbs, protein) {
@@ -77,9 +88,7 @@ export default function BasicTable() {
     <>
 
       <Grid container spacing={0} style={{color:"dimgray"}}>
-        <Grid item xs={12} md={12}>
-          <div style={{marginBottom: "10px"}}></div>
-        </Grid>
+
 
         <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray"}}>
           <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
@@ -96,34 +105,39 @@ export default function BasicTable() {
         </Grid>                  
       </Grid>     
       
-      <Toolbar style={{backgroundColor: "inherit",  fontWeight: "500"}}>CLASSIFIQUE OS ARQUIVOS</Toolbar>
-      
-      <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell style={{color: "dimgray"}}>Arquivo</TableCell>
-              <TableCell style={{color: "dimgray"}} align="left">Entidade</TableCell>
-              <TableCell style={{color: "dimgray"}} align="left">Relatório</TableCell>
-              <TableCell style={{color: "dimgray"}} align="left">Descritivo</TableCell>
-              <TableCell style={{color: "dimgray", maxWidth: "40px"}} align="left">Data de Referência</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.name}>
-                <TableCell component="th" scope="row" style={{maxWidth: "120px", wordWrap: "break-word", color: "dimgray"}}>
-                  {row.name}
-                </TableCell>
-                <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {entidades} groupByKey = "tipo" /></TableCell>
-                <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
-                <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
-                <TableCell align="left"  style={{maxWidth: "40px"}}><DatePickers2 tipo={row.tipo}/></TableCell>
+      <Paper className={classes.paper}>
+        <Toolbar style={{backgroundColor: "white"}}>
+            <Typography className={classes.title} variant="h6" id="tableTitle" component="div" >
+              Classificação
+            </Typography>
+        </Toolbar>      
+        <TableContainer>
+          <Table className={classes.table} aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <TableCell style={{color: "dimgray"}}>Arquivo</TableCell>
+                <TableCell style={{color: "dimgray"}} align="left">Entidade</TableCell>
+                <TableCell style={{color: "dimgray"}} align="left">Relatório</TableCell>
+                <TableCell style={{color: "dimgray"}} align="left">Descritivo</TableCell>
+                <TableCell style={{color: "dimgray", maxWidth: "40px"}} align="left">Data de Referência</TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow key={row.name}>
+                  <TableCell component="th" scope="row" style={{maxWidth: "120px", wordWrap: "break-word", color: "dimgray"}}>
+                    {row.name}
+                  </TableCell>
+                  <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {entidades} groupByKey = "tipo" /></TableCell>
+                  <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
+                  <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
+                  <TableCell align="left"  style={{maxWidth: "40px"}}><DatePickers2 tipo={row.tipo}/></TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Paper>
     </>
   );
 }
