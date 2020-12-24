@@ -122,7 +122,7 @@ export default function HorizontalLinearStepper() {
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>
-                <Paper className={classes.paper}><a style={{color:"dimgray", fontWeight: "500"}}>Arquivos carregados e classificados com sucesso!</a></Paper>
+                <Paper elevation={3} className={classes.paper}><a style={{color:"dimgray", fontWeight: "500"}}>Arquivos carregados e classificados com sucesso!</a></Paper>
             </Typography>
 
             <Button onClick={handleReset} className={classes.button} style={{marginTop: "25px"}}>

@@ -32,7 +32,7 @@ class DropzoneAreaExample extends Component{
     return (
       <>
         <div style={{marginBottom: "25px"}}>
-           {/* <Paper  elevation={3} style={{borderRadius: "4px"}}> */}
+           <Paper  elevation={2} style={{borderRadius: "4px"}}>
               <DropzoneArea
                 filesLimit = "100"
                 dropzoneText = "Arraste e solte um arquivo aqui ou clique"
@@ -47,7 +47,7 @@ class DropzoneAreaExample extends Component{
                 previewText="Selected files"        
                 
               />
-          {/* </Paper> */}
+          </Paper>
         </div>
 
       </>
