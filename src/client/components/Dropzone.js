@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {DropzoneArea} from 'material-ui-dropzone'
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
+import Paper from '@material-ui/core/Paper';
 
 
 const classes  = makeStyles(theme => createStyles({
@@ -30,8 +31,8 @@ class DropzoneAreaExample extends Component{
 
     return (
       <>
-        <div style={{margin: "25px 0px"}}>
-
+        <div style={{marginBottom: "25px"}}>
+           {/* <Paper  elevation={3} style={{borderRadius: "4px"}}> */}
               <DropzoneArea
                 filesLimit = "100"
                 dropzoneText = "Arraste e solte um arquivo aqui ou clique"
@@ -46,6 +47,7 @@ class DropzoneAreaExample extends Component{
                 previewText="Selected files"        
                 
               />
+          {/* </Paper> */}
         </div>
 
       </>

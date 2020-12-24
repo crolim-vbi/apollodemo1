@@ -92,7 +92,10 @@ export default function BasicTable() {
     <>
 
       <Grid container spacing={0} style={{color:"dimgray"}}>
-
+        
+        <Grid item xs={12} md={12}>
+          <div style={{marginBottom: "10px"}}></div>
+        </Grid>    
 
         <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray"}}>
           <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
@@ -109,7 +112,7 @@ export default function BasicTable() {
         </Grid>                  
       </Grid>     
       
-      
+      <Paper className={classes.paper} elevation={3}>
         <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit'}}>
             <Typography className={classes.title} variant="h6" id="tableTitle" component="div" >
               Classifique os Arquivos
@@ -141,7 +144,7 @@ export default function BasicTable() {
             </TableBody>
           </Table>
         </TableContainer>
-      
+      </Paper>
     </>
   );
 }

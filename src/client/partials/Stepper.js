@@ -6,6 +6,7 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
+import Paper from '@material-ui/core/Paper';
 
 import Classificacao from './Classificacao';
 
@@ -24,6 +25,12 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
   },
+  paper: {
+    paddingRight: theme.spacing(2),
+    paddingLeft: theme.spacing(2),
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2)
+  },  
 }));
 
 function getSteps() {
@@ -35,7 +42,7 @@ function getStepContent(step) {
     case 0:
       return <Dropzone  />;
     case 1:
-      return (<div style={{padding: "25px 0px"}}><Classificacao /></div>);
+      return (<Classificacao />);
     default:
       return 'Unknown step';
   }
@@ -94,7 +101,7 @@ export default function HorizontalLinearStepper() {
   
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep} >
+      <Stepper activeStep={activeStep} style={{backgroundColor: "inherit", paddingRight: "0", paddingLeft: "0",  paddingTop: "0", marginBottom: "10px"}}>
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
@@ -115,16 +122,18 @@ export default function HorizontalLinearStepper() {
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>
-                <div style={{padding: "25px 0px"}}><Toolbar style={{backgroundColor: "inherit",  fontWeight: "500", color: "", textTransform: "uppercase"}}>Arquivos carregados e classificados com sucesso!</Toolbar></div>
+                <Paper className={classes.paper}>Arquivos carregados e classificados com sucesso!</Paper>
             </Typography>
-            <Button onClick={handleReset} className={classes.button}>
+
+            <Button onClick={handleReset} className={classes.button} style={{marginTop: "25px"}}>
               Reiniciar
             </Button>
           </div>
         ) : (
           <div>
             <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
-            <div>
+
+            <div style={{marginTop: "35px"}}>
               <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                 Retornar
               </Button>
