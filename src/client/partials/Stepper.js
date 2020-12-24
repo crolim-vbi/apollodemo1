@@ -33,7 +33,7 @@ function getSteps() {
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <Dropzone />;
+      return <Dropzone  />;
     case 1:
       return (<div style={{padding: "25px 0px"}}><Classificacao /></div>);
     default:
@@ -94,7 +94,7 @@ export default function HorizontalLinearStepper() {
   
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep}>
+      <Stepper activeStep={activeStep} >
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
@@ -111,7 +111,7 @@ export default function HorizontalLinearStepper() {
           );
         })}
       </Stepper>
-      <div>
+      <div >
         {activeStep === steps.length ? (
           <div>
             <Typography className={classes.instructions}>

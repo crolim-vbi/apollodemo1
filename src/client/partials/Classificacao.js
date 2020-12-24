@@ -56,7 +56,8 @@ const shoot = () => {
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 700,
+    minWidth: '1700',
+    height: '100px'
   },
   title: {
     flex: '1 1 100%',
@@ -64,6 +65,7 @@ const useStyles = makeStyles({
   },
   paper: {
     width: '100%',
+    borderRadius: '4px'
     // marginBottom: theme.spacing(2),
   }
 });
@@ -78,6 +80,7 @@ const rows = [
   createData('BREOF FIDC - Performance Breakdow - 2020.11.pdf', "monthPicker", 16.0, 24, 6.0),
   createData('BREOF III FIP - Performance Breakdow - 2020.11.pdf', "monthPicker", 3.7, 67, 4.3),
   createData('Nova I FII - Relatório Anual Exemplo - 2020.04.pdf', "yearPicker", 16.0, 49, 3.9),
+  createData('Trilliant - Relatório Anual Exemplo - 2020.04.pdf', "yearPicker", 16.0, 49, 3.9),
 ];
 
 
@@ -106,13 +109,13 @@ export default function BasicTable() {
         </Grid>                  
       </Grid>     
       
-      <Paper className={classes.paper}>
-        <Toolbar style={{backgroundColor: "white"}}>
+      
+        <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit'}}>
             <Typography className={classes.title} variant="h6" id="tableTitle" component="div" >
               Classifique os Arquivos
             </Typography>
         </Toolbar>      
-        <TableContainer>
+        <TableContainer style={{maxHeight: '450px'}}>
           <Table className={classes.table} aria-label="simple table">
             <TableHead>
               <TableRow>
@@ -138,7 +141,7 @@ export default function BasicTable() {
             </TableBody>
           </Table>
         </TableContainer>
-      </Paper>
+      
     </>
   );
 }
