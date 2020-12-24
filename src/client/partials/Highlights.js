@@ -31,7 +31,7 @@ const App = function() {
                     <Grid item xs={12} md={6}>
                       
 
-                          <DataTable2 titulo="Preferidos"/>
+                          <DataTable2 titulo="Destaques"/>
 
                       
 
