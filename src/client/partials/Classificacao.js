@@ -138,7 +138,7 @@ export default function BasicTable() {
                   <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {entidades} groupByKey = "tipo" /></TableCell>
                   <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
                   <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {relatorios} groupByKey = "tema" /></TableCell>
-                  <TableCell align="left"  style={{maxWidth: "40px"}}><DatePickers2 tipo={row.tipo}/></TableCell>
+                  <TableCell align="left"  style={{width: "150px"}}><DatePickers2 tipo={row.tipo}/></TableCell>
                 </TableRow>
               ))}
             </TableBody>
