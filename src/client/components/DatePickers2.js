@@ -51,26 +51,28 @@ export default function MaterialUIPickers({tipo, usarDataAtual}) {
   }
 
   return (
-    <MuiPickersUtilsProvider utils={DateFnsUtils} locale={ptBR}>
-      <Grid container justify="space-around">
-        <KeyboardDatePicker
-          disableToolbar
-          openTo={openTo}
-          autoOk
-          variant="inline"
-          format={format}
-          views={views}
-          margin="normal"
-          // id="date-picker-inline"
-          // label="Date picker inline"
-          value={selectedDate}
-          onChange={handleDateChange}
-          KeyboardButtonProps={{
-            "aria-label": "change date"
-          }}
-          placeholder={placeholder}
-        />
-      </Grid>
-    </MuiPickersUtilsProvider>
+    <div id="DatePickers2">
+      <MuiPickersUtilsProvider utils={DateFnsUtils} locale={ptBR}>
+        <Grid container justify="space-around">
+          <KeyboardDatePicker
+            disableToolbar
+            openTo={openTo}
+            autoOk
+            variant="inline"
+            format={format}
+            views={views}
+            margin="normal"
+            // id="date-picker-inline"
+            // label="Date picker inline"
+            value={selectedDate}
+            onChange={handleDateChange}
+            KeyboardButtonProps={{
+              "aria-label": "change date"
+            }}
+            placeholder={placeholder}
+          />
+        </Grid>
+      </MuiPickersUtilsProvider>
+    </div>
   );
 }

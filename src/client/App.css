@@ -1,3 +1,4 @@
+
   *{
     /* border: solid 1px green; */
   }
@@ -111,29 +112,33 @@
 
 
   
+
+  /* Customizar componentes do MUI */
   
-  .MuiDropzoneArea-icon {  /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
-    color: dimgray !important;
-  }
-
-  .MuiDropzoneArea-text {  
-    /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
-    color: dimgray !important;
-   }
-
-  .MuiInputBase-inputAdornedEnd { /*Obs: isso aqui faz com o valor do input de data fique mais cinza* (muito embora não consigo ficar complemente seguro que isso possa ter efeito colateral na estilização de outro elemento de input)*/ 
-    color: dimgray !important;
-  } 
+    #DataTable2 td  {
+        color: dimgray;
+    }
 
 
-  #DataTable2 td  {
-      color: dimgray;
-  }
+    #DataTable2 .MuiTableRow-head, 
+    #DataTable2 .MuiTablePagination-caption, 
+    #DataTable2 .MuiTablePagination-select,
+    #DataTable2 .MuiTablePagination-selectIcon  {
+        display: none;
+    }
 
 
-  #DataTable2 .MuiTableRow-head, 
-  #DataTable2 .MuiTablePagination-caption, 
-  #DataTable2 .MuiTablePagination-select,
-  #DataTable2 .MuiTablePagination-selectIcon  {
-      display: none;
-  }
+    #DatePickers2 .MuiInputBase-inputAdornedEnd { /*Obs: isso aqui faz com o valor do input de data fique mais cinza* (muito embora não consigo ficar complemente seguro que isso possa ter efeito colateral na estilização de outro elemento de input)*/ 
+      color: dimgray !important;
+    } 
+
+
+    
+    .MuiDropzoneArea-icon {  /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
+      color: dimgray !important;
+    }
+
+    .MuiDropzoneArea-text {  
+      /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
+      color: dimgray !important;
+    }
