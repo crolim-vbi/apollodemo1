@@ -15,8 +15,9 @@ import Button from '@material-ui/core/Button';
 
 import { Link } from 'react-router-dom';
 
+import SearchIcon from '@material-ui/icons/Search';
 
-
+const newIcon = <SearchIcon />;
 
 
 const entidades = [
@@ -318,7 +319,7 @@ const App = function() {
                             <CardContent style={{borderTop: "solid 1px lightgray"}}>
                                 <Typography style={{}}>                                  
                                       <div style={{display: "inline",  float: "left",  paddingBottom: "20px", paddingLeft: "10px", paddingTop: "5px"}}>
-                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR</Button></Link>
+                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained"> {newIcon}  &nbsp; BUSCAR</Button></Link>
                                       </div>
                                 </Typography>
                             </CardContent>
