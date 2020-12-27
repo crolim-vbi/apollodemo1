@@ -223,7 +223,7 @@ const App = function() {
     title: {
       color: "black",
       paddingTop: 10,
-      paddingBottom: 0,
+      paddingBottom: 10,
       paddingLeft: 8
     },
     pos: {
@@ -245,13 +245,13 @@ const App = function() {
 
                           <Card className={classes2.root} style={{backgroundColor: ""}} elevation={3}>
 
-                            <CardContent style={{borderBottom: "solid 1px lightgray2", paddingTop: "5px", paddingBottom: "0px"}}>
+                            <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "5px", paddingBottom: "0px"}}>
                                 <Typography className={classes2.title} color="textSecondary" gutterBottom>
                                     <h6 class="MuiTypography-root MUIDataTableToolbar-titleText-43 MuiTypography-h6">Consulta de Documentos</h6>
                                 </Typography>
                             </CardContent>                            
 
-                            <CardContent style={{color: "dimgray", marginTop: "-10px"}}>
+                            <CardContent style={{color: "dimgray"}}>
 
 
                                     <Grid container spacing={0}>
@@ -316,9 +316,9 @@ const App = function() {
 
                             </CardContent>
 
-                            <CardContent style={{borderTop: "solid 1px lightgray2"}}>
+                            <CardContent style={{borderTop: "solid 1px lightgray"}}>
                                 <Typography style={{}}>                                  
-                                      <div style={{display: "inline",  float: "left",  paddingBottom: "20px", paddingLeft: "10px", paddingTop: "5px", marginTop: "-10px"}}>
+                                      <div style={{display: "inline",  float: "left",  paddingBottom: "20px", paddingLeft: "10px", paddingTop: "5px"}}>
                                           <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained"> {newIcon}  &nbsp; BUSCAR</Button></Link>
                                       </div>
                                 </Typography>
