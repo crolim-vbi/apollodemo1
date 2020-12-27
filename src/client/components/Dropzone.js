@@ -31,6 +31,9 @@ class DropzoneAreaExample extends Component{
 
     return (
       <>
+
+
+
         <div style={{marginBottom: "25px"}}>
            <Paper  elevation={2} style={{borderRadius: "4px", padding: "30px"}}>
               <DropzoneArea
@@ -49,6 +52,9 @@ class DropzoneAreaExample extends Component{
               />
           </Paper>
         </div>
+
+
+     
 
       </>
       

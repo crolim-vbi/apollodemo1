@@ -9,7 +9,7 @@
   }
 
 
-  body, .mainWrap   {
+  body  {
     background-color: #f4f6f8; /* essa parte aqui, quando aplicada ao "body", é importante porque as vezes tem "sobra" entre o footer e o resto da aplicação (sem essa parte aqui esta "sobra" ficaria em branco, o que não é bom!) */
   }
 
@@ -59,13 +59,13 @@
 
 
   /* Container for flexboxes */
-  .header, .footer1 {
+  .header, .footer1{
     display: -webkit-flex;
     display: flex;    
     flex-wrap: wrap;
     justify-content: space-between	;
     align-items: center;
-    border-bottom: solid 1px dimgray;
+    
   }
 
   
@@ -108,6 +108,10 @@
     color: dimgray;
     font-weight: 600;
     font-size: 12px
+  }
+
+  .footer1 {
+    border-bottom: solid 1px dimgray;
   }
 
 

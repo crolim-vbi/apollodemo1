@@ -22,7 +22,7 @@ const Layout = (props) => {
       <div className="globalWrap">
         <Navbar />
         
-        <div className="mainWrap">
+        <div className="mainWrap" >
           <div className="maxScreenWidth">      
 
             <Titulo titulo={props.titulo}/>
