@@ -316,7 +316,7 @@ const App = function() {
 
                             </CardContent>
 
-                            <div style={{padding: "0px 24px"}}>
+                            <div style={{padding: "0px 32px"}}>
 
                               <CardContent style={{borderTop: "solid 1px lightgray", paddingLeft:"0px"}}>
                                   <Typography style={{}}>                                  
