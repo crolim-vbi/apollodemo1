@@ -317,8 +317,8 @@ const App = function() {
 
                             <CardContent style={{borderTop: "solid 1px lightgray"}}>
                                 <Typography style={{}}>                                  
-                                      <div style={{display: "inline",  float: "right",  paddingBottom: "20px"}}>
-                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained" >BUSCAR</Button></Link>
+                                      <div style={{display: "inline",  float: "left",  paddingBottom: "20px", paddingLeft: "10px", paddingTop: "5px"}}>
+                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained">BUSCAR</Button></Link>
                                       </div>
                                 </Typography>
                             </CardContent>
