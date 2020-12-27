@@ -316,13 +316,17 @@ const App = function() {
 
                             </CardContent>
 
-                            <CardContent style={{borderTop: "solid 1px lightgray"}}>
-                                <Typography style={{}}>                                  
-                                      <div style={{display: "inline",  float: "left",  paddingBottom: "20px", paddingLeft: "10px", paddingTop: "5px"}}>
-                                          <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained"> {newIcon}  &nbsp; BUSCAR</Button></Link>
-                                      </div>
-                                </Typography>
-                            </CardContent>
+                            <div style={{padding: "0px 24px"}}>
+
+                              <CardContent style={{borderTop: "solid 1px lightgray", paddingLeft:"0px"}}>
+                                  <Typography style={{}}>                                  
+                                        <div style={{display: "inline",  float: "left",  paddingBottom: "20px", paddingLeft: "0px", paddingTop: "5px"}}>
+                                            <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained"> {newIcon}  &nbsp; BUSCAR</Button></Link>
+                                        </div>
+                                  </Typography>
+                              </CardContent>
+
+                            </div>
 
 
                           </Card>     
