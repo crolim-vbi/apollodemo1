@@ -13,28 +13,22 @@ const Navbar = function() {
     return (
     
     <>
-        <Paper elevation={3}>
+        <Paper elevation={3} className="topWrap" style={{borderRadius: "0px"}}>
 
-            <div className="topWrap">
-
-              <div className="header maxScreenWidth">
-                <div className="zpto"><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></div>
-                
+            <div className="header maxScreenWidth">
+              <div className="zpto"><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></div>
+              
 
 
-                <div className="topNav">
-                  <Link to="/" >Início</Link>
-                  <Link to="/consultar" >Consultar</Link>
-                  <Link to="/inserir" >Inserir</Link>
-                  <Link to="/preferencias" >Preferências</Link>
-                  <Link to="/ajuda" >Ajuda</Link>
-                  <a><UserIcon /></a>
-                </div>    
-                
-              </div>
-
-
-
+              <div className="topNav">
+                <Link to="/" >Início</Link>
+                <Link to="/consultar" >Consultar</Link>
+                <Link to="/inserir" >Inserir</Link>
+                <Link to="/preferencias" >Preferências</Link>
+                <Link to="/ajuda" >Ajuda</Link>
+                <a><UserIcon /></a>
+              </div>    
+              
             </div>
 
         </ Paper>   

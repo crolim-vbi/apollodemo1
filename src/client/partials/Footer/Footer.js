@@ -9,8 +9,7 @@ const Footer = function() {
 
   
     return (
-      <Paper elevation={3}>
-        <div className="bottomWrap">
+        <Paper elevation={3} className="bottomWrap" style={{borderRadius: "0px"}}>
           <div className="footer1 maxScreenWidth">
             <img src={logo_vbi} height="35px" />
             <div style={{height: '100%', textAlign: 'right'}}>
@@ -22,10 +21,7 @@ const Footer = function() {
             <div style={{padding: '12px 0px 8px'}}> COPYRIGHT © 2017 - 2020 - VBI REAL ESTATE</div>
             <div> Apollo27 é um sistema desenvolvido pela VBI Real Estate </div>
           </div>       
-        </div>
-      </Paper>
-  
-  
+        </Paper>
     );
   }
 
