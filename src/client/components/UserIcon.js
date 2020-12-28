@@ -141,7 +141,7 @@ export default function PrimarySearchAppBar() {
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
               color="inherit"
-              style={{height:"30px"}}
+              style={{height:"30px", padding: "0px"}}
               
 
             >

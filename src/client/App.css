@@ -72,8 +72,7 @@
 
   
   .header {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px;
   }
 
   .topNav {
@@ -82,8 +81,8 @@
     flex-wrap: wrap;   
     justify-content: space-between;
     align-items: flex-end;
-    height: 60px;
-    width: 550px;
+    /* height: 60px; */
+    width: 960px;
     margin: 0;
   }  
 
@@ -91,11 +90,12 @@
 
   .topNav > a {
     display: inline-block;
-    padding: 5px 10px;
     color: white;
+    padding: 5px 0px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
+    /* margin-right: 50px; */
   }
 
   .topNav > a:hover {
@@ -107,8 +107,9 @@
 
    /* Estilizar o footer */
    .footer1, .footer2 {
-    height: 60px;
+    /* height: 60px; */
     color: dimgray;
+    padding: 15px 0px;
     font-weight: 600;
     font-size: 12px
   }

@@ -15,21 +15,24 @@ const Navbar = function() {
     <>
         <Paper elevation={6} className="topWrap" style={{borderRadius: "0px"}}>
 
-            <div className="header maxScreenWidth">
-              <div className="zpto"><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></div>
-              
+            <div className="header maxScreenWidth" >
+              <div style={{padding: "5px 0px"}}><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></div>          
+            </div>
 
+            <div className="header" style={{ padding: "0px",  borderTop: "solid 1px gray"}}></div>
 
-              <div className="topNav">
+            <div className="header maxScreenWidth" style={{paddingTop: ""}}>
+           
+              <div className="topNav" >
                 <Link to="/" >Início</Link>
                 <Link to="/consultar" >Consultar</Link>
                 <Link to="/inserir" >Inserir</Link>
                 <Link to="/preferencias" >Preferências</Link>
                 <Link to="/ajuda" >Ajuda</Link>
-                <a><UserIcon /></a>
+                <a style={{padding:"0px", marginRight: "0px"}}><UserIcon /></a>
               </div>    
               
-            </div>
+            </div>            
 
         </ Paper>   
         
