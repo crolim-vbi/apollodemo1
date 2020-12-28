@@ -60,7 +60,7 @@ export default function App() {
 
 
   return (
-      <div id="DataTable2"> 
+      <div id="DataTable1"> 
         <MUIDataTable
           title={"Documentos"}
           data={data}
