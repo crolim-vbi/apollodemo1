@@ -101,7 +101,7 @@ export default function HorizontalLinearStepper() {
   
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep} style={{marginBottom: "25px", marginTop: "-25px", backgroundColor: "inherit",  borderBottom: "solid 1px lightgray"}}>
+      <Stepper activeStep={activeStep} style={{marginBottom: "35px", marginTop: "", backgroundColor: "inherit",  border: "solid 1px lightgray", borderRadius: "4px"}}>
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
@@ -122,10 +122,10 @@ export default function HorizontalLinearStepper() {
         {activeStep === steps.length ? (
           <div>
             <Typography component="div" style={{margin: "0px", padding: "0px 0px"}} className={classes.instructions}>
-                <Paper elevation={3} className={classes.paper}><a style={{color:"dimgray", fontWeight: "500"}}>Arquivos carregados e classificados com sucesso!</a></Paper>
+                <Paper elevation={3} className={classes.paper}><a style={{color:"dimgray", fontWeight: "600"}}>Arquivos carregados e classificados com sucesso!</a></Paper>
             </Typography>
 
-            <Button onClick={handleReset} className={classes.button} style={{marginTop: "25px"}}>
+            <Button onClick={handleReset} className={classes.button} style={{marginTop: "35px"}}>
               Reiniciar
             </Button>
           </div>
@@ -133,7 +133,7 @@ export default function HorizontalLinearStepper() {
           <div>
             <Typography component="div" style={{margin: "0px", padding: "0px 0px"}} className={classes.instructions}>{getStepContent(activeStep)}</Typography>
 
-            <div style={{marginTop: "25px"}}>
+            <div style={{marginTop: "35px"}}>
               <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                 Retornar
               </Button>

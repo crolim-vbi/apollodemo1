@@ -65,7 +65,7 @@ const App = function() {
     //   transform: 'scale(0.8)',
     // },
     // title: {
-    //   fontWeight: 500,
+    //   fontWeight: 600,
     //   color: "black",
     //   paddingTop: 10,
     //   paddingBottom: 10

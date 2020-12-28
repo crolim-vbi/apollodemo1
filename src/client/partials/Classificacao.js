@@ -91,13 +91,13 @@ export default function BasicTable() {
   return (
     <>
 
-      <Grid container spacing={0} style={{color:"dimgray", marginTop: "-25px"}}>
+      <Grid container spacing={0} style={{color:"dimgray", marginTop: ""}}>
         
         {/* <Grid item xs={12} md={12}>
           <div style={{marginBottom: "10px"}}></div>
         </Grid>     */}
 
-        <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray2", borderBottom: "solid 1px lightgray2"}}>
+        <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray2"}}>
           <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
             <div style={{display: "inline-block", alignSelf: "flex-start", padding: "3px 0px"}}>
                 <Tooltip title="Baixar planilha para classificação em lote"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon3}</IconButton></Tooltip>
