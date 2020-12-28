@@ -243,7 +243,7 @@ const App = function() {
                   <Grid item xs={12} >
 
 
-                          <Card className={classes2.root} style={{backgroundColor: ""}} elevation={3}>
+                          <Card className={classes2.root} style={{backgroundColor: "", maxWidth: ""}} elevation={3}>
 
                             <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "5px", paddingBottom: "0px"}}>
                                 <Typography className={classes2.title} color="textSecondary" gutterBottom>
