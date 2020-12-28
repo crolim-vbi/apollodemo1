@@ -125,7 +125,7 @@ export default function HorizontalLinearStepper() {
                 <Paper elevation={3} className={classes.paper}><a style={{color:"dimgray", fontWeight: "600"}}>Arquivos carregados e classificados com sucesso!</a></Paper>
             </Typography>
 
-            <Button onClick={handleReset} className={classes.button} style={{marginTop: "50px"}}>
+            <Button onClick={handleReset} className={classes.button} style={{marginTop: "35px"}}>
               Reiniciar
             </Button>
           </div>
