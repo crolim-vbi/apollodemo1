@@ -59,17 +59,17 @@ const App = function() {
     root: {
       minWidth: 275,
     },
-    bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
-    },
-    title: {
-      fontWeight: 500,
-      color: "black",
-      paddingTop: 10,
-      paddingBottom: 10
-    },
+    // bullet: {
+    //   display: 'inline-block',
+    //   margin: '0 2px',
+    //   transform: 'scale(0.8)',
+    // },
+    // title: {
+    //   fontWeight: 500,
+    //   color: "black",
+    //   paddingTop: 10,
+    //   paddingBottom: 10
+    // },
     pos: {
       marginBottom: 12,
     },
