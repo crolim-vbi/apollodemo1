@@ -8,11 +8,11 @@ import Paper from '@material-ui/core/Paper';
 const Titulo = (props) => {
   return(
     props.titulo ?
-      <Paper elevation={0} style={{padding: "0px 30px", margin: "0px 0px 25px", backgroundColor: "hsla(0,0%,100%,0)", borderRadius: "0px"}} >
-        <div  style={{  padding: "25px 0px", borderBottom: "solid 1px lightgray"}}>
-            <a style={{fontWeight: "550", fontSize: "1.25rem"}}>{props.titulo}</a>
+      <div elevation={0} style={{ padding: "25px 30px 0px", margin: "0px 0px 0px", backgroundColor: "hsla(0,0%,100%,0)", borderRadius: "0px"}} >
+        <div  style={{  border: "solid 1px lightgray", padding: "25px 0px", borderBottom: "none", borderRadius: "4px 4px 0px 0px"}}>
+          &nbsp;&nbsp;&nbsp;<a style={{fontWeight: "550", fontSize: "1.25rem"}}>{props.titulo}</a>
         </div>
-      </Paper>
+      </div>
       :
       <div style={{margin: "0px 0px 35px"}} >
         
@@ -32,7 +32,7 @@ const Layout = (props) => {
         <Titulo titulo={props.titulo}/>
 
         <div className="mainWrap" >
-          <div className="maxScreenWidth">    
+          <div className="maxScreenWidth"  style={{border: "solid 1px lightgray", padding: "25px", marginBottom: "25px", borderRadius: "0px 0px 4px 4px"}}>    
             {props.children}
           </div>
         </div>
