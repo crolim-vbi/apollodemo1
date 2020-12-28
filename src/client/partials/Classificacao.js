@@ -93,9 +93,9 @@ export default function BasicTable() {
 
       <Grid container spacing={0} style={{color:"dimgray", marginTop: ""}}>
         
-        {/* <Grid item xs={12} md={12}>
-          <div style={{marginBottom: "10px"}}></div>
-        </Grid>     */}
+        <Grid item xs={12} md={12}>
+          <div style={{marginBottom: "0px"}}></div>
+        </Grid>    
 
         <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray2"}}>
           <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
