@@ -97,9 +97,9 @@ export default function BasicTable() {
           <div style={{marginBottom: "10px"}}></div>
         </Grid>    
 
-        <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray"}}>
+        <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray2"}}>
           <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
-              <div style={{display: "inline-block", alignSelf: "flex-start"}}>
+            <div style={{display: "inline-block", alignSelf: "flex-start", padding: "3px 0px"}}>
                 <Tooltip title="Baixar planilha para classificação em lote"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon3}</IconButton></Tooltip>
                 <Tooltip title="Submeter planilha para classificação em lote"><IconButton href="javascript:void(0);" onClick={shoot}>{icon2}</IconButton></Tooltip>
                 <Tooltip title="Ajuda com planilha de classificação em lote"><IconButton  href="javascript:void(0);" onClick={shoot} >{icon6}</IconButton></Tooltip>
@@ -107,9 +107,9 @@ export default function BasicTable() {
           </div>
 
         </Grid>                  
-        <Grid item xs={12} md={12}>
+        {/* <Grid item xs={12} md={12}>
           <div style={{marginBottom: "10px"}}></div>
-        </Grid>                  
+        </Grid>                   */}
       </Grid>     
       
       <Paper className={classes.paper} elevation={3}>
