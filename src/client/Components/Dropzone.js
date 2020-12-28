@@ -34,7 +34,7 @@ class DropzoneAreaExample extends Component{
 
 
 
-        <div style={{marginBottom: "25px"}}>
+        <div style={{marginBottom: "25px"}} id="Dropzone">
            <Paper  elevation={3} style={{borderRadius: "4px", padding: "30px"}}>
               <DropzoneArea
                 filesLimit = "100"

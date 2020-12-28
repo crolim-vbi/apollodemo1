@@ -1,4 +1,6 @@
 
+
+
   *{
     /* border: solid 1px green; */
   }
@@ -93,6 +95,7 @@
     color: white;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1rem;
   }
 
   .topNav > a:hover {
@@ -138,11 +141,20 @@
 
 
     
-    .MuiDropzoneArea-icon {  /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
+    #Dropzone .MuiDropzoneArea-icon {  /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
       color: dimgray !important;
     }
 
-    .MuiDropzoneArea-text {  
+    #Dropzone .MuiDropzoneArea-text {  
       /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
       color: dimgray !important;
+      font-size: 1rem !important;
+    }
+
+
+  /* Melhorar essa parte aqui $$$ */
+
+    .meuTitulo, #DataTable1 .MuiTypography-h6, #DataTable2 .MuiTypography-h6 {
+      font-size: 1.1rem !important;
+      font-weight: 500 !important;
     }

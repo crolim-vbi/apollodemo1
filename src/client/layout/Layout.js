@@ -10,7 +10,7 @@ const Titulo = (props) => {
     props.titulo ?
       <Paper elevation={0} style={{padding: "0px 30px", margin: "0px 0px 25px", backgroundColor: "hsla(0,0%,100%,0)", borderRadius: "0px"}} >
         <div  style={{  padding: "25px 0px", borderBottom: "solid 1px lightgray"}}>
-            <a style={{fontWeight: "550", fontSize: "1.25rem"}}>{props.titulo}</a>
+            <a style={{fontWeight: "600", fontSize: "1.25rem"}}>{props.titulo}</a>
         </div>
       </Paper>
       :

@@ -60,12 +60,14 @@ export default function App() {
 
 
   return (
-      <MUIDataTable
-        title={"Documentos"}
-        data={data}
-        columns={columns}
-        options={options}
-      />
+      <div id="DataTable2"> 
+        <MUIDataTable
+          title={"Documentos"}
+          data={data}
+          columns={columns}
+          options={options}
+        />
+      </div>
   );
 }
 

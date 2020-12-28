@@ -247,7 +247,7 @@ const App = function() {
 
                             <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "5px", paddingBottom: "0px"}}>
                                 <Typography className={classes2.title} color="textSecondary" gutterBottom>
-                                    <h6 class="MuiTypography-root MUIDataTableToolbar-titleText-43 MuiTypography-h6">Consulta de Documentos</h6>
+                                    <a class="meuTitulo">Consulta de Documentos</a>
                                 </Typography>
                             </CardContent>                            
 

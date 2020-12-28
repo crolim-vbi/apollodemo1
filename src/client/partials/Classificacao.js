@@ -114,8 +114,8 @@ export default function BasicTable() {
       
       <Paper className={classes.paper} elevation={3}>
         <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit'}}>
-            <Typography className={classes.title} variant="h6" id="tableTitle" component="div" >
-              Classifique os Arquivos
+            <Typography className={classes.title} id="tableTitle" component="div" >
+              <a class="meuTitulo">Classifique os Arquivos</a>
             </Typography>
         </Toolbar>      
         <TableContainer style={{maxHeight: '450px'}}>
