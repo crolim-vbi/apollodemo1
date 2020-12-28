@@ -238,7 +238,7 @@ const App = function() {
   
     return (<>
     
-            <div className={classes.root} style={{paddingBottom: "25px"}}>
+            <div className={classes.root} style={{paddingBottom: "35px"}}>
               
                   <Grid item xs={12} >
 

@@ -63,7 +63,7 @@ const App = function() {
               </Grid>        
               <Grid item xs={12} md={12}>
                 <div style={{marginBottom: "10px"}}></div>
-              </Grid>
+              </Grid>           
               <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray2"}}>
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-start", padding: "3px 0px"}}>
@@ -74,9 +74,7 @@ const App = function() {
                 </div>
   
               </Grid>                  
-              {/* <Grid item xs={12} md={12}>
-                <div style={{marginBottom: "10px"}}></div>
-              </Grid>                   */}
+               
             </Grid> 
 
         
