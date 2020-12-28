@@ -101,7 +101,7 @@ export default function HorizontalLinearStepper() {
   
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep} style={{marginBottom: "25px", marginTop: "-25px", backgroundColor: "inherit", paddingTop: "35px", paddingBottom: "35px", borderBottom: "solid 1px lightgray"}}>
+      <Stepper activeStep={activeStep} style={{marginBottom: "25px", marginTop: "-25px", backgroundColor: "inherit",  borderBottom: "solid 1px lightgray"}}>
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
