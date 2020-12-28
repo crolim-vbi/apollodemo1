@@ -101,7 +101,7 @@ export default function HorizontalLinearStepper() {
   
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep} style={{marginBottom: "25px", marginTop: "-25px", backgroundColor: "inherit", padding: "35px 0px", borderBottom: "solid 1px lightgray"}}>
+      <Stepper activeStep={activeStep} style={{marginBottom: "25px", marginTop: "-25px", backgroundColor: "inherit", paddingTop: "35px", paddingBottom: "35px", borderBottom: "solid 1px lightgray"}}>
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
@@ -121,7 +121,7 @@ export default function HorizontalLinearStepper() {
       <div >
         {activeStep === steps.length ? (
           <div>
-            <Typography component="div" style={{margin: "0px"}} className={classes.instructions}>
+            <Typography component="div" style={{margin: "0px", padding: "0px 0px"}} className={classes.instructions}>
                 <Paper elevation={3} className={classes.paper}><a style={{color:"dimgray", fontWeight: "500"}}>Arquivos carregados e classificados com sucesso!</a></Paper>
             </Typography>
 
@@ -131,7 +131,7 @@ export default function HorizontalLinearStepper() {
           </div>
         ) : (
           <div>
-            <Typography component="div" style={{margin: "0px"}} className={classes.instructions}>{getStepContent(activeStep)}</Typography>
+            <Typography component="div" style={{margin: "0px", padding: "0px 0px"}} className={classes.instructions}>{getStepContent(activeStep)}</Typography>
 
             <div style={{marginTop: "25px"}}>
               <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
