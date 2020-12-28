@@ -36,6 +36,8 @@ const Layout = (props) => {
             {props.children}
           </div>
         </div>
+
+        <div Style={{marginBottom: "20px"}}> &nbsp; </div>
         
         <Footer />
       </div>
