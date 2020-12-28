@@ -10,7 +10,7 @@ import Highlights from '.././partials/Highlights';
 const App = function() {
 
     return (
-      <Layout titulo="Bem-vindo ao Sistema Apollo Lunar">
+      <Layout titulo="">
 
         <Consulta />
 

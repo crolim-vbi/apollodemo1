@@ -16,7 +16,9 @@ const Navbar = function() {
         <Paper elevation={6} className="topWrap" style={{borderRadius: "0px"}}>
 
             <div className="header maxScreenWidth" >
-              <div style={{padding: "5px 0px"}}><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></div>          
+              <div className="topNav" >
+                <Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link>
+              </div>          
             </div>
 
             <div className="header" style={{ padding: "0px",  borderTop: "solid 1px gray"}}></div>
