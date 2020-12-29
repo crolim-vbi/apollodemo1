@@ -3,7 +3,7 @@ import React from 'react';
 import UserIcon from '../../components/UserIcon';
 import apollo_lunar_logo from "./apollo_lunar_logo.png"
 
-import { Link } from 'react-router-dom';
+import { Link , NavLink} from 'react-router-dom';
 
 import Paper from '@material-ui/core/Paper';
 
@@ -26,11 +26,11 @@ const Navbar = function() {
             <div className="header maxScreenWidth" style={{paddingTop: ""}}>
            
               <div className="topNav" >
-                <Link to="/" >Início</Link>
-                <Link to="/consultar" >Consultar</Link>
-                <Link to="/inserir" >Inserir</Link>
-                <Link to="/preferencias" >Preferências</Link>
-                <Link to="/ajuda" >Ajuda</Link>
+                <NavLink exact to="/" >Início</NavLink>
+                <NavLink exact to="/consultar">Consultar</NavLink>
+                <NavLink exact to="/inserir" >Inserir</NavLink>
+                <NavLink exact to="/preferencias" >Preferências</NavLink>
+                <NavLink exact to="/ajuda" >Ajuda</NavLink>
                 <a style={{padding: "0px"}}><UserIcon /></a>
               </div>    
               

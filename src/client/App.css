@@ -100,11 +100,11 @@
     /* margin-right: 50px; */
   }
 
-  .topNav > a:hover {
+   .topNav > .active {
     display: inline-block;
-    color: lightgray!important;
-    border-bottom: solid lightgray 3px;  
-    padding: 5px 0px 2px;
+    color: white!important;
+    border-bottom: solid white 2px;  
+    padding: 5px 0px 3px;
     box-sizing: border-box;  
   }
 
