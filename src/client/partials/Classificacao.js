@@ -113,9 +113,9 @@ export default function BasicTable() {
       </Grid>     
       
       <Paper className={classes.paper} elevation={3}>
-        <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit', textAlign: "left"}}>
+        <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit', textAlign: "left", borderBottom: "solid 1px lightgray"}}>
             <Typography className={classes.title} id="tableTitle" component="div" >
-              <a class="meuTitulo">Classifique os Documentos (Etapa 2/2)</a>
+              <a class="meuTitulo">Classifique os Documentos</a>
             </Typography>
         </Toolbar>      
         <TableContainer style={{maxHeight: '450px'}}>
