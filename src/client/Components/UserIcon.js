@@ -84,7 +84,6 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Minha Conta</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Preferências</MenuItem>
       <MenuItem onClick={handleMenuClose}>Sair</MenuItem>
     </Menu>
   );
