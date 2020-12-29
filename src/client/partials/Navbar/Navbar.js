@@ -18,19 +18,18 @@ const Navbar = function() {
     <>
         <Paper elevation={4} className="topWrap" style={{borderRadius: "0px"}}>
 
-            <div className="header maxScreenWidth" >
+            <div className="header maxScreenWidth" style={{}}>
               <div className="topNav" >
                 <span><Link to="/home" ><img src={apollo_lunar_logo} height="60px" /></Link></span>
               </div>          
             </div>
 
-            <div className="header maxScreenWidth" style={{ padding: "0px",  borderTop: "solid 1px dimgray"}}></div>
 
             {path === "/login" 
               ? 
                   <></>
               :
-                  <div className="header maxScreenWidth" style={{paddingTop: ""}}>
+                  <div className="header maxScreenWidth" style={{borderTop: "solid 1px dimgray"}}>
             
                     <div className="topNav" >
                       <NavLink exact to="/home" >Início</NavLink>
