@@ -7,7 +7,7 @@ const App = function() {
   
     return (
 
-      <Layout titulo="Como funciona o Sistema Apollo Lunar?">
+      <Layout titulo="Ajuda">
       </Layout>
 
 

@@ -48,7 +48,7 @@ const App = function() {
 
                 <div style={{marginBottom: "25px",  borderBottom: "solid 1px lightgray"}}> </div>
 
-                <Button href="/#/home" variant="contained" style={{marginBottom: "25px"}}>Login com o Google</Button>
+                <Button href="/#/home" variant="contained" style={{marginBottom: "25px"}}>Fazer login com o Google</Button>
               
               </Paper>
           
