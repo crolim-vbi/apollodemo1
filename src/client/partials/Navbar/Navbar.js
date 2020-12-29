@@ -31,7 +31,7 @@ const Navbar = function() {
                 <NavLink exact to="/inserir" >Inserir</NavLink>
                 <NavLink exact to="/preferencias" >Preferências</NavLink>
                 <NavLink exact to="/ajuda" >Ajuda</NavLink>
-                <span><a style={{padding: "12px 0px"}}><UserIcon /></a></span>
+                <span><a style={{padding: "12px 0px", marginRight: "0px"}}><UserIcon /></a></span>
               </div>    
               
             </div>            
