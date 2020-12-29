@@ -9,7 +9,7 @@ import Ajuda from './pages/Ajuda';
 import NaoEncontrado from './pages/NaoEncontrado';
 import ConsultaResultado from './pages/ConsultaResultado';
 import DocumentoVisualizacao from './pages/DocumentoVisualizacao';
-import Login from './pages/Login';
+import Login from './pages/Login/Login';
 
 
 import { Route, Switch, Redirect  } from 'react-router-dom';
