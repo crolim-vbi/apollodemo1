@@ -69,9 +69,13 @@ export default function PrimarySearchAppBar() {
 
   const handleMenuClose = () => {
     setAnchorEl(null);
+    shoot();
     handleMobileMenuClose();
   };
 
+  const shoot = () => {
+    alert("Esta funcionalidade ainda está em desenvolvimento");
+  }
 
 
   const menuId = 'primary-search-account-menu';

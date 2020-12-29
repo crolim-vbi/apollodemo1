@@ -37,7 +37,7 @@ const Layout = (props) => {
           </div>
         </div>
 
-        <div Style={{marginBottom: "20px"}}> &nbsp; </div>
+        <div style={{marginBottom: "35px"}}> &nbsp; </div>
         
         <Footer />
       </div>
