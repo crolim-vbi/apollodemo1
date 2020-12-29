@@ -13,7 +13,7 @@ const Navbar = function() {
     return (
     
     <>
-        <Paper elevation={6} className="topWrap" style={{borderRadius: "0px"}}>
+        <Paper elevation={4} className="topWrap" style={{borderRadius: "0px"}}>
 
             <div className="header maxScreenWidth" >
               <div className="topNav" >

@@ -112,7 +112,7 @@ export default function BasicTable() {
         </Grid>                   */}
       </Grid>     
       
-      <Paper className={classes.paper} elevation={3}>
+      <Paper className={classes.paper} elevation={2}>
         <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit', textAlign: "left", borderBottom: "solid 1px lightgray"}}>
             <Typography className={classes.title} id="tableTitle" component="div" >
               <a class="meuTitulo">Classifique os Documentos</a>

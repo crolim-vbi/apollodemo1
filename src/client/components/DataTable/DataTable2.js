@@ -25,7 +25,8 @@ export default function App({titulo}) {
         customToolbarSelect: (selectedRows, displayData, setSelectedRows) => (
             <CustomToolbarSelect selectedRows={selectedRows} displayData={displayData} setSelectedRows={setSelectedRows} />
         ),
-        textLabels: MuiTableTextLabels
+        textLabels: MuiTableTextLabels,
+        elevation: 2
     };
     
     

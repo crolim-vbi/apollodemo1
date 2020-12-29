@@ -9,7 +9,7 @@ const Footer = function() {
 
   
     return (
-        <Paper elevation={6} className="bottomWrap" style={{borderRadius: "0px"}}>
+        <Paper elevation={4} className="bottomWrap" style={{borderRadius: "0px"}}>
           <div className="footer1 maxScreenWidth2">
             <img src={logo_vbi} height="35px" />
           </div>
