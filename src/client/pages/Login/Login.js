@@ -41,8 +41,8 @@ const App = function() {
                 <AccountCircle style={{fontSize:"50px", color: "dimgray",  marginBottom: "20px"}}/>
 
                 <div style={{color:"dimgray", marginBottom: "25px", fontSize: "0.875rem"}}>
-                    <a> Será necessária uma conta @vbirealestate.com, </a> 
-                    <a> caso possua, favor identifique-se no botão abaixo. </a>
+                    <a> Será necessária uma conta @vbirealestate.com. </a> 
+                    <a> Caso possua, favor identifique-se no botão abaixo. </a>
                 </div>
                 
 
