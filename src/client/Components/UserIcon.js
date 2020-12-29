@@ -7,6 +7,8 @@ import Menu from '@material-ui/core/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -86,7 +88,7 @@ export default function PrimarySearchAppBar() {
       <MenuItem onClick={handleMenuClose}>Minha Conta</MenuItem>
       <MenuItem onClick={handleMenuClose}>Logs de Atividade</MenuItem>
       <MenuItem onClick={handleMenuClose}>Notificações</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Sair</MenuItem>
+      <MenuItem component={Link} to="/login" >Sair</MenuItem>
     </Menu>
   );
 

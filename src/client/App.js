@@ -9,10 +9,10 @@ import Ajuda from './pages/Ajuda';
 import NaoEncontrado from './pages/NaoEncontrado';
 import ConsultaResultado from './pages/ConsultaResultado';
 import DocumentoVisualizacao from './pages/DocumentoVisualizacao';
+import Login from './pages/Login';
 
 
-
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect  } from 'react-router-dom';
 
 
 
@@ -29,7 +29,9 @@ const App = function() {
         <Route path="/ajuda" component={Ajuda}/>
         <Route path="/ConsultaResultado" component={ConsultaResultado}/>
         <Route path="/DocumentoVisualizacao" component={DocumentoVisualizacao}/>
-        <Route exact path="/" component={Home}/>
+        <Route path="/home" component={Home}/>
+        <Route path="/login" component={Login}/>
+        <Route exact path="/" render={() => (<Redirect to="/login" />)}/>
         <Route path="/" component={NaoEncontrado}/>
       </Switch>
       

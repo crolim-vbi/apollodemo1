@@ -3,12 +3,15 @@ import React from 'react';
 import UserIcon from '../../components/UserIcon';
 import apollo_lunar_logo from "./apollo_lunar_logo.png"
 
-import { Link , NavLink} from 'react-router-dom';
+import { Link , NavLink, useLocation } from 'react-router-dom';
 
 import Paper from '@material-ui/core/Paper';
 
 
 const Navbar = function() {
+
+    const location = useLocation();
+    const path = location.pathname;
 
     return (
     
@@ -17,7 +20,7 @@ const Navbar = function() {
 
             <div className="header maxScreenWidth" >
               <div className="topNav" >
-                <span><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></span>
+                <span><Link to="/home" ><img src={apollo_lunar_logo} height="60px" /></Link></span>
               </div>          
             </div>
 
@@ -26,12 +29,19 @@ const Navbar = function() {
             <div className="header maxScreenWidth" style={{paddingTop: ""}}>
            
               <div className="topNav" >
-                <NavLink exact to="/" >Início</NavLink>
-                <NavLink exact to="/consultar" >Consultar</NavLink>
-                <NavLink exact to="/inserir" >Inserir</NavLink>
-                <NavLink exact to="/preferencias" >Preferências</NavLink>
-                <NavLink exact to="/ajuda" >Ajuda</NavLink>
-                <span><a style={{padding: "12px 0px", marginRight: "0px"}}><UserIcon /></a></span>
+                {path === "/login" 
+                  ? 
+                    <NavLink exact to="/login" >Login</NavLink> 
+                  : 
+                    <>
+                      <NavLink exact to="/home" >Início</NavLink>
+                      <NavLink exact to="/consultar" >Consultar</NavLink>
+                      <NavLink exact to="/inserir" >Inserir</NavLink>
+                      <NavLink exact to="/preferencias" >Preferências</NavLink>
+                      <NavLink exact to="/ajuda" >Ajuda</NavLink>
+                      <span><a style={{padding: "12px 0px", marginRight: "0px"}}><UserIcon /></a></span>
+                    </>
+                  }
               </div>    
               
             </div>            
