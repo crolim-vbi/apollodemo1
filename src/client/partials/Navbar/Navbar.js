@@ -26,25 +26,22 @@ const Navbar = function() {
 
             <div className="header maxScreenWidth" style={{ padding: "0px",  borderTop: "solid 1px dimgray"}}></div>
 
-            <div className="header maxScreenWidth" style={{paddingTop: ""}}>
-           
-              <div className="topNav" >
-                {path === "/login" 
-                  ? 
-                    <NavLink exact to="/login" >Login</NavLink> 
-                  : 
-                    <>
+            {path === "/login" 
+              ? 
+                  <></>
+              :
+                  <div className="header maxScreenWidth" style={{paddingTop: ""}}>
+            
+                    <div className="topNav" >
                       <NavLink exact to="/home" >Início</NavLink>
                       <NavLink exact to="/consultar" >Consultar</NavLink>
                       <NavLink exact to="/inserir" >Inserir</NavLink>
                       <NavLink exact to="/preferencias" >Preferências</NavLink>
                       <NavLink exact to="/ajuda" >Ajuda</NavLink>
                       <span><a style={{padding: "12px 0px", marginRight: "0px"}}><UserIcon /></a></span>
-                    </>
-                  }
-              </div>    
-              
-            </div>            
+                    </div> 
+                  </div>  
+            }     
 
         </ Paper>   
         
