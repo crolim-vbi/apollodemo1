@@ -65,14 +65,14 @@
     display: -webkit-flex;
     display: flex;    
     flex-wrap: wrap;
-    justify-content: space-between	;
+    justify-content: space-between;
     align-items: center;
     
   }
 
   
   .header {
-    padding: 10px 0px;
+    padding: 0px 0px;
   }
 
   .topNav {
@@ -84,6 +84,7 @@
     /* height: 60px; */
     width: 960px;
     margin: 0;
+    padding: 10px 0px;
   }  
 
 
@@ -95,12 +96,16 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
+    box-sizing: border-box;
     /* margin-right: 50px; */
   }
 
   .topNav > a:hover {
+    display: inline-block;
     color: lightgray!important;
-    border-bottom: solid lightgray 2px;
+    border-bottom: solid lightgray 3px;  
+    padding: 5px 0px 2px;
+    box-sizing: border-box;  
   }
 
 
@@ -125,6 +130,11 @@
   
     #DataTable2 td  {
         color: dimgray;
+    }
+
+    #DataTable2 .MuiPaper-root > .MuiToolbar-root {
+        border-bottom: solid 1px lightgray ;
+        /* background-color: yellow; */
     }
 
 

@@ -140,11 +140,11 @@ export default function PrimarySearchAppBar() {
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
               color="inherit"
-              style={{height:"30px", padding: "0px"}}
+              style={{height:"25px", padding: "0px"}}
               
 
             >
-                <AccountCircle style={{fontSize:"25px"}} />
+                <AccountCircle style={{fontSize:"25px", padding: "0px"}} />
             </IconButton>
 
             {renderMobileMenu}

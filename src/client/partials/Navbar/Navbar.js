@@ -31,7 +31,7 @@ const Navbar = function() {
                 <Link to="/inserir" >Inserir</Link>
                 <Link to="/preferencias" >Preferências</Link>
                 <Link to="/ajuda" >Ajuda</Link>
-                <a style={{padding:"0px", marginRight: "0px"}}><UserIcon /></a>
+                <a style={{padding: "0px"}}><UserIcon /></a>
               </div>    
               
             </div>            
