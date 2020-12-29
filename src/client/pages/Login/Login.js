@@ -27,7 +27,7 @@ const App = function() {
           
           <Navbar />
         
-          <div style={{display: "inline-block", textAlign: "center", margin: "auto"}}>
+          <div style={{display: "inline-block", textAlign: "center", margin: "auto", padding: "25px"}}>
 
               <div style={{borderBottom: "solid 1px lightgray2", marginBottom: "35px"}}>
                 <a style={{fontWeight: "600", fontSize: "1.25rem"}}>Bem-Vindo ao Sistema Apollo Lunar</a>
@@ -38,7 +38,7 @@ const App = function() {
 
                 {/* <img src={astronautWelcome} style={{width: "90px",  marginBottom: "25px"}}></img> */}
 
-                <AccountCircle style={{fontSize:"60px", color: "dimgray",  marginBottom: "25px"}}/>
+                <AccountCircle style={{fontSize:"50px", color: "dimgray",  marginBottom: "20px"}}/>
 
                 <div style={{color:"dimgray", marginBottom: "25px", fontSize: "0.875rem"}}>
                     <a> Será necessária uma conta @vbirealestate.com, </a> <br></br>
