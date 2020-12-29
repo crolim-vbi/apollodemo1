@@ -36,7 +36,14 @@
   }
 
 
-
+  .ypto {
+    
+    color: white !important;
+    background-color: black; /* para backup caso a imagem não carregue */
+    background-image: url("./shared/BackgroundVbi.png");
+    background-position: center;
+    background-repeat: repeat;
+  }
 
 
   .topWrap, .bottomWrap   {
