@@ -84,15 +84,15 @@
     /* height: 60px; */
     width: 960px;
     margin: 0;
-    padding: 10px 0px;
+    padding: 0px 0px;
   }  
 
 
 
-  .topNav > a {
+  .topNav a {
     display: inline-block;
     color: white;
-    padding: 5px 0px;
+    padding: 15px 0px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -100,10 +100,16 @@
   }
 
    .topNav > .active {
-    color: lightgray;
-    border-bottom: solid lightgray 2px;  
-    padding: 5px 0px 3px;  
+    color: white;
+    border-bottom: solid lightgray 1px;  
+    padding: 15px 0px 14px;  
     /* text-decoration: underline; */
+  }
+
+  .topNav > a:hover {
+    color: lightgray;
+    border-bottom: solid darkgray 1px;  
+    padding: 15px 0px 14px;  
   }
 
 

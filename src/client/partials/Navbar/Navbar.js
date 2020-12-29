@@ -17,7 +17,7 @@ const Navbar = function() {
 
             <div className="header maxScreenWidth" >
               <div className="topNav" >
-                <Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link>
+                <span><Link to="/" ><img src={apollo_lunar_logo} height="60px" /></Link></span>
               </div>          
             </div>
 
@@ -27,11 +27,11 @@ const Navbar = function() {
            
               <div className="topNav" >
                 <NavLink exact to="/" >Início</NavLink>
-                <NavLink exact to="/consultar">Consultar</NavLink>
+                <NavLink exact to="/consultar" >Consultar</NavLink>
                 <NavLink exact to="/inserir" >Inserir</NavLink>
                 <NavLink exact to="/preferencias" >Preferências</NavLink>
                 <NavLink exact to="/ajuda" >Ajuda</NavLink>
-                <a style={{padding: "0px"}}><UserIcon /></a>
+                <span><a style={{padding: "12px"}}><UserIcon /></a></span>
               </div>    
               
             </div>            
