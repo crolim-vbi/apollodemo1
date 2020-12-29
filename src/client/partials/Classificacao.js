@@ -61,7 +61,7 @@ const useStyles = makeStyles({
   },
   title: {
     flex: '1 1 100%',
-    color: 'dimgray'
+    color: 'black'
   },
   paper: {
     width: '100%',
@@ -113,20 +113,20 @@ export default function BasicTable() {
       </Grid>     
       
       <Paper className={classes.paper} elevation={3}>
-        <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit'}}>
+        <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit', textAlign: "left"}}>
             <Typography className={classes.title} id="tableTitle" component="div" >
-              <a class="meuTitulo">Agora classifique os seus Arquivos</a>
+              <a class="meuTitulo">Classifique os Documentos (Etapa 2/2)</a>
             </Typography>
         </Toolbar>      
         <TableContainer style={{maxHeight: '450px'}}>
-          <Table className={classes.table} aria-label="simple table">
+          <Table stickyHeader className={classes.table} aria-label="simple table">
             <TableHead>
-              <TableRow>
-                <TableCell style={{color: "dimgray"}}>Arquivo</TableCell>
-                <TableCell style={{color: "dimgray"}} align="left">Entidade</TableCell>
-                <TableCell style={{color: "dimgray"}} align="left">Relatório</TableCell>
-                <TableCell style={{color: "dimgray"}} align="left">Descritivo</TableCell>
-                <TableCell style={{color: "dimgray", maxWidth: "40px"}} align="left">Data de Referência</TableCell>
+              <TableRow style={{}}>
+                <TableCell style={{color: "dimgray", backgroundColor: "white"}}>Nome do Arquivo</TableCell>
+                <TableCell style={{color: "dimgray", backgroundColor: "white"}} align="left">Entidade</TableCell>
+                <TableCell style={{color: "dimgray", backgroundColor: "white"}} align="left">Relatório</TableCell>
+                <TableCell style={{color: "dimgray", backgroundColor: "white"}} align="left">Descritivo</TableCell>
+                <TableCell style={{color: "dimgray", backgroundColor: "white", maxWidth: "40px"}} align="left">Data de Referência</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
