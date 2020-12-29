@@ -120,7 +120,8 @@
     color: dimgray;
     padding: 15px 0px;
     font-weight: 600;
-    font-size: 12px
+    font-size: 12px;
+    text-align: left
   }
 
   .footer1 {
