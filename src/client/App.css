@@ -96,16 +96,14 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    box-sizing: border-box;
     /* margin-right: 50px; */
   }
 
    .topNav > .active {
-    display: inline-block;
-    color: white!important;
-    border-bottom: solid white 2px;  
-    padding: 5px 0px 3px;
-    box-sizing: border-box;  
+    color: lightgray;
+    border-bottom: solid lightgray 2px;  
+    padding: 5px 0px 3px;  
+    /* text-decoration: underline; */
   }
 
 
