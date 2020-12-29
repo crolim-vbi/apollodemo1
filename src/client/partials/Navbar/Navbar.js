@@ -21,7 +21,7 @@ const Navbar = function() {
               </div>          
             </div>
 
-            <div className="header" style={{ padding: "0px",  borderTop: "solid 1px gray"}}></div>
+            <div className="header" style={{ padding: "0px",  borderTop: "solid 1px dimgray"}}></div>
 
             <div className="header maxScreenWidth" style={{paddingTop: ""}}>
            

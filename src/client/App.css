@@ -101,14 +101,14 @@
 
    .topNav > .active {
     color: white;
-    border-bottom: solid lightgray 1px;  
+    border-bottom: solid white 1px;  
     padding: 15px 0px 14px;  
     /* text-decoration: underline; */
   }
 
   .topNav > a:hover {
     color: lightgray;
-    border-bottom: solid darkgray 1px;  
+    border-bottom: solid lightgray 1px;  
     padding: 15px 0px 14px;  
   }
 
