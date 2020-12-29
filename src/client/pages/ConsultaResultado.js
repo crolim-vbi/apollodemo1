@@ -48,7 +48,7 @@ const App = function() {
   const classes = useStyles();
 
   
-    return (<Layout titulo="Sua Busca retornou 25 Documentos" >
+    return (<Layout titulo="Sua Pesquisa retornou 25 Documentos" >
 
             
 
@@ -68,8 +68,7 @@ const App = function() {
                 <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
                     <div style={{display: "inline-block", alignSelf: "flex-start", padding: "3px 0px"}}>
                       <Tooltip title="Retornar"><IconButton href="javascript:history.back()">{icon6}</IconButton></Tooltip>
-                      {/* <Tooltip title="Baixar documentos desta busca"><IconButton href="ExcelExemplo.xlsx" target="_blank">{icon2}</IconButton></Tooltip> */}
-                      <Tooltip title="Compartilhar esta Busca"><IconButton  href="javascript:void(0);" onClick={shoot} >{icon3}</IconButton></Tooltip>
+                      <Tooltip title="Compartilhar esta Pesquisa"><IconButton  href="javascript:void(0);" onClick={shoot} >{icon3}</IconButton></Tooltip>
                     </div>
                 </div>
   

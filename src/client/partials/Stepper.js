@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Carregar Arquivos', 'Classificar Arquivos'];
+  return ['Inserir Documentos', 'Classificar Documentos'];
 }
 
 function getStepContent(step) {
@@ -102,7 +102,7 @@ export default function HorizontalLinearStepper() {
   return (
     <div className={classes.root}>
       <div style={{maxWidth: "960px"}}>
-        <Stepper activeStep={activeStep} style={{marginBottom: "35px", marginTop: "0px", backgroundColor: "inherit",  border: "solid 1px lightgray", borderRadius: "4px"}}>
+        <Stepper elevation={1} activeStep={activeStep} style={{marginBottom: "35px",  borderRadius: "4px", border: "solid 1px lightgray2"}}>
           {steps.map((label, index) => {
             const stepProps = {};
             const labelProps = {};

@@ -149,7 +149,8 @@
     #Dropzone .MuiDropzoneArea-text {  
       /*Realacionado a deixar mais cinza o dropzone onde carrega-se os arquivos*/
       color: dimgray !important;
-      font-size: 1rem !important;
+      font-size: 1.1rem !important;
+      font-weight: 600 !important;
     }
 
 
