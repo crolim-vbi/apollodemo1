@@ -12,21 +12,26 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Minhas Notificações">
+      <Layout titulo="Configurar Minhas Notificações">
 
         <div style={{maxWidth: "960px2"}}>
 
-          <div style={{marginBottom: "32px"}}>
+          <div style={{marginBottom: "24px"}}>
             <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "8px", display: "block"}} >
-              Você será notificado via e-mail sobre os novos documentos conforme as regras de notificações definidas aqui.</a>
+              Você será notificado via e-mail sobre os novos documentos conforme as regras de notificações cadastradas abaixo.</a>
             <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "8px", display: "block"}} >
-              Mas você pode alterar ou criar novas regras conforme desejar. Favor, utilize as opções disponíveis abaixo.</a>
+              Mas você pode editar ou cadastrar novas regras conforme desejar. Favor, utilize as opções disponíveis também abaixo.</a>
           </div>
         
 
-        <Button  variant="contained" color="primary" style={{marginBottom: "32px"}}>Criar nova regra</Button>
+        <Button  variant="contained" color="primary" style={{marginBottom: "40px"}}>Cadastrar nova regra</Button>
+
+
 
         <div id="teste1">
+
+            <a style={{color: "dimgray", display: "block", margin: "10px 0px 15px", fontWeight: "600", fontSize: "1rem"}}>Regras Cadastradas</a>
+
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
               <div style={{padding: "8px 24px", borderBottom: "solid 1px lightgray"}}>
