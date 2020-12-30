@@ -33,7 +33,7 @@ export default function CheckboxesTags({multipleBoolen, optionsValues, groupByKe
         </React.Fragment>
       ): null}
       renderInput={(params) => (
-        <TextField {...params}  label={labelName}/>
+        <TextField {...params}  label={labelName}   />
       )}
     />
 

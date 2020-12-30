@@ -188,3 +188,8 @@
       font-size: 1.1rem !important;
       font-weight: 600 !important;
     }
+
+
+    #teste1 * {
+      /* font-size: 0.875rem  */
+    }
