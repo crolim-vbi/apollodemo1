@@ -12,7 +12,7 @@ import Grid from '@material-ui/core/Grid';
 
 import IconButton from '@material-ui/core/IconButton';
 
-import ScreenShareOutlinedIcon from '@material-ui/icons/ScreenShareOutlined';
+import ScreenShareOutlinedIcon from '@material-ui/icons/ScreenShare';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 

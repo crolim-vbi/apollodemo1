@@ -8,12 +8,15 @@ import Paper from '@material-ui/core/Paper';
 
 import Button from '@material-ui/core/Button';
 
+import { Link } from 'react-router-dom';
+
+
 
 import SearchIcon from '@material-ui/icons/Search';
-import FindInPageOutlinedIcon from '@material-ui/icons/FindInPageOutlined';
+import FindInPageOutlinedIcon from '@material-ui/icons/FindInPage';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
-import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircleOutlined';
-import PublishOutlinedIcon from '@material-ui/icons/PublishOutlined';
+import AccountCircleOutlinedIcon from '@material-ui/icons/AccountCircle';
+import PublishOutlinedIcon from '@material-ui/icons/Publish';
 
 
 
@@ -46,8 +49,9 @@ const App = function() {
                 <Grid container spacing={2}>
                     <Grid item xs={12} sm={6} md={3}>
                       
-
-                          <Button variant="contained" style={{width: "100%", backgroundColor: "white", padding: "15px"}}><FindInPageOutlinedIcon /> &nbsp; Pesquisar Documentos</Button>
+                      <Link exact to="/consultar" style={{textDecoration: "none"}} >
+                          <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><FindInPageOutlinedIcon /> &nbsp; Pesquisar Documentos</Button>
+                      </Link>
 
                       
 
@@ -58,9 +62,9 @@ const App = function() {
 
                     <Grid item xs={12} sm={6} md={3}>
                       
-                      
-                      <Button variant="contained" style={{width: "100%", backgroundColor: "white", padding: "15px"}}><NotificationsNoneIcon /> &nbsp; Escolher Notificações</Button>
-
+                      <Link exact to="/preferencias" style={{textDecoration: "none"}} >
+                        <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><NotificationsNoneIcon /> &nbsp; Escolher Notificações</Button>
+                      </Link>
                         
                     </Grid>        
 
@@ -68,16 +72,18 @@ const App = function() {
 
                     <Grid item xs={12} sm={6} md={3}>
                       
-                       <Button variant="contained" style={{width: "100%", backgroundColor: "white", padding: "15px"}}><AccountCircleOutlinedIcon /> &nbsp; Minha Conta</Button>
-                      
+                      <Link exact to="/minhaConta" style={{textDecoration: "none"}} >
+                        <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><AccountCircleOutlinedIcon /> &nbsp; Minha Conta</Button>
+                      </Link>
 
                     </Grid>                     
 
 
                    <Grid item xs={12} sm={6} md={3}>
                       
-                      <Button variant="contained" style={{width: "100%", backgroundColor: "white", padding: "15px"}}><PublishOutlinedIcon /> &nbsp; Inserir Documentos</Button>
-
+                      <Link exact to="/inserir" style={{textDecoration: "none"}} >
+                          <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><PublishOutlinedIcon /> &nbsp; Inserir Documentos</Button>
+                      </Link>
 
                     </Grid> 
 

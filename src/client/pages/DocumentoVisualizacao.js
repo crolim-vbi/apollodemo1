@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 
 
 import GetAppIcon from '@material-ui/icons/GetApp';
-import ScreenShareOutlinedIcon from '@material-ui/icons/ScreenShareOutlined';
+import ScreenShareOutlinedIcon from '@material-ui/icons/ScreenShare';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 
 import IconButton from '@material-ui/core/IconButton';

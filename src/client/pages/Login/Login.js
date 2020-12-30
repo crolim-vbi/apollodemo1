@@ -38,7 +38,7 @@ const App = function() {
 
                 {/* <img src={astronautWelcome} style={{width: "90px",  marginBottom: "25px"}}></img> */}
 
-                <AccountCircle style={{fontSize:"50px", color: "dimgray",  marginBottom: "20px"}}/>
+                <AccountCircle fontSize="large" style={{ color: "dimgray",  marginBottom: "20px"}}/>
 
                 <div style={{color:"dimgray", marginBottom: "25px", fontSize: "0.875rem"}}>
                     <a> Será necessária uma conta @vbirealestate.com. </a> 
