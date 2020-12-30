@@ -25,7 +25,7 @@ const App = function() {
     return (<>
     
         
-            <div className={classes.root}  style={{paddingBottom: "10px", marginBottom: "25px"}}>
+            <div className={classes.root}  style={{paddingBottom: "10px", marginBottom: "0px"}}>
 
                 <Grid container spacing={4}>
                     <Grid item xs={12} md={6}>
