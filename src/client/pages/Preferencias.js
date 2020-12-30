@@ -10,12 +10,13 @@ const App = function() {
     return (<>
       <Layout titulo="Minhas Notificações">
 
-        <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "5px", display: "block"}} >
-          Você será notificado via e-mail sobre os novos documentos conforme as regras de notificações abaixo.</a>
-        <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "5px", display: "block"}} >
-          Mas você pode alterar ou criar novas regras quando desejar. Utilize as opções disponíveis nesta página.</a>
-
-        
+        <div style={{maxWidth: "960px"}}>
+          <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "5px", display: "block"}} >
+            Você será notificado via e-mail sobre os novos documentos conforme as regras de notificações abaixo.</a>
+          <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "5px", display: "block"}} >
+            Mas você pode alterar ou criar novas regras quando desejar. Utilize as opções disponíveis nesta página.</a>
+        </div>
+      
       </Layout>
     
     </>);
