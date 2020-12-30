@@ -64,7 +64,7 @@ const App = function() {
                     <Grid item xs={12} sm={6} md={3}>
                       
                       <Link exact to="/preferencias" style={{textDecoration: "none"}} >
-                        <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><NotificationsNoneIcon /> &nbsp; Escolher Notificações</Button>
+                        <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><NotificationsNoneIcon /> &nbsp; Definir Notificações</Button>
                       </Link>
                         
                     </Grid>        
