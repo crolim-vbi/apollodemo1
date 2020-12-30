@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 
 
 import GetAppIcon from '@material-ui/icons/GetApp';
-import ScreenShareIcon from '@material-ui/icons/ScreenShare';
+import ScreenShareOutlinedIcon from '@material-ui/icons/ScreenShareOutlined';
 import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 
 import IconButton from '@material-ui/core/IconButton';
@@ -30,7 +30,7 @@ import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 
 
 const icon2 = <GetAppIcon   />;
-const icon3 = <ScreenShareIcon />;
+const icon3 = <ScreenShareOutlinedIcon />;
 const icon5 = <PictureAsPdfIcon />;
 const icon6 = <ArrowBackIcon  />;
 const icon7 = <LibraryBooksIcon  />;

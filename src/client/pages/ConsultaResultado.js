@@ -12,12 +12,12 @@ import Grid from '@material-ui/core/Grid';
 
 import IconButton from '@material-ui/core/IconButton';
 
-import ScreenShareIcon from '@material-ui/icons/ScreenShare';
+import ScreenShareOutlinedIcon from '@material-ui/icons/ScreenShareOutlined';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 
 
-const icon3 = <ScreenShareIcon    />;
+const icon3 = <ScreenShareOutlinedIcon    />;
 const icon6 = <ArrowBackIcon  />;
 
 

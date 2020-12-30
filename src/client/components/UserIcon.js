@@ -91,7 +91,7 @@ export default function PrimarySearchAppBar() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={shoot}>Minha Conta</MenuItem>
-      <MenuItem onClick={shoot}>Logs de Atividade</MenuItem>
+      <MenuItem onClick={shoot}>Log de Atividades</MenuItem>
       <MenuItem onClick={shoot}>Notificações</MenuItem>
       <MenuItem component={Link} to="/login" >Sair</MenuItem>
     </Menu>

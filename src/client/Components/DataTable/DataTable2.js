@@ -44,16 +44,16 @@ export default function App({titulo}) {
         ['17/05/2020', 'SBC FII - Performance Breakdow - 2020.04'],
         ['17/05/2020', 'VBI CRI FII - Performance Breakdow - 2020.04'],
         ['17/05/2020', 'VBI REITS FOF FII - Performance Breakdow - 2020.04'],  
+        ['17/05/2020', 'SBC FII - Performance Breakdow - 2020.04'],
+        ['17/05/2020', 'VBI CRI FII - Performance Breakdow - 2020.04'],
+        ['17/05/2020', 'VBI REITS FOF FII - Performance Breakdow - 2020.04'],      
         ['23/05/2020' , 'VBI CRI FII - Posição Investidores - 2018.01.xls' ],
         ['22/05/2020', 'BREOF FIP II FIP - Performance Breakdow - 2020.04'],
         ['21/05/2020', 'BREOF FIDC - Performance Breakdow - 2020.04'],
         ['20/05/2020', 'BREOF III FIP - Performance Breakdow - 2020.04'],
-        ['19/05/2020', 'Nova I FII - Performance Breakdow - 2020.04'], 
+        ['19/05/2020', 'Nova I FII - Performance Breakdow - 2020.04'] ,
         ['18/05/2020' ,'TRILLIANT REIT FIM - Performance Breakdown - 2018.01.xls' ],
-        ['17/05/2020', 'VBI ULIVING FII - Performance Breakdow - 2020.04'],
-        ['17/05/2020', 'SBC FII - Performance Breakdow - 2020.04'],
-        ['17/05/2020', 'VBI CRI FII - Performance Breakdow - 2020.04'],
-        ['17/05/2020', 'VBI REITS FOF FII - Performance Breakdow - 2020.04'],            
+        ['17/05/2020', 'VBI ULIVING FII - Performance Breakdow - 2020.04'],    
     ];
 
     

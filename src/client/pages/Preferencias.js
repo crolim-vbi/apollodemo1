@@ -5,7 +5,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Configurar Notificações">
+      <Layout titulo="Escolher Notificações">
 
         <div Style={{marginBottom: "20px"}}> &nbsp; </div>
       </Layout>

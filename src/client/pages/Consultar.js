@@ -10,7 +10,7 @@ const App = function() {
     return (<>
       <Layout titulo="" >
 
-        <div style={{maxWidth: "960px"}}>
+        <div style={{maxWidth: "960px2"}}>
           <Consulta />
         </div>
         

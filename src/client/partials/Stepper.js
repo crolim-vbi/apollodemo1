@@ -102,7 +102,7 @@ export default function HorizontalLinearStepper() {
   return (
     <div className={classes.root}>
       <div style={{maxWidth: "960px"}}>
-        <Stepper elevation={0} activeStep={activeStep} style={{marginBottom: "35px",  borderRadius: "4px", border: "solid 1px lightgray"}}>
+        <Stepper elevation={0} activeStep={activeStep} style={{marginBottom: "35px",  borderRadius: "4px", borderBottom: "solid 2px lightgray"}}>
           {steps.map((label, index) => {
             const stepProps = {};
             const labelProps = {};
@@ -123,7 +123,7 @@ export default function HorizontalLinearStepper() {
       <div >
         {activeStep === steps.length ? (
           <div>
-            <Typography component="div" style={{margin: "0px", padding: "0px 0px", maxWidth: "960px"}} className={classes.instructions}>
+            <Typography component="div" style={{margin: "0px", padding: "0px 0px", maxWidth: "960px", textAlign: "center"}} className={classes.instructions}>
                 <Paper elevation={2} className={classes.paper}>
                   <a class="meuTitulo">Documentos inseridos e classificados com sucesso!</a>
                 </Paper>

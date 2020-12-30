@@ -25,13 +25,13 @@ const App = function() {
     return (<>
     
         
-            <div className={classes.root}  style={{paddingBottom: "10px"}}>
+            <div className={classes.root}  style={{paddingBottom: "10px", marginBottom: "25px"}}>
 
                 <Grid container spacing={4}>
                     <Grid item xs={12} md={6}>
                       
 
-                          <DataTable2 titulo="Documentos em Destaque"/>
+                          <DataTable2 titulo="Em Destaque"/>
 
                       
 

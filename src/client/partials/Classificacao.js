@@ -111,15 +111,15 @@ export default function BasicTable() {
           <div style={{marginBottom: "10px"}}></div>
         </Grid>                   */}
       </Grid>     
+
+      <Paper className={classes.paper} elevation={0} style={{marginBottom: "10px", padding: "15px 0px", borderBottom: "solid 2px lightgray", textAlign: "center"}}>
+          <a class="meuTitulo">Agora, classifique os seus Documentos conforme as opções abaixo</a>
+      </Paper>
       
-      <Paper className={classes.paper} elevation={2}>
-        <Toolbar style={{backgroundColor: "white", borderRadius: 'inherit', textAlign: "left", borderBottom: "solid 1px lightgray"}}>
-            <Typography className={classes.title} id="tableTitle" component="div" >
-              <a class="meuTitulo">Classifique os Arquivos</a>
-            </Typography>
-        </Toolbar>      
+      <Paper className={classes.paper} elevation={2} style={{borderRadius: '4px'}}>
+  
         <TableContainer style={{maxHeight: '450px'}}>
-          <Table stickyHeader className={classes.table} aria-label="simple table">
+          <Table  stickyHeader className={classes.table} aria-label="simple table" style={{maxHeight: '450px'}}>
             <TableHead>
               <TableRow style={{}}>
                 <TableCell style={{color: "dimgray", backgroundColor: "white"}}>Nome do Arquivo</TableCell>

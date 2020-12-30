@@ -8,6 +8,8 @@ import { Link , NavLink, useLocation } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 
 
+
+
 const Navbar = function() {
 
     const location = useLocation();
@@ -33,9 +35,9 @@ const Navbar = function() {
             
                     <div className="topNav" >
                       <NavLink exact to="/home" >Início</NavLink>
-                      <NavLink exact to="/consultar" >Consultar</NavLink>
+                      <NavLink exact to="/consultar" >Pesquisar</NavLink>
+                      <NavLink exact to="/preferencias" >Preferências</NavLink>                      
                       <NavLink exact to="/inserir" >Inserir</NavLink>
-                      <NavLink exact to="/preferencias" >Preferências</NavLink>
                       <NavLink exact to="/ajuda" >Ajuda</NavLink>
                       <span><a style={{padding: "12px 0px", marginRight: "0px"}}><UserIcon /></a></span>
                     </div> 

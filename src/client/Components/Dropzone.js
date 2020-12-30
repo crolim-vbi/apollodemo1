@@ -40,7 +40,7 @@ class DropzoneAreaExample extends Component{
               <br></br><br></br> */}
               <DropzoneArea
                 filesLimit = "100"
-                dropzoneText = "Arraste e solte seus arquivos aqui ou clique"
+                dropzoneText = "Arraste e solte os seus documentos aqui ou clique para inseri-los"
                 onChange={this.handleChange.bind(this)}
 
 
