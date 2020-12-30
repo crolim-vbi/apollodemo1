@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Inserir Documentos', 'Classificar Documentos'];
+  return ['Inserir', 'Classificar Documentos'];
 }
 
 function getStepContent(step) {
