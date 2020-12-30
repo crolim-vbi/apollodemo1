@@ -156,10 +156,10 @@
     }
 
 
-    #DataTable2 .MuiTableRow-head, 
-    #DataTable2 .MuiTablePagination-caption, 
     #DataTable2 .MuiTablePagination-select,
-    #DataTable2 .MuiTablePagination-selectIcon  {
+    #DataTable2 .MuiTablePagination-selectIcon,
+    #DataTable2 .MuiTablePagination-caption,
+    #DataTable2 .MuiTableRow-head {
         display: none;
     }
 
