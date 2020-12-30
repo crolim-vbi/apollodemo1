@@ -97,9 +97,6 @@ export default function BasicTable() {
           <div style={{marginBottom: "0px"}}></div>
         </Grid>    
 
-        <Paper className={classes.paper} elevation={0} style={{marginBottom: "10px", padding: "15px 0px", borderBottom: "solid 2px lightgray", border: "solid 2px lightgray2", textAlign: "center"}}>
-          <a class="meuTitulo">Agora, classifique os seus Documentos conforme as opções abaixo</a>
-        </Paper>
 
         <Grid item xs={12} md={12} style={{borderTop: "solid 1px lightgray", borderBottom: "solid 1px lightgray2", marginBottom: "10px2"}}>
           <div style={{width:"100%", height:"100%", display: "flex", justifyContent: "flex-start"}}>
@@ -110,7 +107,13 @@ export default function BasicTable() {
               </div>
           </div>
 
-        </Grid>                  
+        </Grid>          
+
+        <Paper className={classes.paper} elevation={0} style={{marginBottom: "10px", padding: "15px 0px", borderBottom: "solid 2px lightgray", border: "solid 2px lightgray2", textAlign: "center"}}>
+          <a class="meuTitulo">Agora, classifique os seus Documentos conforme as opções abaixo</a>
+        </Paper>
+
+
         {/* <Grid item xs={12} md={12}>
           <div style={{marginBottom: "10px"}}></div>
         </Grid>                   */}
