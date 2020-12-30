@@ -98,28 +98,34 @@
 
   .topNav a {
     display: inline-block;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     padding: 15px 0px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     margin-right: 10px;
   }
 
-   .topNav > .active {
-    color: white;
-    border-bottom: solid white 1px;  
-    padding: 15px 0px 14px;  
-    /* text-decoration: underline; */
-  }
+
+
 
   .topNav a:hover {
-    color: rgba(255, 255, 255, 0.7);
-    /* border-bottom: solid lightgray 1px;   */
-    /* padding: 15px 0px 14px;   */
+    color: white;
   }
 
+  .topNav > a:hover {
+    border-bottom: solid  dimgray 2px;  
+    padding: 15px 0px 13px;  
+    font-weight: 500;
+  }
 
+  .topNav > .active, .topNav > .active:hover {
+    color: white;
+    border-bottom: solid white 2px;  
+    padding: 15px 0px 13px;
+    font-weight: 600;
+    /* text-decoration: underline; */
+  }
 
    /* Estilizar o footer */
    .footer1, .footer2 {

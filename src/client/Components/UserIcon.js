@@ -69,12 +69,13 @@ export default function PrimarySearchAppBar() {
 
   const handleMenuClose = () => {
     setAnchorEl(null);
-    shoot();
+    // shoot();
     handleMobileMenuClose();
   };
 
   const shoot = () => {
     alert("Esta funcionalidade ainda está em desenvolvimento");
+    handleMenuClose();
   }
 
 
@@ -89,9 +90,9 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Minha Conta</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Logs de Atividade</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Notificações</MenuItem>
+      <MenuItem onClick={shoot}>Minha Conta</MenuItem>
+      <MenuItem onClick={shoot}>Logs de Atividade</MenuItem>
+      <MenuItem onClick={shoot}>Notificações</MenuItem>
       <MenuItem component={Link} to="/login" >Sair</MenuItem>
     </Menu>
   );
