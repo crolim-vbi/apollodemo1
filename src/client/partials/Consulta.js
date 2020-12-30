@@ -245,11 +245,11 @@ const App = function() {
 
                           <Card className={classes2.root} style={{backgroundColor: "", maxWidth: ""}} elevation={2}>
 
-                            <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "5px", paddingBottom: "0px"}}>
+                            {/* <CardContent style={{borderBottom: "solid 1px lightgray", paddingTop: "5px", paddingBottom: "0px"}}>
                                 <Typography className={classes2.title} color="textSecondary" gutterBottom>
                                     <a class="meuTitulo">Pesquisar Documentos</a>
                                 </Typography>
-                            </CardContent>                            
+                            </CardContent>                             */}
 
                             <CardContent style={{color: "dimgray"}}>
 
@@ -321,7 +321,7 @@ const App = function() {
                               <CardContent style={{borderTop: "solid 1px lightgray", paddingLeft:"0px"}}>
                                   <Typography style={{}}>                                  
                                         <div style={{display: "inline",  float: "left",  paddingBottom: "20px", paddingLeft: "0px", paddingTop: "5px"}}>
-                                            <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained"> {newIcon}  &nbsp; PESQUISAR</Button></Link>
+                                            <Link to="/ConsultaResultado" style={{textDecoration: "none"}}><Button variant="contained" color="primary"> {newIcon}  &nbsp; PESQUISAR</Button></Link>
                                         </div>
                                   </Typography>
                               </CardContent>

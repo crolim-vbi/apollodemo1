@@ -19,7 +19,7 @@ const App = function() {
 
         <Highlights2/>
 
-        <a style={{color: "dimgray", display: "block", margin: "10px 0px 15px", fontWeight: "600", fontSize: "1rem"}}>Documentos</a>
+        <a style={{color: "dimgray", display: "block", margin: "10px 0px 15px", fontWeight: "600", fontSize: "1rem"}}>Documentos Recentes</a>
 
         <Highlights />
 

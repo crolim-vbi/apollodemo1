@@ -7,13 +7,13 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="" >
+      <Layout titulo="Inserir" >
 
-        <div style={{marginBottom: "0px"}}>  </div>
+        
 
         <Stepper />
 
-        <div style={{height: "25px"}}>  </div>
+        
 
       </Layout>
     

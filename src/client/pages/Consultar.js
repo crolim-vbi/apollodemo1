@@ -8,9 +8,9 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="" >
+      <Layout titulo="Pesquisar Documentos" >
 
-        <div style={{maxWidth: "960px2"}}>
+        <div style={{paddingTop: "0px"}}>
           <Consulta />
         </div>
         

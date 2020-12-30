@@ -51,7 +51,7 @@ const App = function() {
                     <Grid item xs={12} sm={6} md={3}>
                       
                       <Link exact to="/consultar" style={{textDecoration: "none"}} >
-                          <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><SearchIcon /> &nbsp; Pesquisar Documentos</Button>
+                          <Button variant="contained"  color="primary" style={{width: "100%",  padding: "6px 16px"}}><SearchIcon /> &nbsp; Pesquisar Documentos</Button>
                       </Link>
 
                       
@@ -64,7 +64,7 @@ const App = function() {
                     <Grid item xs={12} sm={6} md={3}>
                       
                       <Link exact to="/preferencias" style={{textDecoration: "none"}} >
-                        <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><NotificationsNoneIcon /> &nbsp; Definir Notificações</Button>
+                        <Button variant="contained"  color="primary" style={{width: "100%",  padding: "6px 16px"}}><NotificationsNoneIcon /> &nbsp; Configurar Notificações</Button>
                       </Link>
                         
                     </Grid>        
@@ -74,7 +74,7 @@ const App = function() {
                     <Grid item xs={12} sm={6} md={3}>
                       
                       <Link exact to="/minhaConta" style={{textDecoration: "none"}} >
-                        <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><AccountCircleOutlinedIcon /> &nbsp; Minha Conta</Button>
+                        <Button variant="contained"  color="primary" style={{width: "100%",  padding: "6px 16px"}}><AccountCircleOutlinedIcon /> &nbsp; Minha Conta</Button>
                       </Link>
 
                     </Grid>                     
@@ -83,7 +83,7 @@ const App = function() {
                    <Grid item xs={12} sm={6} md={3}>
                       
                       <Link exact to="/inserir" style={{textDecoration: "none"}} >
-                          <Button variant="contained" style={{width: "100%",  backgroundColor: "white", padding: "12px"}}><CloudUploadIcon /> &nbsp; Inserir Documentos</Button>
+                          <Button variant="contained"  color="primary" style={{width: "100%",  padding: "6px 16px"}}><CloudUploadIcon /> &nbsp; Inserir Documentos</Button>
                       </Link>
 
                     </Grid> 

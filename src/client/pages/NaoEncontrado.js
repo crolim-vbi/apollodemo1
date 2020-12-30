@@ -8,7 +8,7 @@ const App = function() {
       <Layout titulo="Não Encontrado" >
 
 
-        <div Style={{marginBottom: "20px"}}> &nbsp; </div>
+        
 
       </Layout>
     

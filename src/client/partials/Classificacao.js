@@ -141,7 +141,7 @@ export default function BasicTable() {
             <TableBody>
               {rows.map((row) => (
                 <TableRow key={row.name}>
-                  <TableCell component="th" scope="row" style={{maxWidth: "120px", wordWrap: "break-word", color: "dimgray"}}>
+                  <TableCell component="th" scope="row" style={{maxWidth: "120px", wordWrap: "break-word", color: "black"}}>
                     {row.name}
                   </TableCell>
                   <TableCell align="left"><CheckboxesTags multipleBoolen={false} labelName = {null} optionsValues = {entidades} groupByKey = "tipo" /></TableCell>
