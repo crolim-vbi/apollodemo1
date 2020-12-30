@@ -54,7 +54,7 @@ const App = function() {
                   </Grid>
                   <Grid item xs={12} md={6}>
                         <div style={{padding: "8px 24px 24px 0px"}}>
-                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar Regra </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
+                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
                         </div>  
                   </Grid>
 
@@ -85,7 +85,7 @@ const App = function() {
                   </Grid>
                   <Grid item xs={12} md={6}>
                         <div style={{padding: "8px 24px 24px 0px"}}>
-                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar Regra </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
+                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
                         </div>  
                   </Grid>
 
@@ -115,7 +115,7 @@ const App = function() {
                   </Grid>
                   <Grid item xs={12} md={6}>
                         <div style={{padding: "8px 24px 24px 0px"}}>
-                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar Regra </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
+                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
                         </div>  
                   </Grid>
 
