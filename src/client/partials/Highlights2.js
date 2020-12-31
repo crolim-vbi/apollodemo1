@@ -73,7 +73,7 @@ const App = function() {
 
                     <Grid item xs={12} sm={6} md={3}>
                       
-                      <Link exact to="/minhaConta" style={{textDecoration: "none"}} >
+                      <Link style={{textDecoration: "none"}} >
                         <Button variant="contained"  color="primary" style={{width: "100%",  padding: "6px 16px"}}><AccountCircleOutlinedIcon /> &nbsp; Minha Conta</Button>
                       </Link>
 
