@@ -117,7 +117,19 @@ const CoresVBI = {
         light: '#5b80ae',
         main: '#2a547e',
         dark: '#002c51',
-        contrastText: '#fff'
+        contrastText: '#fff',
+        complementaryColor: {
+            light: '#b08054',
+            main: '#7e542a',
+            dark: '#4e2b00',
+            contrastText: '#fff'
+        },
+        splitComplementaryColor: {
+            light: '#afad57',
+            main: '#7e7e2a',
+            dark: '#4f5200',
+            contrastText: '#fff'
+        }        
     },    
 
 
