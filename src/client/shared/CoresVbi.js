@@ -113,6 +113,14 @@ const CoresVBI = {
         contrastText: '#fff'
     },    
 
+    azulBlueGray2: {
+        light: '#5b80ae',
+        main: '#2a547e',
+        dark: '#002c51',
+        contrastText: '#fff'
+    },    
+
+
 
     azulAteneoBlue: {
         light: '#41659c',
