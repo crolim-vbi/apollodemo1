@@ -15,7 +15,7 @@ const theme = createMuiTheme(
   {
     palette: {
       primary: CoresVbi.azulExcelBlueGray,
-      secondary: CoresVbi.azulBlueGray2.splitComplementaryColor,
+      secondary: CoresVbi.azulExcelBlueGray.splitComplementaryColor,
   },
 });
 
