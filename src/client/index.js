@@ -14,7 +14,7 @@ import { createMuiTheme,  ThemeProvider } from '@material-ui/core/styles';
 const theme = createMuiTheme(
   {
     palette: {
-      primary: CoresVbi.verdePetroleo,
+      primary: CoresVbi.azulExcelBlueGray,
       secondary: CoresVbi.laranjaVbi1,
   },
 });

@@ -62,12 +62,50 @@ const CoresVBI = {
         contrastText: '#fff',
     },    
 
-    azulVbiMaterialUi :{    
+    azulMaterialUi :{    
         light: '#4791db',
         main: '#1976d2',
         dark: '#115293',
         contrastText: '#fff',
     },  
+
+    azulMidnightExpress: {
+        light: '#342970',
+        main: '#000044',
+        dark: '#00001f',
+        contrastText: '#fff'
+    },
+
+    azulExcelDarkBlue: {
+        light: '#3e478e',
+        main: '#002060',
+        dark: '#000036',
+        contrastText: '#fff'
+    },
+
+
+    azulExcelBlueGray: {
+        light: '#708098',
+        main: '#44546a',
+        dark: '#1a2b3f',
+        contrastText: '#fff'
+    },
+
+
+    azulExcelBlueGrayLighter40: {
+        light: '#b4c8e2',
+        main: '#8497b0',
+        dark: '#566981',
+        contrastText: '#fff'
+    },    
+
+    azulExcelBlueGrayLighter20: {
+        light: '#8ca1c1',
+        main: '#5d7391',
+        dark: '#314863',
+        contrastText: '#fff'
+    },    
+
 
     // Cores De Apoio
 
