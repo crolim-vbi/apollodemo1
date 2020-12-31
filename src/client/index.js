@@ -14,7 +14,7 @@ import { createMuiTheme,  ThemeProvider } from '@material-ui/core/styles';
 const theme = createMuiTheme(
   {
     palette: {
-      primary: CoresVbi.azulBlueGray2,
+      primary: CoresVbi.azulExcelBlueGray,
       secondary: CoresVbi.azulBlueGray2.splitComplementaryColor,
   },
 });
