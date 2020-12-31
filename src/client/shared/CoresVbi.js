@@ -106,6 +106,20 @@ const CoresVBI = {
         contrastText: '#fff'
     },    
 
+    azulWikipediaBlueGray: {
+        light: '#98caff',
+        main: '#6699cc',
+        dark: '#326b9b',
+        contrastText: '#fff'
+    },    
+
+
+    azulAteneoBlue: {
+        light: '#41659c',
+        main: '#003b6d',
+        dark: '#001641',
+        contrastText: '#fff'
+    },        
 
     // Cores De Apoio
 
