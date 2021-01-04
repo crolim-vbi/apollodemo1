@@ -37,13 +37,21 @@
 
 
   .ypto {
-    
     color: white !important;
-    background-color: black; /* para backup caso a imagem não carregue */
+    background-color: white; /* para backup caso a imagem não carregue */
     background-image: url("./shared/BackgroundVbi.png");
     background-position: center;
     background-repeat: repeat;
   }
+
+
+  #login-page {
+    background-color: inherit; /* para backup caso a imagem não carregue */
+    background-image: url("./shared/BackgroundVbiBranco.png");
+    background-position: center;
+    background-repeat: repeat;
+  }  
+
 
 
   .topWrap, .bottomWrap   {

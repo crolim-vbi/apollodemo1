@@ -38,35 +38,36 @@ const App = function() {
 
           
           <Navbar />
-        
-          <div style={{display: "inline-block", textAlign: "center", margin: "auto", padding: "30px", maxWidth: "380px"}}>
 
-              <div style={{borderBottom: "solid 1px lightgray2", marginBottom: "35px"}}>
-                <a style={{fontWeight: "600", fontSize: "1.25rem"}}>Bem-Vindo ao Sistema Apollo Lunar</a>
-              </div>
+          <div id="login-page" style={{display: "flex", margin: "auto", width: "100%", flex: "1", position: "relative", alignSelf: "stretch"}}>
+            <div style={{display: "inline-block", textAlign: "center", margin: "auto", padding: "30px", maxWidth: "380px"}}>
 
-          
-              <Paper elevation={2} style={{padding: "25px 25px 0px"}}>
-
-                {/* <img src={astronautWelcome} style={{width: "90px",  marginBottom: "25px"}}></img> */}
-
-                <AccountCircle fontSize="large" color="" style={{ marginBottom: "20px", color: ""}}/>
-
-                <div style={{color:"dimgray", marginBottom: "25px", fontSize: "0.875rem"}}>
-                    <a> Será necessária uma conta @vbirealestate.com. </a> 
-                    <a> Caso possua, favor identifique-se no botão abaixo. </a>
+                <div style={{borderBottom: "solid 1px lightgray2", marginBottom: "35px"}}>
+                  <a style={{fontWeight: "600", fontSize: "1.25rem"}}>Bem-Vindo ao Sistema Apollo Lunar</a>
                 </div>
+
+            
+                <Paper elevation={2} style={{padding: "25px 25px 0px"}}>
+
+                  {/* <img src={astronautWelcome} style={{width: "90px",  marginBottom: "25px"}}></img> */}
+
+                  <AccountCircle fontSize="large" color="" style={{ marginBottom: "20px", color: ""}}/>
+
+                  <div style={{color:"dimgray", marginBottom: "25px", fontSize: "0.875rem"}}>
+                      <a> Será necessária uma conta @vbirealestate.com. </a> 
+                      <a> Caso possua, favor identifique-se no botão abaixo. </a>
+                  </div>
+                  
+
+                  <div style={{marginBottom: "25px",  borderBottom: "solid 1px lightgray"}}> </div>
+
+                  <Button href="/#/home" variant="contained" color="primary" style={{marginBottom: "25px"}}><ExitToAppIcon /> &nbsp; Fazer login com Google</Button>
                 
+                </Paper>
+            
+            </div>
 
-                <div style={{marginBottom: "25px",  borderBottom: "solid 1px lightgray"}}> </div>
-
-                <Button href="/#/home" variant="contained" color="primary" style={{marginBottom: "25px"}}><ExitToAppIcon /> &nbsp; Fazer login com Google</Button>
-              
-              </Paper>
-          
           </div>
-
-
           <Footer />
 
         
