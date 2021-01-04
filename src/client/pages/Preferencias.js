@@ -29,12 +29,12 @@ const App = function() {
             <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "8px", display: "block"}} >
               Você será notificado via e-mail sobre os novos documentos conforme as regras de notificações cadastradas abaixo.</a>
             <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "8px", display: "block"}} >
-              Mas você pode editar ou cadastrar novas regras conforme desejar. Favor, utilize as opções disponíveis abaixo.</a>
+              Mas você pode editar ou criar novas regras conforme desejar. Favor, utilize as opções disponíveis abaixo.</a>
           </div>
         
 
         {/* <Button variant="contained" color="primary" style={{marginBottom: "40px"}}><AddCircleOutlineIcon /> &nbsp; Cadastrar nova regra</Button> */}
-        <Button variant="contained" color="primary" style={{marginBottom: "40px"}}>Cadastrar nova regra</Button>
+        <Button variant="contained" color="primary" style={{marginBottom: "40px"}}>Criar nova regra</Button>
         
 
 
