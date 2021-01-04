@@ -29,7 +29,7 @@ const App = function() {
             <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "8px", display: "block"}} >
               Você receberá no seu e-mail os novos documentos inseridos no sistema conforme as regras de notificações abaixo.</a>
             <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "8px", display: "block"}} >
-              Mas você pode editar ou criar novas regras da forma que desejar. Favor, utilize as opções disponíveis abaixo.</a>
+              Mas você pode editar esta regras ou criar novas da forma que desejar. Favor, utilize as opções disponíveis abaixo.</a>
           </div>
         
 
