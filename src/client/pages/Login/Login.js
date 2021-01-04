@@ -2,6 +2,9 @@ import React from 'react';
 import Navbar from '../../partials/Navbar/Navbar';
 import Footer from '../../partials/Footer/Footer';
 
+
+
+
 import Layout from '../../layout/Layout';
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
@@ -16,7 +19,15 @@ import astronautWelcome from "./astronaut_welcome.png"
 
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
-
+import LockOpenIcon from '@material-ui/icons/LockOpen';
+import VpnKeyIcon from '@material-ui/icons/VpnKey';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import LockIcon from '@material-ui/icons/Lock';
+import PermIdentityIcon from '@material-ui/icons/PermIdentity';
+import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import GTranslateIcon from '@material-ui/icons/GTranslate';
 
 const App = function() {
 
@@ -48,7 +59,7 @@ const App = function() {
 
                 <div style={{marginBottom: "25px",  borderBottom: "solid 1px lightgray"}}> </div>
 
-                <Button href="/#/home" variant="contained" color="primary" style={{marginBottom: "25px"}}>Fazer login com o Google</Button>
+                <Button href="/#/home" variant="contained" color="primary" style={{marginBottom: "25px"}}><ExitToAppIcon /> &nbsp; Fazer login com Google</Button>
               
               </Paper>
           
