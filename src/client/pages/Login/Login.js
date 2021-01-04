@@ -72,6 +72,7 @@ const App = function() {
                       inputProps={{ 'aria-label': 'secondary checkbox' }}
                       size="small"
                       style={{color:"dimgray"}}
+                      // color="secondary"
                     />    
                     <a style={{color:"dimgray", fontSize: "0.875rem"}}>Lembrar login</a>
                   </div>
