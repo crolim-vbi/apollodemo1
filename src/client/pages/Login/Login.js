@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../partials/Navbar/Navbar';
 import Footer from '../../partials/Footer/Footer';
 
+import apollo_lunar_logo from "./apollo_lunar_logo.png"
 
 
 
@@ -34,12 +35,11 @@ const App = function() {
 
   
     return (
-      <div className="globalWrap">
+      <div className="globalWrap" id="login-page">
 
-          
-          <Navbar />
+          <Navbar /> 
 
-          <div id="login-page" style={{display: "flex", margin: "auto", width: "100%", flex: "1", position: "relative", alignSelf: "stretch"}}>
+          <div  style={{display: "flex", margin: "auto", width: "100%", flex: "1", position: "relative", alignSelf: "stretch"}}>
             <div style={{display: "inline-block", textAlign: "center", margin: "auto", padding: "30px", maxWidth: "380px"}}>
 
                 <div style={{borderBottom: "solid 1px lightgray2", marginBottom: "35px"}}>

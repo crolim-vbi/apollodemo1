@@ -64,12 +64,18 @@
     background-image: url("./shared/BackgroundVbi.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;  
-    
+    background-size: cover;      
     
     align-items: left;
     justify-content: flex-start;
   }
+
+
+  #login-page .topWrap, #login-page .bottomWrap  {
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0.85) !important;  
+  }
+
 
 
   .bottomWrap {
