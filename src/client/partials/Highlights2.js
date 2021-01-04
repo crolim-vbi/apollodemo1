@@ -51,7 +51,7 @@ const App = function() {
                     <Grid item xs={12} sm={6} md={3}>
                       
                       <Link exact to="/consultar" style={{textDecoration: "none"}} >
-                          <Button variant="contained"  color="primary" style={{width: "100%",  padding: "6px 16px"}}><SearchIcon /> &nbsp; Pesquisar Documentos</Button>
+                          <Button variant="contained"  color="primary" style={{width: "100%",  padding: "6px 16px"}}><SearchIcon /> &nbsp; Consultar Documentos</Button>
                       </Link>
 
                       

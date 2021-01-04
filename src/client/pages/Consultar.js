@@ -8,7 +8,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Pesquisar Documentos" >
+      <Layout titulo="Consultar Documentos" >
 
         <div style={{paddingTop: "0px"}}>
           <Consulta />
