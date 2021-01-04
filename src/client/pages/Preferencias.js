@@ -27,9 +27,9 @@ const App = function() {
 
           <div style={{marginBottom: "24px"}}>
             <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "8px", display: "block"}} >
-              Você será notificado via e-mail sobre os novos documentos conforme as regras de notificações cadastradas abaixo.</a>
+              Você receberá no seu e-mail os novos documentos inseridos no sistema conforme as regras de notificações abaixo.</a>
             <a style={{color:"dimgray", fontSize: "0.875rem", marginBottom: "8px", display: "block"}} >
-              Mas você pode editar ou criar novas regras conforme desejar. Favor, utilize as opções disponíveis abaixo.</a>
+              Mas você pode editar ou criar novas regras da forma que desejar. Favor, utilize as opções disponíveis abaixo.</a>
           </div>
         
 
