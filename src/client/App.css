@@ -48,8 +48,10 @@
   #login-page {
     background-color: inherit; /* para backup caso a imagem não carregue */
     background-image: url("./shared/BackgroundVbiBranco.png");
+    /* Centralizar e escalar a imagem agradavelmente */
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
   }  
 
 

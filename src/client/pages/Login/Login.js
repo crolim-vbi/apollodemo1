@@ -47,7 +47,7 @@ const App = function() {
                 </div>
 
             
-                <Paper elevation={2} style={{padding: "25px 25px 0px"}}>
+                <Paper id="" elevation={2} style={{padding: "25px 25px 0px"}}>
 
                   {/* <img src={astronautWelcome} style={{width: "90px",  marginBottom: "25px"}}></img> */}
 
