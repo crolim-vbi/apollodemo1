@@ -11,7 +11,7 @@ const App = function() {
 
         <div style={{maxWidth: "960px"}}>
 
-          <div style={{marginBottom: "16px"}}> </div>
+          <div style={{marginBottom: "8px"}}> </div>
 
           <a className="meuTitulo" style={{display: "block", marginBottom: "8px"}}>Cras non tellus ac nulla consectetur tempus ac in urna.</a>
 
