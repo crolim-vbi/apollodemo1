@@ -7,6 +7,8 @@ import CheckboxesTags from '../components/CheckboxesTags';
 import Grid from '@material-ui/core/Grid';
 
 import Button from '@material-ui/core/Button';
+import Tooltip from "@material-ui/core/Tooltip";
+
 
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import EditIcon from '@material-ui/icons/Edit';
@@ -65,7 +67,7 @@ const App = function() {
                   </Grid>
                   <Grid item xs={12} md={6}>
                         <div style={{padding: "0px 24px 4px 0px"}}>
-                          <IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton>
+                          <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
                         </div>  
                   </Grid>
 
@@ -96,7 +98,7 @@ const App = function() {
                   </Grid>
                   <Grid item xs={12} md={6}>
                         <div style={{padding: "0px 24px 4px 0px"}}>
-                          <IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton>
+                          <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
                         </div>  
                   </Grid>
 
@@ -126,7 +128,7 @@ const App = function() {
                   </Grid>
                   <Grid item xs={12} md={6}>
                         <div style={{padding: "0px 24px 4px 0px"}}>
-                          <IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton>
+                          <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
                         </div>  
                   </Grid>
 
