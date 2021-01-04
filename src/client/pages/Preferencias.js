@@ -41,12 +41,12 @@ const App = function() {
 
         <div id="teste1">
 
-            <a style={{color: "dimgray", display: "block", margin: "10px 0px 15px", fontWeight: "600", fontSize: "1rem"}}>Regras Cadastradas</a>
+            <a style={{color: "dimgray", display: "block", margin: "10px 0px 15px", fontWeight: "600", fontSize: "1rem"}}>Regras de Notificações</a>
 
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
               <div style={{padding: "8px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Breakdown de Todos os Fundos</a>
+                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Receber Breakdown dos Fundos</a>
               </div>
               
               <div style={{padding: "0px 24px"}}>
@@ -55,7 +55,7 @@ const App = function() {
 
                       <Grid item xs={12} md={6}>
                         <div style={{margin: "8px 24px 8px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "Ser notificado sobre esses Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
+                            <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de ser notificado sobre esses Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
                         </div>  
                       </Grid>                    
                       <Grid item xs={12} md={6}>
@@ -79,7 +79,7 @@ const App = function() {
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
               <div style={{padding: "8px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Fechamento Mensal dos INRs</a>
+                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Receber Fechamento Mensal dos INRs</a>
               </div>
               
               <div style={{padding: "0px 24px"}}>
@@ -87,7 +87,7 @@ const App = function() {
                   <Grid container>
                       <Grid item xs={12} md={6}>
                           <div style={{margin: "8px 24px 8px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "Ser notificado sobre esses Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
+                            <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de ser notificado sobre esses Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
                           </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
@@ -109,7 +109,7 @@ const App = function() {
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
               <div style={{padding: "8px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Relatório de passivo dos fundos</a>
+                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Receber Relatório de passivo dos fundos</a>
               </div>
               
               <div style={{padding: "0px 24px"}}>
@@ -117,7 +117,7 @@ const App = function() {
                   <Grid container>
                       <Grid item xs={12} md={6}>
                           <div style={{margin: "8px 24px 8px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "Ser notificado sobre esses Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
+                            <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de ser notificado sobre esses Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
                           </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
