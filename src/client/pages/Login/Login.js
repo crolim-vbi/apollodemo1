@@ -28,6 +28,7 @@ import PermIdentityIcon from '@material-ui/icons/PermIdentity';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
 import GTranslateIcon from '@material-ui/icons/GTranslate';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
 const App = function() {
 

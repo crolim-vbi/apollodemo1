@@ -8,6 +8,13 @@ import Grid from '@material-ui/core/Grid';
 
 import Button from '@material-ui/core/Button';
 
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import EditIcon from '@material-ui/icons/Edit';
+import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
+import IconButton from '@material-ui/core/IconButton';
+
+
 const App = function() {
 
   
@@ -24,7 +31,9 @@ const App = function() {
           </div>
         
 
-        <Button  variant="contained" color="primary" style={{marginBottom: "40px"}}>Cadastrar nova regra</Button>
+        {/* <Button variant="contained" color="primary" style={{marginBottom: "40px"}}><AddCircleOutlineIcon /> &nbsp; Cadastrar nova regra</Button> */}
+        <Button variant="contained" color="primary" style={{marginBottom: "40px"}}>Cadastrar nova regra</Button>
+        
 
 
 
@@ -55,8 +64,8 @@ const App = function() {
 
                   </Grid>
                   <Grid item xs={12} md={6}>
-                        <div style={{padding: "8px 24px 24px 0px"}}>
-                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
+                        <div style={{padding: "0px 24px 4px 0px"}}>
+                          <IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton>
                         </div>  
                   </Grid>
 
@@ -86,8 +95,8 @@ const App = function() {
                       </Grid>
                   </Grid>
                   <Grid item xs={12} md={6}>
-                        <div style={{padding: "8px 24px 24px 0px"}}>
-                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
+                        <div style={{padding: "0px 24px 4px 0px"}}>
+                          <IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton>
                         </div>  
                   </Grid>
 
@@ -116,8 +125,8 @@ const App = function() {
                       </Grid>
                   </Grid>
                   <Grid item xs={12} md={6}>
-                        <div style={{padding: "8px 24px 24px 0px"}}>
-                          <Button variant="contained" style={{fontSize: "0.75rem"}}> Editar </Button> <Button style={{fontSize: "0.75rem"}} > Excluir </Button>
+                        <div style={{padding: "0px 24px 4px 0px"}}>
+                          <IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton>
                         </div>  
                   </Grid>
 
