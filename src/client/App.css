@@ -46,6 +46,7 @@
 
 
   #login-page {
+  /* body {     */
     background-color: inherit; /* para backup caso a imagem não carregue */
     background-image: url("./shared/BackgroundVbiBranco.png");
     /* Centralizar e escalar a imagem agradavelmente */
