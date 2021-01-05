@@ -45,8 +45,8 @@ const App = function() {
 
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
-              <div style={{padding: "8px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Breakdown dos Fundos</a>
+              <div style={{padding: "16px 24px", borderBottom: "solid 1px lightgray"}}>
+                <a style={{fontSize: "0.875rem", fontWeight: "600"}}>Breakdown dos Fundos</a>
               </div>
               
               <div style={{padding: "0px 24px"}}>
@@ -59,15 +59,15 @@ const App = function() {
                         </div>  
                       </Grid>                    
                       <Grid item xs={12} md={6}>
-                          <div style={{margin: "8px 24px 8px 0px"}}>
+                        <div style={{margin: "8px 24px 16px 0px"}}>
                             <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" />
                           </div>
                       </Grid>
 
                   </Grid>
                   <Grid item xs={12} md={6}>
-                        <div style={{padding: "0px 24px 4px 0px"}}>
-                          <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
+                      <div style={{margin: "8px 24px 16px 0px"}}>
+                          {/* <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip> */}
                         </div>  
                   </Grid>
 
@@ -78,27 +78,27 @@ const App = function() {
 
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
-              <div style={{padding: "8px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Fechamento Mensal dos INRs</a>
+              <div style={{padding: "16px 24px", borderBottom: "solid 1px lightgray"}}>
+                <a style={{fontSize: "0.875rem", fontWeight: "600"}}>Fechamento Mensal dos INRs</a>
               </div>
               
               <div style={{padding: "0px 24px"}}>
 
                   <Grid container>
                       <Grid item xs={12} md={6}>
-                          <div style={{margin: "8px 24px 8px 0px"}}>
+                          <div style={{margin: "8px 24px 16px 0px"}}>
                             <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
                           </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
-                        <div style={{margin: "8px 24px 8px 0px"}}>
+                        <div style={{margin: "8px 24px 16px 0px"}}>
                           <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" />
                         </div>  
                       </Grid>
                   </Grid>
                   <Grid item xs={12} md={6}>
                         <div style={{padding: "0px 24px 4px 0px"}}>
-                          <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
+                          {/* <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip> */}
                         </div>  
                   </Grid>
 
@@ -108,8 +108,8 @@ const App = function() {
             </Paper>
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
-              <div style={{padding: "8px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "500"}}>Relatório de passivo dos fundos</a>
+              <div style={{padding: "16px 24px", borderBottom: "solid 1px lightgray"}}>
+                <a style={{fontSize: "0.875rem", fontWeight: "600"}}>Relatório de passivo dos fundos</a>
               </div>
               
               <div style={{padding: "0px 24px"}}>
@@ -121,14 +121,14 @@ const App = function() {
                           </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
-                        <div style={{margin: "8px 24px 8px 0px"}}>
+                        <div style={{margin: "8px 24px 16px 0px"}}>
                            <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" />
                         </div>  
                       </Grid>
                   </Grid>
                   <Grid item xs={12} md={6}>
                         <div style={{padding: "0px 24px 4px 0px"}}>
-                          <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
+                          {/* <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip> */}
                         </div>  
                   </Grid>
 

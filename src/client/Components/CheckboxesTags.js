@@ -14,7 +14,7 @@ export default function CheckboxesTags({multipleBoolen, optionsValues, groupByKe
     <Autocomplete
       // size="small"
       multiple={multipleBoolen ? true : null}
-      limitTags={1}
+      // limitTags={1}
       // id="checkboxes-tags-demo"
       options={optionsValues}
       groupBy={ groupByKey ? (option) => option[groupByKey] : ""}
