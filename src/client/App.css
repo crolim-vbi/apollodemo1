@@ -21,6 +21,11 @@
     margin: auto 
   }
 
+  .maxScreenWidth2 {
+    max-width: 960px; /* essa parte aqui é para por o limite no quanto a tela se "estica" quando o monitor é largo demais (obs: se a tela se "esticar" demais, pode trazer problemas ruins para a UI) */
+    margin: auto 
+  }  
+
 
   .globalWrap { /* esse globalWrap com essas 3 configurações** permite que o footer use "margin-top: auto;" e fique fixado sempre no fundo da página; **(min-height: 100vh; display: flex; flex-direction: column;) */
       min-height: 100vh;
@@ -105,8 +110,7 @@
     flex-wrap: wrap;   
     justify-content: space-between;
     align-items: flex-end;
-    /* height: 60px; */
-    width: 960px;
+    width: 100%;
     margin: 0;
     padding: 0px 0px;
   }  
