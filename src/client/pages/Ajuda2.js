@@ -9,7 +9,7 @@ const App = function() {
 
       <Layout titulo="Ajuda" zpto2>
 
-        <div style={{maxWidth: "960px2", margin: "auto"}}>
+        <div style={{maxWidth: "960px", margin: "auto2"}}>
 
           <div style={{marginBottom: "8px"}}> </div>
 
