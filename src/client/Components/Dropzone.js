@@ -34,7 +34,7 @@ class DropzoneAreaExample extends Component{
 
 
 
-        <div style={{margin: "0 auto 25px", maxWidth: "960px"}} id="Dropzone">
+        <div style={{margin: "0 auto 25px", maxWidth: "960px2"}} id="Dropzone">
            <Paper  elevation={2} style={{borderRadius: "4px", padding: "25px 30px"}}>
               {/* <a class="meuTitulo" style={{color: "dimgray", marginBottom: "25px"}}>Carregue os Arquivos</a>
               <br></br><br></br> */}

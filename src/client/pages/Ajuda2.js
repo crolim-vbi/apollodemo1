@@ -7,9 +7,9 @@ const App = function() {
   
     return (
 
-      <Layout titulo="Ajuda" zpto>
+      <Layout titulo="Ajuda" zpto2>
 
-        <div style={{maxWidth: "960px", margin: "auto"}}>
+        <div style={{maxWidth: "960px2", margin: "auto"}}>
 
           <div style={{marginBottom: "8px"}}> </div>
 

@@ -7,7 +7,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Inserir Documentos" zpto>
+      <Layout titulo="Inserir Documentos">
 
         
 

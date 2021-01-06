@@ -5,7 +5,8 @@ import Home from './pages/Home';
 import Consulta from './pages/Consultar';
 import Inserir from './pages/Inserir';
 import Preferencias from './pages/Preferencias';
-import Ajuda from './pages/Ajuda';
+import Ajuda from './pages/Ajuda2';
+import Ajuda2 from './pages/Ajuda';
 import NaoEncontrado from './pages/NaoEncontrado';
 import ConsultaResultado from './pages/ConsultaResultado';
 import DocumentoVisualizacao from './pages/DocumentoVisualizacao';
@@ -29,6 +30,7 @@ const App = function() {
         <Route path="/inserir" component={Inserir}/>
         <Route path="/preferencias" component={Preferencias}/>
         <Route path="/ajuda" component={Ajuda}/>
+        <Route path="/ajuda2" component={Ajuda2}/>
         <Route path="/ConsultaResultado" component={ConsultaResultado}/>
         <Route path="/DocumentoVisualizacao" component={DocumentoVisualizacao}/>
         <Route path="/home" component={Home}/>
