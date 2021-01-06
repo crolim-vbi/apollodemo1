@@ -132,12 +132,14 @@
 
   .topNav a:hover {
     color: white;
+    color: #00b3f0;
   }
 
   .topNav > a:hover {
-    border-bottom: solid  dimgray 2px;  
+    border-bottom: solid  #00b3f0 2px;  
     padding: 15px 0px 13px;  
     font-weight: 500;
+    color: #00b3f0;
   }
 
   .topNav > .active, .topNav > .active:hover {
@@ -145,6 +147,7 @@
     border-bottom: solid white 2px;  
     padding: 15px 0px 13px;
     font-weight: 600;
+    color: white;
     /* text-decoration: underline; */
   }
 
