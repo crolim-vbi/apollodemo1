@@ -7,6 +7,7 @@ import { Link , NavLink, useLocation } from 'react-router-dom';
 
 import Paper from '@material-ui/core/Paper';
 
+import HelpIcon from '@material-ui/icons/Help';
 
 
 
@@ -41,7 +42,6 @@ const Navbar = function() {
                       <NavLink exact to="/ajuda" >Ajuda</NavLink>
                     </div> 
                     <div className="topNav topNav2" >
-                      
                       <span><a style={{padding: "12px 0px", marginRight: "0px"}}><UserIcon /></a></span>
                     </div>                     
                   </div>  
