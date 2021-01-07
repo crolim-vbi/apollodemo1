@@ -257,17 +257,17 @@ const App = function() {
                                     <Grid container spacing={0}>
                                         <Grid item xs={12} md={4}>
                                             <div className={classes.paper}>
-                                              <CheckboxesTags multipleBoolen={true} labelName = "Entidades" optionsValues = {entidades} groupByKey = "tipo" />
+                                              <CheckboxesTags multipleBoolen={true} labelName = "Entidades" optionsValues = {entidades} groupByKey = "tipo" limitTagsOption={1}/>
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} md={4}>
                                             <div className={classes.paper}>
-                                              <CheckboxesTags multipleBoolen={true} labelName = "Tema" optionsValues = {temas} />
+                                              <CheckboxesTags multipleBoolen={true} labelName = "Tema" optionsValues = {temas} limitTagsOption={1}/>
                                             </div>
                                         </Grid>
                                         <Grid item xs={12} md={4}>
                                             <div className={classes.paper}>
-                                              <CheckboxesTags multipleBoolen={true} labelName = "Relatórios" optionsValues = {relatorios} groupByKey = "tema" />
+                                              <CheckboxesTags multipleBoolen={true} labelName = "Relatórios" optionsValues = {relatorios} groupByKey = "tema" limitTagsOption={1}/>
                                             </div>
                                         </Grid>
                                     </Grid>

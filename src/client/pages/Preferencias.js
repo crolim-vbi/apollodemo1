@@ -19,6 +19,54 @@ import IconButton from '@material-ui/core/IconButton';
 
 const App = function() {
 
+    let defaultValueArray1 = [  {"nome": "Performance Breakdown","tema": "Ativo","frequencia": "Mensal"}];
+    let defaultValueArray2 = [  
+      {
+        "nome": "BREOF II FIP",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "BREOF FIDC",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "BREOF III FIP",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "Nova I FII",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "Trilliant Reit FIM",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "SBC FII",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "VBI Uliving FII",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "VBI CRI FII",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "VBI Reits FoF FII",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "VBI Logístico FII",
+        "tipo": "Fundos"
+      },
+      {
+        "nome": "VBI Prime Properties FII",
+        "tipo": "Fundos"
+      },      
+    ];
+
   
     return (<>
       <Layout titulo="Configurar Minhas Notificações">
@@ -46,7 +94,7 @@ const App = function() {
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
               <div style={{padding: "16px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "600"}}>Breakdown dos Fundos</a>
+                <a style={{fontSize: "0.875rem", fontWeight: "600"}}>Performance Breakdown dos Fundos</a>
               </div>
               
               <div style={{padding: "0px 24px"}}>
@@ -55,12 +103,12 @@ const App = function() {
 
                       <Grid item xs={12} md={6}>
                         <div style={{margin: "8px 24px 8px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
+                            <CheckboxesTags  multipleBoolen={true} labelName = "Gostaria de receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" defaultValueArray={defaultValueArray1}/>
                         </div>  
                       </Grid>                    
                       <Grid item xs={12} md={6}>
                         <div style={{margin: "8px 24px 16px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" />
+                            <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" defaultValueArray={defaultValueArray2}/>
                           </div>
                       </Grid>
 
@@ -87,7 +135,7 @@ const App = function() {
                   <Grid container>
                       <Grid item xs={12} md={6}>
                           <div style={{margin: "8px 24px 16px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
+                            <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema"  />
                           </div>
                       </Grid>
                       <Grid item xs={12} md={6}>

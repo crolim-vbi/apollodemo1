@@ -8,15 +8,16 @@ import CheckBoxIcon from '@material-ui/icons/CheckBox';
 const icon1 = <CheckBoxOutlineBlankIcon    />;
 const checkedIcon1 = <CheckBoxIcon  />;
 
-export default function CheckboxesTags({multipleBoolen, optionsValues, groupByKey, labelName}) {
+export default function CheckboxesTags({multipleBoolen, optionsValues, groupByKey, labelName, limitTagsOption, defaultValueArray}) {
   return (
     
     <Autocomplete
       // size="small"
       multiple={multipleBoolen ? true : null}
-      // limitTags={1}
+      limitTags={limitTagsOption ? limitTagsOption : 100}
       // id="checkboxes-tags-demo"
       options={optionsValues}
+      defaultValue={ defaultValueArray }
       groupBy={ groupByKey ? (option) => option[groupByKey] : ""}
       disableCloseOnSelect = {multipleBoolen ? true : null}
       getOptionLabel={(option) => option.nome}
