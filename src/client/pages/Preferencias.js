@@ -165,7 +165,7 @@ const App = function() {
 
                       <Grid item xs={12} md={6}>
                         <div style={{margin: "16px 24px 16px 0px"}}>
-                            <CheckboxesTags  multipleBoolen={true} labelName = "Irei receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" defaultValueArray={defaultValueArray1}/>
+                            <CheckboxesTags  multipleBoolen={true} labelName = "Você receberá estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" defaultValueArray={defaultValueArray1}/>
                         </div>  
                       </Grid>                    
                       <Grid item xs={12} md={6}>
@@ -200,7 +200,7 @@ const App = function() {
                   <Grid container>
                       <Grid item xs={12} md={6}>
                           <div style={{margin: "16px 24px 16px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "Irei receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" defaultValueArray={defaultValueArray3} />
+                            <CheckboxesTags multipleBoolen={true} labelName = "Você receberá estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" defaultValueArray={defaultValueArray3} />
                           </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
