@@ -16,7 +16,7 @@ const Footer = function() {
     return (
         <Paper elevation={4} className="bottomWrap" style={{borderRadius: "0px"}}>
           <div className="footer1 maxScreenWidth">
-            <img src={logo_vbi} height="35px" />
+            <a href="https://vbirealestate.com/" target="_blank"><img src={logo_vbi} height="35px" /></a>
           </div>
           {path === "/login" 
               ? 

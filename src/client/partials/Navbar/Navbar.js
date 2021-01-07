@@ -41,8 +41,8 @@ const Navbar = function() {
                       <NavLink exact to="/inserir" >Inserir</NavLink>
                       <NavLink exact to="/ajuda" >Ajuda</NavLink>
                     </div> 
-                    <div className="topNav topNav2" >
-                      <span><a style={{padding: "12px 0px", marginRight: "0px"}}><UserIcon /></a></span>
+                    <div className="topNav" >
+                      <span><a style={{padding: "12px 0px", marginRight: "0px", color: ""}}><UserIcon /></a></span>
                     </div>                     
                   </div>  
             }     
