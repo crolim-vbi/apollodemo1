@@ -3,7 +3,7 @@ import ExcelIconImg from "./excelIcon.png"
 
 const ExcelIcon = () => {
     return(
-        <div className="hoverIconButton" style={{height: "22px", width: "22px", display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <div className="excelIconClass" style={{height: "22px", width: "22px", display: "flex", alignItems: "center", justifyContent: "center"}}>
             {/* <img src={ExcelIconImg} style={{height: "20px"}}  /> */}
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000"
