@@ -11,7 +11,7 @@ import Highlights2 from '.././partials/Highlights2';
 const App = function() {
 
     return (
-      <Layout titulo="Documentos Recentes">
+      <Layout titulo="Sistema Apollo Lunar">
 
         {/* <Consulta /> */}
 

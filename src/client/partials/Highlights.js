@@ -41,7 +41,7 @@ const App = function() {
                     <Grid item xs={12} md={6}>
                       
                       
-                          <DataTable2 titulo="Últimas Atualizações"/>
+                          <DataTable2 titulo="Documentos Recentes"/>
 
                       
 
