@@ -128,10 +128,12 @@
   }
 
 
+  .hoverIconButton *  {  
+    fill: dimgray;
+  }
 
-  .topNav a:hover {
-    color: white;
-    color: #00b3f0;
+  .hoverIconButton:hover *  {
+    fill: #00b3f0;
   }
 
   .topNav > a:hover {

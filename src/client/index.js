@@ -17,6 +17,15 @@ const theme = createMuiTheme(
       primary: CoresVbi.azulVbi1,
       secondary: CoresVbi.laranjaVbi1,
   },
+  overrides: {
+    MuiIconButton: {
+      root: {
+        '&:hover': {
+          color: "#00b3f0"
+        }
+      }
+    }
+  }  
 });
 
 
