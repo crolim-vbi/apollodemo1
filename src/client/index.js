@@ -21,8 +21,11 @@ const theme = createMuiTheme(
     MuiIconButton: {
       root: {
         '&:hover': {
-          color: "#00b3f0"
-        }
+          color: "#00b3f0",
+        },
+        '&:hover *': {
+          fill: "#00b3f0"
+        }        
       }
     }
   }  

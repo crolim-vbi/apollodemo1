@@ -132,9 +132,9 @@
     fill: dimgray;
   }
 
-  .excelIconClass:hover *  {
+  /* .excelIconClass:hover *  {
     fill: #00b3f0;
-  }
+  } */
 
   .topNav > a:hover {
     border-bottom: solid  #00b3f0 2px;  
