@@ -28,7 +28,7 @@ export default function App() {
     textLabels: MuiTableTextLabels
   };
 
-  const columns = ["Relatório", "Entidade", "Data", "Tipo", "Carregado por"];
+  const columns = ["Tipo de Relatório", "Entidade", "Data", "Tipo", "Carregado por"];
 
   const data = [
     ['Performance Breakdown', 'BREOF FIP', '2020.12', 'Excel', 'Diogo Massaro'],
