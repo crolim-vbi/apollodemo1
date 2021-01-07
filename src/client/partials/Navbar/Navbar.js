@@ -37,8 +37,8 @@ const Navbar = function() {
                     <div className="topNav" >
                       <NavLink exact to="/home" >Início</NavLink>
                       <NavLink exact to="/consultar" >Consultar</NavLink>
-                      <NavLink exact to="/preferencias" >Preferências</NavLink>                      
                       <NavLink exact to="/inserir" >Inserir</NavLink>
+                      <NavLink exact to="/preferencias" >Preferências</NavLink>                      
                       <NavLink exact to="/ajuda" >Ajuda</NavLink>
                     </div> 
                     <div className="topNav" >
