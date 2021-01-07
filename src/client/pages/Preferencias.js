@@ -19,7 +19,23 @@ import IconButton from '@material-ui/core/IconButton';
 
 const App = function() {
 
-    let defaultValueArray1 = [  {"nome": "Performance Breakdown","tema": "Ativo","frequencia": "Mensal"}];
+    let defaultValueArray1 = [  
+      {
+          "nome": "Performance Breakdown",
+          "tema": "Ativo",
+          "frequencia": "Mensal"
+      },
+      {
+        "nome": "Carteira Fechamento",
+        "tema": "Ativo",
+        "frequencia": "Mensal"
+      },
+      {
+        "nome": "Demonstrativo de Caixa",
+        "tema": "Ativo",
+        "frequencia": "Mensal"
+      },            
+    ];
     let defaultValueArray2 = [  
       {
         "nome": "BREOF II FIP",
@@ -66,6 +82,47 @@ const App = function() {
         "tipo": "Fundos"
       },      
     ];
+    let defaultValueArray3 = [
+      {
+        "nome": "Demonstrativo de Caixa",
+        "tema": "Ativo",
+        "frequencia": "Mensal"
+      }      
+    ];
+    let defaultValueArray4 = [
+      {
+        "nome": "Basset Hound LLC",
+        "tipo": "INRs"
+      },
+      {
+        "nome": "BREOF II Luxco SarL",
+        "tipo": "INRs"
+      },
+      {
+        "nome": "Canaryanna LLC",
+        "tipo": "INRs"
+      },
+      {
+        "nome": "Espirito Santo LLC",
+        "tipo": "INRs"
+      },
+      {
+        "nome": "Floripa",
+        "tipo": "INRs"
+      },
+      {
+        "nome": "Tabbyal",
+        "tipo": "INRs"
+      },
+      {
+        "nome": "BREOF III SCS",
+        "tipo": "INRs"
+      },
+      {
+        "nome": "Brazil Student Housing LLC",
+        "tipo": "INRs"
+      }      
+    ];
 
   
     return (<>
@@ -87,103 +144,81 @@ const App = function() {
 
 
 
-        <div id="teste1">
+        <div id="">
 
-            <a style={{color: "dimgray", display: "block", margin: "10px 0px 15px", fontWeight: "600", fontSize: "1rem"}}>Regras de Notificações</a>
+            <a style={{color: "dimgray", display: "block", margin: "10px 0px 15px", fontWeight: "600", fontSize: "1.0rem"}}>Regras de Notificações</a>
 
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
-              <div style={{padding: "16px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "600"}}>Performance Breakdown dos Fundos</a>
+              <div style={{padding: "0px 24px", borderBottom: "solid 1px lightgray"}}>
+                <a style={{fontSize: "0.875rem", fontWeight: "600", margin: "16px 0px", display: "inline-block"}}>Receber Fechamento Mensal dos Fundos</a>
+                <span style={{display: "inline-block", float: "right", marginLeft: "24px", marginTop: "2px"}}>
+                  <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
+                </span>                    
               </div>
-              
+            
+
+
               <div style={{padding: "0px 24px"}}>
 
                   <Grid container>
 
                       <Grid item xs={12} md={6}>
-                        <div style={{margin: "8px 24px 8px 0px"}}>
-                            <CheckboxesTags  multipleBoolen={true} labelName = "Gostaria de receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" defaultValueArray={defaultValueArray1}/>
+                        <div style={{margin: "16px 24px 16px 0px"}}>
+                            <CheckboxesTags  multipleBoolen={true} labelName = "Irei receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" defaultValueArray={defaultValueArray1}/>
                         </div>  
                       </Grid>                    
                       <Grid item xs={12} md={6}>
-                        <div style={{margin: "8px 24px 16px 0px"}}>
+                        <div style={{margin: "16px 24px 16px 0px", marginRight: "0px"}}>
                             <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" defaultValueArray={defaultValueArray2}/>
                           </div>
                       </Grid>
 
                   </Grid>
-                  <Grid item xs={12} md={6}>
-                      <div style={{margin: "8px 24px 16px 0px"}}>
-                          {/* <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip> */}
+                  {/* <Grid item xs={12} md={6}>
+                        <div style={{margin: "16px 24px 16px 0px"}}>
+                          <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
                         </div>  
-                  </Grid>
+                  </Grid> */}
 
               </div>
-              
-
-            </Paper>
-
-            <Paper elevation={2} style={{marginBottom: "8px"}}>
-              
-              <div style={{padding: "16px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "600"}}>Fechamento Mensal dos INRs</a>
-              </div>
-              
-              <div style={{padding: "0px 24px"}}>
-
-                  <Grid container>
-                      <Grid item xs={12} md={6}>
-                          <div style={{margin: "8px 24px 16px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema"  />
-                          </div>
-                      </Grid>
-                      <Grid item xs={12} md={6}>
-                        <div style={{margin: "8px 24px 16px 0px"}}>
-                          <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" />
-                        </div>  
-                      </Grid>
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                        <div style={{padding: "0px 24px 4px 0px"}}>
-                          {/* <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip> */}
-                        </div>  
-                  </Grid>
-
-              </div>
-              
 
             </Paper>
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
-              <div style={{padding: "16px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "600"}}>Relatório de passivo dos fundos</a>
+
+              <div style={{padding: "0px 24px", borderBottom: "solid 1px lightgray"}}>
+                <a style={{fontSize: "0.875rem", fontWeight: "600", margin: "16px 0px", display: "inline-block"}}>Receber Demonstrativo de Caixa dos INRs</a>
+                <span style={{display: "inline-block", float: "right", marginLeft: "24px", marginTop: "2px"}}>
+                  <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
+                </span>                    
               </div>
-              
+
+
               <div style={{padding: "0px 24px"}}>
 
                   <Grid container>
                       <Grid item xs={12} md={6}>
-                          <div style={{margin: "8px 24px 8px 0px"}}>
-                            <CheckboxesTags multipleBoolen={true} labelName = "Gostaria de receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" />
+                          <div style={{margin: "16px 24px 16px 0px"}}>
+                            <CheckboxesTags multipleBoolen={true} labelName = "Irei receber estes Relatórios..." optionsValues = {relatorios} groupByKey = "tema" defaultValueArray={defaultValueArray3} />
                           </div>
                       </Grid>
                       <Grid item xs={12} md={6}>
-                        <div style={{margin: "8px 24px 16px 0px"}}>
-                           <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" />
+                        <div style={{margin: "16px 24px 16px 0px", marginRight: "0px"}}>
+                          <CheckboxesTags multipleBoolen={true} labelName = "... para estas Entidades." optionsValues = {entidades} groupByKey = "tipo" defaultValueArray={defaultValueArray4} />
                         </div>  
                       </Grid>
                   </Grid>
-                  <Grid item xs={12} md={6}>
+                  {/* <Grid item xs={12} md={6}>
                         <div style={{padding: "0px 24px 4px 0px"}}>
-                          {/* <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip> */}
+                          <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
                         </div>  
-                  </Grid>
+                  </Grid> */}
 
               </div>
               
 
-            </Paper>                
+            </Paper>         
           </div>
         </div>
 
@@ -303,6 +338,11 @@ const temas = [
     "tema": "Ativo",
     "frequencia": "Mensal"
   },
+  {
+    "nome": "Carteira Fechamento",
+    "tema": "Ativo",
+    "frequencia": "Mensal"
+  },  
   {
     "nome": "Demonstrativo de Caixa",
     "tema": "Ativo",
