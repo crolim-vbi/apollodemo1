@@ -23,7 +23,7 @@ const theme = createMuiTheme(
         '&:hover': {
           color: "#00b3f0",
         },
-        '&:hover *': {
+        '&:hover .changeFillOnHover *': {
           fill: "#00b3f0"
         }        
       }

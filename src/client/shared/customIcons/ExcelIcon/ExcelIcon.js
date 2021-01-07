@@ -3,7 +3,7 @@ import ExcelIconImg from "./excelIcon.png"
 
 const ExcelIcon = () => {
     return(
-        <div className="excelIconClass" style={{height: "22px", width: "22px", display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <div className="changeFillOnHover" style={{height: "22px", width: "22px", display: "flex", alignItems: "center", justifyContent: "center"}}>
             {/* <img src={ExcelIconImg} style={{height: "20px"}}  /> */}
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000"
@@ -12,7 +12,7 @@ const ExcelIcon = () => {
                 Created by potrace 1.16, written by Peter Selinger 2001-2019
                 </metadata>
                 <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none">
+                fill="dimgray" stroke="none">
                 <path d="M680 2130 c-333 -64 -622 -120 -642 -124 l-38 -7 0 -874 c0 -481 2
                 -875 4 -875 6 0 1247 -239 1274 -245 l22 -5 0 1125 c0 619 -3 1125 -7 1124 -5
                 -1 -280 -54 -613 -119z m-105 -707 c36 -76 68 -148 71 -160 8 -31 20 -29 28 3
