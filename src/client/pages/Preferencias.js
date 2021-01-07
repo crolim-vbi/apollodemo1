@@ -126,7 +126,7 @@ const App = function() {
 
   
     return (<>
-      <Layout titulo="Configurar Minhas Notificações">
+      <Layout titulo="Configurar Notificações">
 
         <div style={{maxWidth: "960px2"}}>
 
@@ -151,7 +151,7 @@ const App = function() {
             <Paper elevation={2} style={{marginBottom: "8px"}}>
               
               <div style={{padding: "0px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "600", margin: "16px 0px", display: "inline-block"}}>Receber Fechamento Mensal dos Fundos</a>
+                <a style={{fontSize: "0.875rem", fontWeight: "600", margin: "16px 0px", display: "inline-block"}}>Fechamento Mensal dos Fundos</a>
                 <span style={{display: "inline-block", float: "right", marginLeft: "24px", marginTop: "2px"}}>
                   <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
                 </span>                    
@@ -188,7 +188,7 @@ const App = function() {
               
 
               <div style={{padding: "0px 24px", borderBottom: "solid 1px lightgray"}}>
-                <a style={{fontSize: "0.875rem", fontWeight: "600", margin: "16px 0px", display: "inline-block"}}>Receber Demonstrativo de Caixa dos INRs</a>
+                <a style={{fontSize: "0.875rem", fontWeight: "600", margin: "16px 0px", display: "inline-block"}}>Demonstrativo de Caixa dos INRs</a>
                 <span style={{display: "inline-block", float: "right", marginLeft: "24px", marginTop: "2px"}}>
                   <Tooltip title={"Editar Regra"}><IconButton style={{fontSize: "0.75rem"}}><EditOutlinedIcon fontSize="small" /></IconButton></Tooltip><Tooltip title={"Deletar Regra"}><IconButton style={{fontSize: "0.75rem"}}><DeleteOutlineIcon fontSize="small" /></IconButton></Tooltip>
                 </span>                    
