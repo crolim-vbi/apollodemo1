@@ -1,162 +1,120 @@
 import React from 'react';
-import { fade, makeStyles } from '@material-ui/core/styles';
-import IconButton from '@material-ui/core/IconButton';
-import Badge from '@material-ui/core/Badge';
-import MenuItem from '@material-ui/core/MenuItem';
+import { withStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
+import MenuItem from '@material-ui/core/MenuItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+
+
+
+
+import IconButton from '@material-ui/core/IconButton';
+
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import SettingsIcon from '@material-ui/icons/Settings';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
+import AccountBoxIcon from '@material-ui/icons/AccountBox';
+
+
+import Divider from '@material-ui/core/Divider';
+
 import { Link } from 'react-router-dom';
 
 
-const useStyles = makeStyles((theme) => ({
-  grow: {
-    flexGrow: 1,
+const StyledMenu = withStyles({
+  paper: {
+    border: '1px solid #d3d4d5',
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    display: 'none',
-    [theme.breakpoints.up('sm')]: {
-      display: 'block',
-    },
-  },
+})((props) => (
+  <Menu
+    elevation={2}
+    getContentAnchorEl={null}
+    anchorOrigin={{
+      vertical: 'bottom',
+      horizontal: 'right',
+    }}
+    transformOrigin={{
+      vertical: 'top',
+      horizontal: 'right',
+    }}
+    {...props}
+  />
+));
 
-  inputRoot: {
-    color: 'inherit',
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '20ch',
+const StyledMenuItem = withStyles((theme) => ({
+  root: {
+    '&:hover': {
+      // backgroundColor: theme.palette.primary.main,
+      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
+        color: "#00b3f0",
+      },
     },
   },
-  sectionDesktop: {
-    display: 'none',
-    [theme.breakpoints.up('md')]: {
-      display: 'flex',
-    },
-  },
-  sectionMobile: {
-    display: 'flex',
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
-    },
-  },
-}));
+}))(MenuItem);
 
-export default function PrimarySearchAppBar() {
-  const classes = useStyles();
+export default function CustomizedMenus() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (event) => {
+  const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
+  const handleClose = () => {
     setAnchorEl(null);
-    // shoot();
-    handleMobileMenuClose();
   };
-
-  const shoot = () => {
-    alert("Esta funcionalidade ainda está em desenvolvimento");
-    handleMenuClose();
-  }
-
-
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem component={Link} to="#" >Minha Conta</MenuItem>
-      <MenuItem component={Link} to="/login" >Sair</MenuItem>
-    </Menu>
-  );
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="secondary">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="show 11 new notifications" color="inherit">
-          <Badge badgeContent={11} color="secondary">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
-      </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem>
-    </Menu>
-  );
 
   return (
-    <>
-        <div >
-
-            <IconButton
-              edge="false"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-              style={{height:"25px", padding: "0px"}}
-              
-
-            >
-                <AccountCircle style={{fontSize:"25px", padding: "0px"}} />
-            </IconButton>
-
-            {renderMobileMenu}
-            {renderMenu}
-        </div>
-    </>
+    // <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", height: "100vh", backgroundColor: "yellow2"}}>
+      <>
+        <IconButton
+          aria-controls="customized-menu"
+          aria-haspopup="true"
+          // variant="contained"
+          // color="primary"
+          onClick={handleClick}
+          color="inherit"
+          style={{padding: "0px", margin: "0px"}}
+        >
+          <AccountCircleIcon />
+        </IconButton>
+        <StyledMenu
+          id="customized-menu"
+          anchorEl={anchorEl}
+          keepMounted
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <StyledMenuItem>
+            <div style={{padding: "16px 16px", width: "100%", textAlign: "center", }}>
+              <AccountBoxIcon fontSize="Large" style={{color: "dimgray"}}/><br />
+              <a>Diogo Massaro</a><br />
+              <a style={{color: "dimgray"}}>dmassaro@vbirealestate.com </a>
+            </div>
+          </StyledMenuItem>
+          <Divider light />
+          <StyledMenuItem>
+            <ListItemIcon>
+              <AccountCircleIcon fontSize="" />
+            </ListItemIcon>
+            <ListItemText primary="Minha Conta" />
+          </StyledMenuItem>
+          <Divider light />
+          <StyledMenuItem>
+            <ListItemIcon>
+              <SettingsIcon fontSize="" />
+            </ListItemIcon>
+            <ListItemText primary="Administrar Sistema" />
+          </StyledMenuItem>
+          <Divider light />
+          <StyledMenuItem component={Link} to="/login">
+            <ListItemIcon>
+              <ExitToAppIcon fontSize="" />
+            </ListItemIcon>
+            <ListItemText primary="Sair" />
+          </StyledMenuItem>
+        </StyledMenu>
+      </>
+    // </div>
   );
 }

@@ -42,7 +42,7 @@ const Navbar = function() {
                       <NavLink exact to="/ajuda" >Ajuda</NavLink>
                     </div> 
                     <div className="topNav" >
-                      <span><a style={{padding: "12px 0px", marginRight: "0px", color: ""}}><UserIcon /></a></span>
+                      <span><a style={{padding: "0px", margin: "0px"}}><UserIcon /></a></span>
                     </div>                     
                   </div>  
             }     
